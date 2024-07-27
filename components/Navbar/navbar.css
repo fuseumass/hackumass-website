@@ -1,0 +1,220 @@
+.navbar {
+    background: #FFF6EC;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.navbar-landing {
+    background: transparent;
+    height: 148px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    /* box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.3); */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 90vw;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-logo {
+    color: #000;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.6vw;
+    display: flex;
+    align-items: center;
+    height: max-content;
+}
+
+.fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8vw;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 50px;
+    list-style: none;
+    text-align: center;
+    width: max-content;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    font-size: 0.938vw;
+}
+
+.nav-links {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 80%;
+    align-self: center;
+}
+
+.nav-links-landing {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 80%;
+    align-self: center;
+}
+
+.nav-links:hover {
+    color: #000;
+    font-size: 1.5rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-links-landing:hover {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    line-height: 1.1;
+}
+
+@media screen and (max-width: 960px) {
+    .nav-menu {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+        position: absolute;
+        grid-gap: 0;
+        top: 100px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-item {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-menu.active {
+        background: #FFF6EC;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border-top: rgba(0, 0, 0, 0.3) 1px solid;
+        padding-top: 20px;
+        margin: 20px;
+    }
+
+    .nav-links-landing {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        font-size: 1.5rem;
+        border-top: rgba(0, 0, 0, 0.3) 1px solid;
+        padding-top: 20px;
+        margin: 20px;
+        color: #000;
+    }
+
+
+    .nav-links, .nav-links-landing {
+        text-align: center;
+        width: 80%;
+        display: table;
+    }
+
+    .navbar-logo {
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(30%, 0%);
+    }
+
+    .menu-icon {
+        height: 80px;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 80px;
+        margin-right: 20px;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        transition: all 0.3s ease-out;
+    }
+
+    .navbar-landing {
+        /* background: url('/land-mobile-nav.png') center center/cover no-repeat; */
+        background-color: #fff;
+
+        .nav-menu.active {
+            background: #fff;
+        }
+
+        .landing {
+            color: black !important;
+        }
+
+        .mobile {
+            color: black !important;
+        }
+    }
+}
