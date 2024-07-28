@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faArrowRightLong,
     faBars,
-    faTimes,
+    faTimes
 } from "@fortawesome/free-solid-svg-icons";
+import { faSquareFacebook, faSquareXTwitter, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function NavigationBarLand(user) {
     const [click, setClick] = useState(false);
@@ -64,17 +65,17 @@ function NavigationBarLand(user) {
                         <li className="nav-item">
                             <Link
                                 smooth="true"
-                                href="#pricing"
+                                href="#faq"
                                 className="nav-links-landing landing"
                                 onClick={closeMobileMenu}
                             >
                                 FAQ
                             </Link>
                         </li>
-                        <li className="nav-item landing">
+                        <li className="nav-item">
                             <Link
                                 smooth="true"
-                                href="#aboutus"
+                                href="#sponsors"
                                 className="nav-links-landing landing"
                                 style={{ borderTop: "none" }}
                                 onClick={() => {
@@ -87,44 +88,66 @@ function NavigationBarLand(user) {
                         <li className="nav-item">
                             <Link
                                 smooth="true"
-                                href="#pricing"
+                                href="#team"
                                 className="nav-links-landing landing"
                                 onClick={closeMobileMenu}
                             >
                                 Team
                             </Link>
                         </li>
-
                         <li className="nav-item">
-                            {!user.user ? (
-                                <Link
-                                    smooth="true"
-                                    href="/login"
-                                    className="nav-links-landing landing"
-                                    onClick={closeMobileMenu}
-                                >
-                                    Get Started
-                                    <FontAwesomeIcon
-                                        className="mobile"
-                                        icon={faArrowRightLong}
-                                        style={{ fontSize: 30, color: "white", marginLeft: 20 }}
-                                    />
-                                </Link>
-                            ) : (
-                                <Link
-                                    smooth="true"
-                                    href="/users"
-                                    className="nav-links-landing landing"
-                                    onClick={closeMobileMenu}
-                                >
-                                    Dashboard
-                                    <FontAwesomeIcon
-                                        className="mobile"
-                                        icon={faArrowRightLong}
-                                        style={{ fontSize: 30, color: "white", marginLeft: 20 }}
-                                    />
-                                </Link>
-                            )}
+                            <Link
+                                smooth="true"
+                                href="2023.hackumass.com"
+                                className="nav-links-landing landing"
+                                style={{ borderTop: "none" }}
+                                onClick={() => {
+                                    closeMobileMenu();
+                                }}
+                            >
+                                2023
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                smooth="true"
+                                href="https://www.facebook.com/HackUMass/"
+                                className="nav-links-landing landing"
+                                onClick={closeMobileMenu}
+                            >
+                                <FontAwesomeIcon icon={faSquareFacebook} />
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                smooth="true"
+                                href="https://www.facebook.com/HackUMass/"
+                                className="nav-links-landing landing"
+                                onClick={closeMobileMenu}
+                            >
+                                <FontAwesomeIcon icon={faSquareXTwitter} />
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                smooth="true"
+                                href="https://www.facebook.com/HackUMass/"
+                                className="nav-links-landing landing"
+                                onClick={closeMobileMenu}
+                            >
+                                <FontAwesomeIcon icon={faSquareInstagram} />
+                            </Link>
+                        </li>
+
+                        <li className="nav-item" style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "white", paddingLeft: "20px", paddingRight: "20px", paddingTop: "7px", paddingBottom: "7px", borderRadius: "30px" }}>
+                            <Link
+                                style={{ color: "black" }}
+                                smooth="true"
+                                href="https://dashboard.hackumass.com"
+                                className="nav-links-landing landing"
+                                onClick={closeMobileMenu}>
+                                Applications Open!
+                            </Link>
                         </li>
                     </ul>
                 </div>
