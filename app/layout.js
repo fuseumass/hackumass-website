@@ -6,7 +6,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "HackUMass XII - An outpost for your craziest ideas",
   description: "HackUMass is an outpost for your craziest ideas. November 8 - 10, 2024 at UMass Amherst.",
-  icons: [{rel: 'icon', type: 'image/png', href: '/BlueGears.png'}]
 };
 
 export default function RootLayout({ children }) {
