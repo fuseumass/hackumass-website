@@ -88,7 +88,7 @@
     font-size: 64px;
     font-weight: 500;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #183249;
 }
 
@@ -96,7 +96,6 @@
     text-align: center;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 50px;
     color: #183249;
 }
 
@@ -132,4 +131,19 @@
     border-radius: 50%;
     color: white;
     background-color: #dcdcdc;
+}
+
+.SponsorImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.SponsorImages img {
+    width: 80vw;
+    height: auto;
+    margin: 20px;
 }
