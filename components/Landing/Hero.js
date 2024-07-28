@@ -19,7 +19,7 @@ export default function HeroSection() {
                 <button className="LandingHeroMainAppbutt">
                     <p style={{ margin: "auto" }}>Apply Now!</p>
                     <Fragment>
-                        <FontAwesomeIcon icon={faCircleArrowRight} style={{ fontSize: 40 }} priority={true} />
+                        <FontAwesomeIcon icon={faCircleArrowRight} style={{ fontSize: 40 }} />
                     </Fragment>
                 </button>
             </div>
