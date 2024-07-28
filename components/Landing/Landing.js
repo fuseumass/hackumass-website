@@ -5,6 +5,7 @@ import './Landing.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
+import HeroSection from "./Hero.js";
 
 export default function Landing() {
     useEffect(() => {
@@ -65,30 +66,7 @@ export default function Landing() {
     return (
         <div className="landingpage">
             <NavigationBarLand />
-            <div className="LandingContainer">
-                <div className="LandingHeroMain">
-                    <Image
-                        className="LandingHeroMainImg"
-                        src="/LandingText.png"
-                        sizes={1000}
-                        width={0}
-                        height={0}
-                    />
-                    <button className="LandingHeroMainAppbutt">
-                        <p style={{ margin: "auto" }}>Apply Now!</p>
-                        <FontAwesomeIcon icon={faCircleArrowRight} style={{ fontSize: 40 }} />
-                    </button>
-                </div>
-                <div className="LandingHeroBuilding">
-                    <Image
-                        className="LandingHeroBuildingImg"
-                        src="/Buildings.png"
-                        sizes={5000}
-                        width={0}
-                        height={0}
-                    />
-                </div>
-            </div>
+            <HeroSection />
             <div className="LandingAbout">
                 <div className="LandingAboutHeader">
                     <h1>Why HackUMass?</h1>
@@ -107,6 +85,21 @@ export default function Landing() {
                     <button className="LandingAboutContentButton" id="buttwhy3"></button>
                     <button className="LandingAboutContentButton" id="buttwhy4"></button>
                     <button className="LandingAboutContentButton" id="buttwhy5"></button>
+                </div>
+            </div>
+            <div className="Sponsors">
+                <div className="LandingAboutHeader">
+                    <h1>Our Sponsors</h1>
+                    <p>Want to Sponsor HackUMass? Reach out to us at <span style={{ color: "#2832C1", cursor: "pointer"}} onClick={() => (window.open("mailto:team@hackumass.com"))}>team@hackumass.com</span></p>
+                </div>
+                <div className="SponsorImages">
+                    <Image src="/Sponsors.png" sizes={2000} width={0} height={0} priority={true} />
+                </div>
+                <div className="LandingAboutHeader">
+                    <h1>Our Partners</h1>
+                </div>
+                <div className="SponsorImages">
+                    <Image src="/Partners.png" sizes={2000} width={0} height={0} priority={true} />
                 </div>
             </div>
         </div>
