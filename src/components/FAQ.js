@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Question from "./Question";
 import PropTypes from "prop-types";
 
-const FAQ = ({ className = "" }) => {
+const FAQ = () => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -34,7 +34,7 @@ const FAQ = ({ className = "" }) => {
   }, []);
   return (
     <section
-      className={`self-stretch flex flex-col items-center justify-start gap-[90px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] text-center text-45xl text-text-secondary font-heading ${className}`}
+      className={`self-stretch flex flex-col items-center justify-start gap-[90px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] text-center text-45xl text-text-secondary font-heading `}
       data-animate-on-scroll
     >
       <div className="flex flex-col items-center justify-start py-0 px-[60px]">

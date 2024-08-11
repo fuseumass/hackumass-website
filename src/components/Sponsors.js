@@ -3,7 +3,7 @@ import SponsorsCard from "./SponsorsCard";
 import Button from "./Button";
 import PropTypes from "prop-types";
 
-const Sponsors = ({ className = "" }) => {
+const Sponsors = () => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -35,7 +35,7 @@ const Sponsors = ({ className = "" }) => {
   }, []);
   return (
     <section
-      className={`self-stretch overflow-hidden flex flex-col items-center justify-start gap-[90px] text-center text-45xl text-text-secondary font-heading ${className}`}
+      className={`self-stretch overflow-hidden flex flex-col items-center justify-start gap-[90px] text-center text-45xl text-text-secondary font-heading $`}
     >
       <div
         className="self-stretch flex flex-col items-center justify-start py-0 px-[60px] gap-[30px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0]"
@@ -57,11 +57,11 @@ const Sponsors = ({ className = "" }) => {
           </div>
         </div>
         <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[60px]">
-          <SponsorsCard image15="/image-15@2x.png" />
-          <SponsorsCard image15="/image-15@2x.png" />
-          <SponsorsCard image15="/image-15@2x.png" />
-          <SponsorsCard image15="/image-151@2x.png" />
-          <SponsorsCard image15="/image-151@2x.png" />
+          <SponsorsCard image="/image-15@2x.png" />
+          <SponsorsCard image="/image-15@2x.png" />
+          <SponsorsCard image="/image-15@2x.png" />
+          <SponsorsCard image="/image-151@2x.png" />
+          <SponsorsCard image="/image-151@2x.png" />
         </div>
       </div>
       <div className="self-stretch flex flex-row items-center justify-center py-0 px-[60px] gap-[90px] text-left text-base text-black font-body md:flex-col md:gap-[90px] md:items-center md:justify-center sm:flex-col sm:gap-[30px] sm:items-center sm:justify-center">
