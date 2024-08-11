@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import PropTypes from "prop-types";
 
 const Button = ({
-  className = "",
   propPosition,
   propTop,
   propRight,
@@ -18,7 +17,7 @@ const Button = ({
 
   return (
     <button
-      className={`cursor-pointer [border:none] p-0 bg-[transparent] w-64 relative h-[46px] ${className}`}
+      className={`cursor-pointer [border:none] p-0 bg-[transparent] w-64 relative h-[46px]`}
       style={buttonDynamicStyle}
     >
       <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-81xl bg-lightest-grey" />

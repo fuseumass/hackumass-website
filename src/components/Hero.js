@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Button from "./Button";
 import PropTypes from "prop-types";
 
-const Hero = ({ className = "" }) => {
+const Hero = () => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -33,13 +33,8 @@ const Hero = ({ className = "" }) => {
     };
   }, []);
   return (
-    <section
-      className={`self-stretch h-[944px] flex flex-col items-center justify-start relative gap-[60px] text-left text-45xl text-lightest-grey font-heading ${className}`}
-    >
-      <header
-        className="self-stretch overflow-hidden flex flex-col items-center justify-start py-[15px] px-[60px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] z-[0] text-left text-lg text-lightest-grey font-body"
-        data-animate-on-scroll
-      >
+    <section className={`self-stretch h-[944px] flex flex-col items-center justify-start relative gap-[60px] text-left text-45xl text-lightest-grey font-heading`}>
+      <header className="self-stretch overflow-hidden flex flex-col items-center justify-start py-[15px] px-[60px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] z-[0] text-left text-lg text-lightest-grey font-body" data-animate-on-scroll>
         <div className="self-stretch relative h-28 overflow-hidden shrink-0">
           <div className="absolute top-[32px] right-[0px] w-[848px] h-12">
             <div className="absolute top-[14px] right-[437px] leading-[181.53%] font-medium">
@@ -80,10 +75,7 @@ const Hero = ({ className = "" }) => {
           />
         </div>
       </header>
-      <div
-        className="self-stretch overflow-hidden flex flex-col items-start justify-center py-[15px] px-[60px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] z-[1]"
-        data-animate-on-scroll
-      >
+      <div className="self-stretch overflow-hidden flex flex-col items-start justify-center py-[15px] px-[60px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] z-[1]" data-animate-on-scroll>
         <h1 className="m-0 relative text-inherit leading-[131.7%] font-semibold font-[inherit]">
           <p className="m-0">An outpost for,</p>
           <p className="m-0">Your Craziest ideas.</p>
@@ -111,15 +103,15 @@ const Hero = ({ className = "" }) => {
         </div>
       </div>
       <div
-        className="w-[1440px] h-[932px] absolute !m-[0] top-[240px] left-[0px] overflow-hidden shrink-0 [&.animate]:animate-[1s_ease_0s_1_normal_forwards_slide-in-bottom] opacity-[0] z-[2]"
+        className="w-[120vw] h-[932px] absolute !m-[0] top-[240px] left-[0px] overflow-hidden shrink-0 [&.animate]:animate-[1s_ease_0s_1_normal_forwards_slide-in-bottom] opacity-[0] z-[2]"
         data-animate-on-scroll
       >
         <img
-          className="absolute top-[564.5px] left-[0px] w-[1440px] h-[375.8px] z-[200]"
+          className=" absolute top-[564.5px] w-[100vw] h-[375.8px] z-[200]"
           alt=""
           src="/bushes.svg"
         />
-        <div className="absolute bottom-[209px] left-[calc(50%_-_685px)] w-[1373px] h-[687px]">
+        <div className="absolute bottom-[209px] w-[120vw] h-[687px]">
           <img
             className="absolute top-[376px] left-[0px] w-[354px] h-[260px] object-cover"
             alt=""

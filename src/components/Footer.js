@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
 
-const Footer = ({ className = "" }) => {
+const Footer = () => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -33,7 +33,7 @@ const Footer = ({ className = "" }) => {
   }, []);
   return (
     <section
-      className={`self-stretch flex flex-col items-center justify-end pt-0 px-[30px] pb-[60px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in-bottom] opacity-[0] text-left text-base text-text-secondary font-body ${className}`}
+      className={`self-stretch flex flex-col items-center justify-end pt-0 px-[30px] pb-[60px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in-bottom] opacity-[0] text-left text-base text-text-secondary font-body `}
       data-animate-on-scroll
     >
       <div className="self-stretch flex flex-col items-center justify-end py-0 px-[90px] gap-[60px]">
