@@ -113,7 +113,7 @@ export default function WhyHackUmass() {
                 buttwhy1.style.backgroundColor = "#ffffff";
             }
             console.log(why1.style.display, why2.style.display, why3.style.display, why4.style.display, why5.style.display);
-        }, 1500);
+        }, 3000);
 
         return () => {
             clearInterval(interval);

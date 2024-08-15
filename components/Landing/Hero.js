@@ -27,7 +27,7 @@ export default function HeroSection() {
                 <Image
                     priority={true}
                     className="LandingHeroBuildingImg"
-                    src="/Buildings.png"
+                    src="/Building.png"
                     sizes={5000}
                     width={0}
                     height={0}
