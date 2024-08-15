@@ -3,7 +3,9 @@
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    background-image: url('/BGC.png');
+    background: linear-gradient(180deg, #2b38c4, #4b7bf5 35%, #68bbe3 55%, #7ec8e3 70%, #cef6ff 80%);
+    background-blend-mode: screen;
+    mix-blend-mode: screen;
     background-position: start;
 }
 
@@ -26,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
     padding-left: 100px;
     height: max-content;
@@ -34,7 +36,7 @@
 }
 
 .LandingHeroMainImg {
-    width: 50vw;
+    width: 40vw;
     height: auto;
 }
 
@@ -56,7 +58,7 @@
 
 .LandingHeroBuilding {
     z-index: 0;
-    margin-top: 22vh;
+    margin-top: 14rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -64,18 +66,19 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 
 .LandingHeroBuildingImg {
-    width: 80vw;
+    width: 100vw;
     height: auto;
+    mix-blend-mode: lighten;
 }
 
 
 /********************************* Landing About *********************************/
 
 .LandingAbout {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +89,7 @@
 .LandingAboutHeader h1 {
     text-align: center;
     font-size: 64px;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 50px;
     margin-bottom: 20px;
     color: #183249;
@@ -94,8 +97,8 @@
 
 .LandingAboutHeader p {
     text-align: center;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
     color: #183249;
 }
 
@@ -133,16 +136,32 @@
     background-color: #dcdcdc;
 }
 
-.SponsorImages {
+/******************************* Sponsor Images ***********************************/
+
+
+.SponsorImages, .PartnerImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.SponsorImagesUpper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.SponsorImages img {
+.SponsorImagesUpper img {
+    width: 20vw;
+    height: auto;
+    margin: 20px;
+}
+
+.PartnerImages img {
     width: 80vw;
     height: auto;
     margin: 20px;
