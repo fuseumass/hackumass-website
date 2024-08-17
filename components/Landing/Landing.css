@@ -273,7 +273,7 @@
 
 .FooterEmailSub img {
     width: max-content;
-    height: max-content;
+    height: 100%;
     margin-right: 5px;
     cursor: pointer;
 }
