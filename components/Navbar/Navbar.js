@@ -5,7 +5,6 @@ import Image from "next/image";
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faArrowRightLong,
     faBars,
     faTimes
 } from "@fortawesome/free-solid-svg-icons";

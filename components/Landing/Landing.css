@@ -139,7 +139,7 @@
 /******************************* Sponsor Images ***********************************/
 
 
-.SponsorImages, .PartnerImages{
+.SponsorImages, .PartnerImages {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,4 +165,183 @@
     width: 80vw;
     height: auto;
     margin: 20px;
+}
+
+
+/***************************** FAQ Section **********************************/
+
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.FAQContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10vw;
+    row-gap: 50px;
+    width: 80vw;
+}
+
+.FAQContentItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    color: #183149;
+}
+
+.FAQContentItemHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #183149;
+}
+
+.FAQContentItemText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #183149;
+    width: 35vw;
+    text-wrap: wrap;
+}
+
+/********************************* Footer *********************************/
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.FooterEmailSub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 40vw;
+    height: 60px;
+    background-color: #EFF8FA;
+    border-radius: 30px;
+    border-color: #009DD9;
+    border-width: 2px;
+}
+
+.FooterEmailSubInput {
+    width: inherit;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #183149;
+    outline: none;
+}
+
+.FooterEmailSubInput::placeholder {
+    color: #183249;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.FooterEmailSub img {
+    width: max-content;
+    height: max-content;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.FooterSocials {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 50px;
+    list-style: none;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.social-links {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    align-self: center;
+}
+
+.FooterContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60vw;
+    height: auto;
+}
+
+.FooterContent img {
+    width: 15vw;
+    height: auto;
+}
+
+.FooterContentLeft {
+    display: flex;
+    flex-direction: column;
+    border-left: #183249 2px solid;
+    color: #183249;
+    justify-content: center;
+    align-items: start;
+    width: max-content;
+    height: max-content;
+    font-size: 18px;
+}
+
+.FooterContentLeft p {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.FooterContentRight {
+    display: flex;
+    flex-direction: column;
+    border-right: #183249 2px solid;
+    color: #183249;
+    justify-content: center;
+    align-items: end;
+    width: max-content;
+    height: max-content;
+    font-size: 18px;
+}
+
+.FooterContentRight p {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
