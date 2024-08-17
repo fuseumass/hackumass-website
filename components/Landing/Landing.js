@@ -21,7 +21,7 @@ import { faSquareFacebook, faSquareXTwitter, faSquareInstagram } from "@fortawes
 export default function Landing() {
 
     return (
-        <div className="landingpage">
+        <div className="landingpage dark">
             <NavigationBarLand />
             <HeroSection />
             <WhyHackUmass />
