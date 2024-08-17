@@ -122,7 +122,7 @@ export default function WhyHackUmass() {
     }, [])
 
     return (
-        <div className="LandingAbout">
+        <div className="LandingAbout" id="aboutus">
             <div className="LandingAboutHeader">
                 <h1 className="heading">Why HackUMass?</h1>
                 <p className="p1">Welcome to HackUMass, a 36-hour hackathon where college students come together to learn, connect, and build their dream projects.</p>

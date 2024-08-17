@@ -26,7 +26,7 @@ export default function Landing() {
             <HeroSection />
             <WhyHackUmass />
             <Sponsors />
-            <div className="FAQ">
+            <div className="FAQ" id="faq">
                 <div className="LandingAboutHeader">
                     <h1 className="heading">Frequently Asked Questions</h1>
                 </div>
@@ -72,6 +72,7 @@ export default function Landing() {
                 </div>
                 <div className="FooterSocials">
                     <Link
+                        rel="noopener noreferrer" target="_blank"
                         smooth="true"
                         href="https://www.facebook.com/HackUMass/"
                         className="social-links"
@@ -81,6 +82,7 @@ export default function Landing() {
 
                     <Link
                         smooth="true"
+                        rel="noopener noreferrer" target="_blank"
                         href="https://www.facebook.com/HackUMass/"
                         className="social-links"
                     >
@@ -88,6 +90,7 @@ export default function Landing() {
                     </Link>
                     <Link
                         smooth="true"
+                        rel="noopener noreferrer" target="_blank"
                         href="https://www.facebook.com/HackUMass/"
                         className="social-links"
                     >
@@ -95,6 +98,7 @@ export default function Landing() {
                     </Link>
                     <Link
                         smooth="true"
+                        rel="noopener noreferrer" target="_blank"
                         href="https://www.facebook.com/HackUMass/"
                         className="social-links"
                     >

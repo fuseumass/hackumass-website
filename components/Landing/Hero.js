@@ -16,7 +16,7 @@ export default function HeroSection() {
                     width={0}
                     height={0}
                 />
-                <button className="LandingHeroMainAppbutt">
+                <button className="LandingHeroMainAppbutt" onClick={() => window.open("https://dashboard.hackumass.com/login", "_blank")}>
                     <p style={{ margin: "auto" }}>Apply Now!</p>
                     <Fragment>
                         <FontAwesomeIcon icon={faCircleArrowRight} style={{ fontSize: 40 }} />

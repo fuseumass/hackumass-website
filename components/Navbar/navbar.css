@@ -33,11 +33,6 @@
     height: max-content;
 }
 
-.fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8vw;
-}
-
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(9, auto);
@@ -56,15 +51,6 @@
     font-size: 0.94vw;
 }
 
-.nav-links {
-    color: #000;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    height: 80%;
-    align-self: center;
-}
-
 .nav-links-landing {
     color: #fff;
     display: flex;
@@ -72,12 +58,6 @@
     text-decoration: none;
     height: 80%;
     align-self: center;
-}
-
-.nav-links:hover {
-    color: #000;
-    font-size: 1.5rem;
-    transition: all 0.1s ease-in-out;
 }
 
 .nav-links-landing:hover {
@@ -115,26 +95,23 @@
     }
 
     .nav-item {
-        margin-top: 1rem;
+        scroll-behavior: smooth;
+        margin-top: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .nav-menu.active {
-        background: #FFF6EC;
+        position: fixed;
+        background-color: #3A5BE6;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
     }
 
-    .nav-links {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        border-top: rgba(0, 0, 0, 0.3) 1px solid;
-        padding-top: 20px;
-        margin: 20px;
+    .navbar-landing:has(.nav-menu.active) {
+        position: sticky;
     }
 
     .nav-links-landing {
@@ -142,14 +119,12 @@
         justify-content: center !important;
         align-items: center !important;
         font-size: 1.5rem;
-        border-top: rgba(0, 0, 0, 0.3) 1px solid;
-        padding-top: 20px;
         margin: 20px;
         color: #000;
     }
 
 
-    .nav-links, .nav-links-landing {
+    .nav-links-landing {
         text-align: center;
         width: 80%;
         display: table;
@@ -175,27 +150,13 @@
         cursor: pointer;
     }
 
-    .nav-links-mobile {
-        display: block;
-        text-align: center;
-        margin: 2rem auto;
-        border-radius: 4px;
-        width: 80%;
-        text-decoration: none;
-        font-size: 1.5rem;
-        background-color: transparent;
-        color: #fff;
-        border: 1px solid #fff;
-        transition: all 0.3s ease-out;
+    .application-button {
+        display: none !important;
     }
 
     .navbar-landing {
-        /* background: url('/land-mobile-nav.png') center center/cover no-repeat; */
-        background-color: #fff;
-
-        .nav-menu.active {
-            background: #fff;
-        }
+        background-color: #3A5BE6;
+        height: 100px;
 
         .landing {
             color: black !important;

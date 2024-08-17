@@ -2,7 +2,7 @@ import Image from "next/image.js";
 
 export default function Sponsors() {
     return (
-        <div className="Sponsors">
+        <div className="Sponsors" id="sponsors">
             <div className="LandingAboutHeader">
                 <h1 className="heading">Our Sponsors</h1>
                 <p className="p">Want to Sponsor HackUMass? Reach out to us at <span style={{ color: "#2832C1", cursor: "pointer", textDecoration: "underline" }} onClick={() => (window.open("mailto:team@hackumass.com"))}>team@hackumass.com</span></p>

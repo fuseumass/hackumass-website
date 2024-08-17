@@ -64,16 +64,6 @@ function NavigationBarLand(user) {
                         <li className="nav-item">
                             <Link
                                 smooth="true"
-                                href="#faq"
-                                className="nav-links-landing landing"
-                                onClick={closeMobileMenu}
-                            >
-                                FAQ
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                smooth="true"
                                 href="#sponsors"
                                 className="nav-links-landing landing"
                                 style={{ borderTop: "none" }}
@@ -82,6 +72,16 @@ function NavigationBarLand(user) {
                                 }}
                             >
                                 Sponsors
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                smooth="true"
+                                href="#faq"
+                                className="nav-links-landing landing"
+                                onClick={closeMobileMenu}
+                            >
+                                FAQ
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -96,8 +96,9 @@ function NavigationBarLand(user) {
                         </li>
                         <li className="nav-item">
                             <Link
+                                rel="noopener noreferrer" target="_blank"
                                 smooth="true"
-                                href="2023.hackumass.com"
+                                href="https://2023.hackumass.com"
                                 className="nav-links-landing landing"
                                 style={{ borderTop: "none" }}
                                 onClick={() => {
@@ -109,6 +110,7 @@ function NavigationBarLand(user) {
                         </li>
                         <li className="nav-item">
                             <Link
+                                rel="noopener noreferrer" target="_blank"
                                 smooth="true"
                                 href="https://www.facebook.com/HackUMass/"
                                 className="nav-links-landing landing"
@@ -119,6 +121,7 @@ function NavigationBarLand(user) {
                         </li>
                         <li className="nav-item">
                             <Link
+                                rel="noopener noreferrer" target="_blank"
                                 smooth="true"
                                 href="https://www.facebook.com/HackUMass/"
                                 className="nav-links-landing landing"
@@ -129,6 +132,7 @@ function NavigationBarLand(user) {
                         </li>
                         <li className="nav-item">
                             <Link
+                                rel="noopener noreferrer" target="_blank"
                                 smooth="true"
                                 href="https://www.facebook.com/HackUMass/"
                                 className="nav-links-landing landing"
@@ -138,8 +142,9 @@ function NavigationBarLand(user) {
                             </Link>
                         </li>
 
-                        <li className="nav-item" style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "white", paddingLeft: "20px", paddingRight: "20px", paddingTop: "7px", paddingBottom: "7px", borderRadius: "30px" }}>
+                        <li className="nav-item application-button" style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "white", paddingLeft: "20px", paddingRight: "20px", paddingTop: "7px", paddingBottom: "7px", borderRadius: "30px" }}>
                             <Link
+                                rel="noopener noreferrer" target="_blank"
                                 style={{ color: "black" }}
                                 smooth="true"
                                 href="https://dashboard.hackumass.com"
