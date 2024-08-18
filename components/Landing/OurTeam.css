@@ -1,0 +1,159 @@
+.thesaas-sections-split .section {
+  margin: 30px 50px 100px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ebebeb;
+}
+
+.thesaas-sections-split .section-info {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .thesaas-sections-split .section {
+    margin: 30px 0 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+
+/* Members Tabs */
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-bottom: 4px solid !important;
+}
+
+.nav-item:hover {
+  color: #183149;
+}
+
+#tabs .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  font-size: 1.25em;
+}
+
+.nav > a {
+  display: inline-block;
+}
+
+
+.p {
+  font-size: 30px;
+}
+
+.primary-color {
+  color: #183149;
+}
+
+.img-border {
+  border: 0.20rem solid #2832C1;
+}
+
+#textshadow {
+  color: white;
+  text-shadow: -1px -1px 0 #272727, 1px -1px 0 #272727, -1px 1px 0 #272727,
+    1px 1px 0 #272727;
+}
+
+
+.section {
+  padding: 40px 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+#team-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  color: #333;
+  text-align: center;
+}
+
+.nav-tabs .nav-link.active {
+  color: #2832C1;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #2832C1;
+}
+
+.tab-content {
+  padding: 15px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-pane img {
+  max-width: 80%;
+  height: auto;
+}
+
+.object-fit-cover {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; 
+  padding: 20px;
+}
+
+.team-categories {
+  background-color: transparent;
+  border-bottom: transparent;
+}
+
+.team-role {
+  color: #183249;
+}
+
+.role-text {
+  padding-top: 3px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.name-text {
+  padding-top: 3px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
