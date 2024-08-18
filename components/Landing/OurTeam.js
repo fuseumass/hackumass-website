@@ -68,14 +68,14 @@ export default function OurTeam() {
         const prdesignTab = document.getElementById('nav-prdesign');
         const sponsorshipTab = document.getElementById('nav-sponsorship');
         const technologyTab = document.getElementById('nav-technology');
-        
+
         const tabs = [
-          directorsTab,
-          hardwareTab,
-          logisticsTab,
-          prdesignTab,
-          sponsorshipTab,
-          technologyTab,
+            directorsTab,
+            hardwareTab,
+            logisticsTab,
+            prdesignTab,
+            sponsorshipTab,
+            technologyTab,
         ];
         
         const createTeamArr = (team) => {
@@ -122,42 +122,44 @@ export default function OurTeam() {
           return colDivElement;
         };
         
-        const directorsTeam = createTeamArr("Directors");
-        const hardwareTeam = createTeamArr("Hardware");
-        const logisticsTeam = createTeamArr("Logistics");
-        const prdesignTeam = createTeamArr("PR-Design");
-        const sponsorshipTeam = createTeamArr("Sponsorship");
-        const technologyTeam = createTeamArr("Tech");
+        // const directorsTeam = createTeamArr("Directors");
+        // const hardwareTeam = createTeamArr("Hardware");
+        // const logisticsTeam = createTeamArr("Logistics");
+        // const prdesignTeam = createTeamArr("PR-Design");
+        // const sponsorshipTeam = createTeamArr("Sponsorship");
+        // const technologyTeam = createTeamArr("Tech");
         
         const teams = [
-          directorsTeam,
-          hardwareTeam,
-          logisticsTeam,
-          prdesignTeam,
-          sponsorshipTeam,
-          technologyTeam,
-        ];
+          createTeamArr("Directors"),
+          createTeamArr("Hardware"),
+          createTeamArr("Logistics"),
+          createTeamArr("PR-Design"),
+          createTeamArr("Sponsorship"),
+          createTeamArr("Tech"),
+      ];
         
-        teams.forEach((team, i) => {
+      tabs.forEach(tab => tab.innerHTML = '');
+
+      teams.forEach((team, i) => {
           const row = makeRowDivElement();
           team.forEach((memberObj) => {
-            row.appendChild(makeColDivElement(memberObj));
+              row.appendChild(makeColDivElement(memberObj));
           });
           tabs[i].appendChild(row);
-        });
+      });
 
-        document.querySelectorAll('.nav-link').forEach(tab => {
-            tab.addEventListener('click', function (e) {
-              e.preventDefault();
-          
-              document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-              document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('show', 'active'));
-          
-              this.classList.add('active');
-              const target = document.querySelector(this.getAttribute('href'));
-              target.classList.add('show', 'active');
-            });
-          });
+      document.querySelectorAll('.nav-link').forEach(tab => {
+        tab.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('show', 'active'));
+
+            this.classList.add('active');
+            const target = document.querySelector(this.getAttribute('href'));
+            target.classList.add('show', 'active');
+        });
+    });
     }, []);
       
 
