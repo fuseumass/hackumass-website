@@ -92,6 +92,15 @@
     color: #183249;
 }
 
+.LandingAboutHeader h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    color: #183249;
+}
+
 .LandingAboutHeader p {
     text-align: center;
     font-size: 18px;

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import HeroSection from "./Hero.js";
 import WhyHackUmass from "./WhyHackUmass.js";
+import OurTeam from "./OurTeam.js";
 
 export default function Landing() {
     
@@ -29,6 +30,7 @@ export default function Landing() {
                     <Image src="/Partners.png" sizes={2000} width={0} height={0} priority={true} />
                 </div>
             </div>
+            <OurTeam />
         </div>
     );
 
