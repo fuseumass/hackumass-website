@@ -1,539 +1,548 @@
 .landingpage {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-    background: linear-gradient(180deg, #2b38c4, #4b7bf5 35%, #68bbe3 55%, #7ec8e3 70%, #cef6ff 80%);
-    background-blend-mode: screen;
-    mix-blend-mode: screen;
-    background-position: start;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #2b38c4,
+    #4b7bf5 35%,
+    #68bbe3 55%,
+    #7ec8e3 70%,
+    #cef6ff 80%
+  );
+  background-blend-mode: screen;
+  mix-blend-mode: screen;
+  background-position: start;
 }
 
 .LandingContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    align-content: start;
-    justify-items: start;
-    margin-top: 148px;
-    width: 100%;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-content: start;
+  justify-items: start;
+  margin-top: 148px;
+  width: 100%;
+  height: 100vh;
 }
 
 /********************************* Landing Hero *********************************/
 
 .LandingHeroMain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-    margin-top: 20px;
-    margin-bottom: 100px;
-    padding-left: 100px;
-    height: max-content;
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding-left: 100px;
+  height: max-content;
+  z-index: 1;
 }
 
 .LandingHeroMainImg {
-    width: 35vw;
-    height: auto;
+  width: 35vw;
+  height: auto;
 }
 
 .LandingHeroMainAppbutt {
-    margin-left: 3.5vw;
-    font-size: 28px;
-    font-weight: 600;
-    background-color: white;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    width: 20vw;
-    height: 6vh;
-    padding: 5px;
-    border-radius: 30px;
+  margin-left: 3.5vw;
+  font-size: 28px;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  width: 20vw;
+  height: 6vh;
+  padding: 5px;
+  border-radius: 30px;
 }
 
 .LandingHeroBuilding {
-    z-index: 0;
-    margin-top: 15px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+  z-index: 0;
+  margin-top: 15px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .LandingHeroBuildingImg {
-    width: 100vw;
-    height: auto;
-    mix-blend-mode: lighten;
+  width: 100vw;
+  height: auto;
+  mix-blend-mode: lighten;
 }
-
 
 /********************************* Landing About *********************************/
 
 .LandingAbout {
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: max-content;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
 }
 
 .LandingAboutHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .LandingAboutHeader h1 {
-    text-align: center;
-    font-size: 64px;
-    font-weight: 700;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    color: #183249;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #183249;
 }
 
 .LandingAboutHeader p {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    color: #183249;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #183249;
 }
 
 .LandingAboutContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
 }
 
-#why3, #why2, #why1, #why4, #why5 {
-    display: none;
-    width: 1200px;
-    height: auto;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+#why3,
+#why2,
+#why1,
+#why4,
+#why5 {
+  display: none;
+  width: 1200px;
+  height: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .LandingAboutContentButtons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin-bottom: 50px;
 }
 
 .LandingAboutContentButton {
-    margin: 7px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    color: white;
-    background-color: #dcdcdc;
+  margin: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  background-color: #dcdcdc;
 }
 
 /******************************* Sponsor Images ***********************************/
 
-
-.SponsorImages, .PartnerImages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+.SponsorImages,
+.PartnerImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .SponsorImagesUpper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .SponsorImagesUpper img {
-    width: 20vw;
-    height: auto;
-    margin: 20px;
+  width: 20vw;
+  height: auto;
+  margin: 20px;
 }
 
 .WhySponsor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  width: 100%;
 }
 
 .WhySponsorLeft {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 40vw;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 40vw;
+  height: auto;
 }
 
 .WhySponsorLeft h1 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #183149;
+  font-size: 18px;
+  font-weight: 600;
+  color: #183149;
 }
 
 .WhySponsorLeft p {
-    margin-top: 20px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #183149; 
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #183149;
 }
 
 .WhySponsorRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40vw;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: auto;
 }
 
 .WhySponsorRight img {
-    width: 25vw;
-    height: auto;
-    margin: 20px;
+  width: 25vw;
+  height: auto;
+  margin: 20px;
 }
 
 .WhySponsorButton {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 15vw;
-    height: 60px;
-    background-color: #fff;
-    border-radius: 30px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 15vw;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .WhySponsorButton p {
-    color: #183249;
-    font-size: 18px;
-    font-weight: 700;
+  color: #183249;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .PartnerImages img {
-    width: 80vw;
-    height: auto;
-    margin: 20px;
+  width: 80vw;
+  height: auto;
+  margin: 20px;
 }
-
 
 /***************************** FAQ Section **********************************/
 
 .FAQ {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .FAQContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 10vw;
-    row-gap: 20px;
-    width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 10vw;
+  row-gap: 20px;
+  width: 80vw;
 }
 
 .FAQContentItem {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    color: #183149;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  color: #183149;
 }
 
 .FAQContentItemHeading {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    font-size: 18px;
-    font-weight: 600;
-    padding-bottom: 20px;
-    color: #183149;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  color: #183149;
 }
 
 .FAQContentItemText {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    font-size: 14px;
-    font-weight: 400;
-    color: #183149;
-    width: 35vw;
-    text-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #183149;
+  width: 35vw;
+  text-wrap: wrap;
 }
 
 /********************************* Footer *********************************/
 
 .Footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .FooterEmailSub {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 40vw;
-    height: 60px;
-    background-color: #EFF8FA;
-    border-radius: 30px;
-    border-color: #009DD9;
-    border-width: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 40vw;
+  height: 60px;
+  background-color: #eff8fa;
+  border-radius: 30px;
+  border-color: #009dd9;
+  border-width: 2px;
 }
 
 .FooterEmailSubInput {
-    width: inherit;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    padding-left: 20px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #183149;
-    outline: none;
+  width: inherit;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #183149;
+  outline: none;
 }
 
 .FooterEmailSubInput::placeholder {
-    color: #183249;
-    font-size: 16px;
-    font-weight: 400;
+  color: #183249;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .FooterEmailSub img {
-    width: max-content;
-    height: 100%;
-    margin-right: 5px;
-    cursor: pointer;
+  width: max-content;
+  height: 100%;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 .FooterSocials {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 50px;
-    list-style: none;
-    text-align: center;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-    color: black;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 50px;
+  list-style: none;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: black;
 }
 
 .social-links {
-    color: #000;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 30px;
-    align-self: center;
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 30px;
+  align-self: center;
 }
 
 .FooterContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 60vw;
-    height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60vw;
+  height: auto;
 }
 
 .FooterContent img {
-    width: 15vw;
-    height: auto;
+  width: 15vw;
+  height: auto;
 }
 
 .FooterContentLeft {
-    display: flex;
-    flex-direction: column;
-    border-left: #183249 2px solid;
-    color: #183249;
-    justify-content: center;
-    align-items: start;
-    width: max-content;
-    height: max-content;
-    font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  border-left: #183249 2px solid;
+  color: #183249;
+  justify-content: center;
+  align-items: start;
+  width: max-content;
+  height: max-content;
+  font-size: 18px;
 }
 
 .FooterContentLeft p {
-    margin-left: 20px;
-    margin-bottom: 10px;
-    cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .FooterContentRight {
-    display: flex;
-    flex-direction: column;
-    border-right: #183249 2px solid;
-    color: #183249;
-    justify-content: center;
-    align-items: end;
-    width: max-content;
-    height: max-content;
-    font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  border-right: #183249 2px solid;
+  color: #183249;
+  justify-content: center;
+  align-items: end;
+  width: max-content;
+  height: max-content;
+  font-size: 18px;
 }
 
 .FooterContentRight p {
-    margin-right: 20px;
-    margin-bottom: 10px;
-    cursor: pointer;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
-
 
 /***** Media Queries *****/
 
 @media screen and (max-width: 768px) {
-    .LandingContainer {
-        height: 80vh;
-    }
+  .LandingContainer {
+    height: 80vh;
+  }
 
-    .LandingHeroMain {
-        padding-left: 0;
-        margin-top: 50px;
-        margin-bottom: 0;
-    }
+  .LandingHeroMain {
+    padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
 
-    .LandingHeroMainImg {
-        width: 95vw;
-    }
+  .LandingHeroMainImg {
+    width: 95vw;
+  }
 
-    .LandingHeroMainAppbutt {
-        margin-top: 30px;
-        font-size: 20px;
-        width: 90vw;
-        height: 6vh;
-    }
+  .LandingHeroMainAppbutt {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 90vw;
+    height: 6vh;
+  }
 
-    .LandingHeroBuilding {
-        margin-top: 25vw;
-    }
+  .LandingHeroBuilding {
+    margin-top: 25vw;
+  }
 
-    .LandingAboutHeader h1 {
-        font-size: 40px;
-    }
+  .LandingAboutHeader h1 {
+    font-size: 40px;
+  }
 
-    .LandingAboutHeader p {
-        text-align: center;
-        font-size: 16px;
-        width: 90vw;
-    }
+  .LandingAboutHeader p {
+    text-align: center;
+    font-size: 16px;
+    width: 90vw;
+  }
 
-    .LandingAboutContent {
-        flex-direction: column;
-        margin: 20px;
-    }
+  .LandingAboutContent {
+    flex-direction: column;
+    margin: 20px;
+  }
 
-    /* Sponsor Images */
-    .SponsorImagesUpper {
-        flex-direction: column;
-        margin-bottom: 0;
-    }
+  /* Sponsor Images */
+  .SponsorImagesUpper {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 
-    .SponsorImagesUpper img {
-        width: 60vw;
-    }
+  .SponsorImagesUpper img {
+    width: 60vw;
+  }
 
-    .WhySponsor {
-        flex-direction: column;
-        margin: 0;
-        margin-top: 40px;
-    }
-    .WhySponsorLeft, .WhySponsorRight {
-        width: 90vw;
-    }
-    .WhySponsorButton {
-        width: 90vw;
-    }
-    .WhySponsorRight img {
-        width: 90vw;
-    }
+  .WhySponsor {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 40px;
+  }
+  .WhySponsorLeft,
+  .WhySponsorRight {
+    width: 90vw;
+  }
+  .WhySponsorButton {
+    width: 90vw;
+  }
+  .WhySponsorRight img {
+    width: 90vw;
+  }
 
-    /* FAQ */
-    .FAQContent {
-        grid-template-columns: 1fr;
-        column-gap: 0;
-    }
+  /* FAQ */
+  .FAQContent {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
 
-    .FAQContentItem {
-        width: 80vw;
-    }
+  .FAQContentItem {
+    width: 80vw;
+  }
 
-    .FAQContentItemHeading {
-        font-size: 16px;
-    }
+  .FAQContentItemHeading {
+    font-size: 16px;
+  }
 
-    .FAQContentItemText {
-        font-size: 14px;
-        width: 100%;
-    }
+  .FAQContentItemText {
+    font-size: 14px;
+    width: 100%;
+  }
 
-    /* Footer */
-    .FooterEmailSub {
-        width: 90vw;
-    }
+  /* Footer */
+  .FooterEmailSub {
+    width: 90vw;
+  }
 
-    .FooterEmailSubInput {
-        width: 90%;
-    }
+  .FooterEmailSubInput {
+    width: 90%;
+  }
 
-    .FooterEmailSubInput::placeholder {
-        font-size: 14px;
-    }
+  .FooterEmailSubInput::placeholder {
+    font-size: 14px;
+  }
 
-    .FooterEmailSub img {
-        width: max-content;
-        height: 90%;
-        margin-right: 5px;
-        cursor: pointer;
-    }
+  .FooterEmailSub img {
+    width: max-content;
+    height: 90%;
+    margin-right: 5px;
+    cursor: pointer;
+  }
 
-    .FooterContent {
-        width: 90vw;
-    }
+  .FooterContent {
+    width: 90vw;
+  }
 
-    .FooterContent img {
-        display: none;
-    }
+  .FooterContent img {
+    display: none;
+  }
 }
