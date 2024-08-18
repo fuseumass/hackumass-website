@@ -87,7 +87,7 @@ export default function OurTeam() {
                 return {
                 name: fullName,
                 role: role,
-                image: `/${team}_${firstName}_${lastName}.jpg`,
+                image: `/Team/${team}_${firstName}_${lastName}.jpg`,
                 };
           });
         };
@@ -105,29 +105,25 @@ export default function OurTeam() {
         };
         
         const makeColDivElement = (memberObj) => {
-          const colDivElement = document.createElement('div');
-          colDivElement.classList.add(
-            'col-lg-3',
-            'col-md-6',
-            'col-sm-12',
-            'text-center',
-            'team-content'
-          );
-          colDivElement.innerHTML = `
-                <img class="rounded-circle shadow-2 img-border object-fit-cover" onerror="this.src='/Default.jpg'" 
-                    src="${memberObj.image}" alt="${memberObj.name}" style=""/>
+            const colDivElement = document.createElement('div');
+            colDivElement.classList.add(
+                'col-lg-3',
+                'col-md-6',
+                'col-sm-12',
+                'text-center',
+                'team-content'
+            );
+        
+            const imageSrc = memberObj.image && memberObj.image !== '' ? memberObj.image : '/Team/Default.jpg';
+            colDivElement.innerHTML = `
+                <img class="rounded-circle shadow-2 img-border object-fit-cover" 
+                    src="${imageSrc}" alt="${memberObj.name}" style=""/>
                 <h5 class="primary-color role-text">${memberObj.name}</h5>
                 <h6 class="team-role role-text">${memberObj.role}</h6>
             `;
-          return colDivElement;
+            return colDivElement;
         };
         
-        // const directorsTeam = createTeamArr("Directors");
-        // const hardwareTeam = createTeamArr("Hardware");
-        // const logisticsTeam = createTeamArr("Logistics");
-        // const prdesignTeam = createTeamArr("PR-Design");
-        // const sponsorshipTeam = createTeamArr("Sponsorship");
-        // const technologyTeam = createTeamArr("Tech");
         
         const teams = [
           createTeamArr("Directors"),
@@ -169,7 +165,7 @@ export default function OurTeam() {
             <div className="LandingAboutHeader">
                 <h1 className="heading">Our Team</h1>
                 <br></br>
-                <h3 >Meet the people behind it!</h3>
+                <p className="p1" >Meet the people behind it!</p>
                 <br></br>
             </div>
             <div style={{width: "70%", margin: "auto"}} id="team-container">
