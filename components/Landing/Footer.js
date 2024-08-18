@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
         <Image
           src="/FullBlueLogo.png"
-          sizes={2000}
+          sizes={1000}
           width={0}
           height={0}
           priority={true}
@@ -104,7 +104,11 @@ export default function Footer() {
             </Link>
           </p>
           <p style={{ marginBottom: "0" }}>
-            <Link smooth="true" href="#footer">
+            <Link
+              smooth="true"
+              target="_blank"
+              href="mailto:team@hackumass.org"
+            >
               Contact Us
             </Link>
           </p>
