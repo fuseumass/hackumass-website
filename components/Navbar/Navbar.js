@@ -109,7 +109,7 @@ function NavigationBarLand(user) {
                   closeMobileMenu();
                 }}
               >
-                2023
+                2024
               </Link>
             </li>
             <li className="nav-item">

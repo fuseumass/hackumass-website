@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import "./core.min.css";
 import "./OurTeam.css";
 import "./Landing.css";
 
@@ -167,7 +166,7 @@ export default function OurTeam() {
           <section id="tabs">
             <div class="container">
               <div class="row">
-                <div class="col-xs-12 ">
+                <div style={{alignItems: "center", justifyContent: "center"}}>
                   <nav>
                     <div
                       class="nav nav-tabs nav-fill team-categories"
