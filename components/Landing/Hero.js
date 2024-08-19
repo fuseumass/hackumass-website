@@ -21,7 +21,7 @@ export default function HeroSection() {
           <Fragment>
             <FontAwesomeIcon
               icon={faCircleArrowRight}
-              style={{ fontSize: 40 }}
+              style={{ fontSize: 40, marginRight: "10px" }}
             />
           </Fragment>
         </button>
