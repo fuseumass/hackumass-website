@@ -85,7 +85,7 @@ export default function Footer() {
         <div className="PopupOverlay">
           <div className="PopupContent">
             <h3>Success!</h3>
-            <p>Thank you! Your subscription has been submitted.</p>
+            <p>Thank you! Your email has been submitted.</p>
             <button onClick={handleClosePopup}>Close</button>
           </div>
         </div>
