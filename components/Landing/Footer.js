@@ -1,4 +1,4 @@
-import Image from "next/image.js";
+import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,27 +10,87 @@ import {
   faSquareXTwitter,
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    setEmailError("");
+
+    if (!validateEmail(email)) {
+      setEmailError("Please enter a valid email address.");
+      return;
+    }
+
+    const formData = new FormData(event.target);
+    try {
+      await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+      setIsPopupVisible(true);
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupVisible(false);
+    setEmail("");
+  };
+
   return (
     <div className="Footer">
       <div className="FooterEmailSub">
-        <form name="email-subscription" method="POST" data-netlify="true">
+        <form
+          name="email-subscription"
+          method="POST"
+          data-netlify="true"
+          netlify
+          onSubmit={handleFormSubmit}
+        >
+          <input type="hidden" name="form-name" value="email-subscription" />
           <input
             className="FooterEmailSubInput"
             placeholder="Enter your email to know when applications open!"
-          ></input>
+            type="email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
           <button type="submit">
             <Fragment>
               <FontAwesomeIcon
                 icon={faCircleArrowRight}
-                style={{ fontSize: 40, color: "black", marginRight: "5px" }}
+                style={{ fontSize: 40, color: "black", marginRight: "10px" }}
               />
             </Fragment>
           </button>
         </form>
+        {emailError && <p style={{ color: "red" }}>{emailError}</p>}
       </div>
+
+      {isPopupVisible && (
+        <div className="PopupOverlay">
+          <div className="PopupContent">
+            <h3>Success!</h3>
+            <p>Thank you! Your subscription has been submitted.</p>
+            <button onClick={handleClosePopup}>Close</button>
+          </div>
+        </div>
+      )}
+
       <div className="FooterSocials">
         <Link
           rel="noopener noreferrer"
@@ -95,6 +155,7 @@ export default function Footer() {
           width={0}
           height={0}
           priority={true}
+          alt="HackUMass Logo"
         />
         <div className="FooterContentRight">
           <p>
