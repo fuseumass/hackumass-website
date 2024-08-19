@@ -16,16 +16,20 @@ export default function Footer() {
   return (
     <div className="Footer">
       <div className="FooterEmailSub">
-        <input
-          className="FooterEmailSubInput"
-          placeholder="Enter your email to know when applications open!"
-        ></input>
-        <Fragment>
-          <FontAwesomeIcon
-            icon={faCircleArrowRight}
-            style={{ fontSize: 40, color: "black", marginRight: "5px" }}
-          />
-        </Fragment>
+        <form name="email-subscription" method="POST" data-netlify="true">
+          <input
+            className="FooterEmailSubInput"
+            placeholder="Enter your email to know when applications open!"
+          ></input>
+          <button type="submit">
+            <Fragment>
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                style={{ fontSize: 40, color: "black", marginRight: "5px" }}
+              />
+            </Fragment>
+          </button>
+        </form>
       </div>
       <div className="FooterSocials">
         <Link
