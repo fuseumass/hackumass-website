@@ -82,13 +82,15 @@ export default function Sponsors() {
         <h1 className="heading">Our Partners</h1>
       </div>
       <div className="PartnerImages">
-        <Image
-          src="/Partners.png"
-          sizes={2000}
-          width={0}
-          height={0}
-          priority={true}
-        />
+          <Image src="/Partners/Wolfram-Alpha.png" sizes={2000} width={0} height={0} priority={true}></Image>
+          <Image src="/Partners/echo3d.png" sizes={2000} width={0} height={0} priority={true}></Image>
+          <Image src="/Partners/Google-Cloud.png" sizes={2000} width={0} height={0} priority={true}></Image>
+          <Image src="/Partners/Insomnia-Cookies.png" sizes={2000} width={0} height={0} priority={true}></Image>
+          <Image src="/Partners/M5.png" sizes={2000} width={0} height={0} priority={true}></Image>
+          <Image src="/Partners/Major-League-Hacking.png" sizes={2000} width={0} height={0} priority={true}></Image>
+          <Image src="/Partners/Standout-Stickers.png" sizes={2000} width={0} height={0} priority={true}></Image>
+          <Image src="/Partners/Silver-Screen-Design.png" sizes={2000} width={0} height={0} priority={true}></Image>
+          <Image src="/Partners/Analog-Devices.png" sizes={2000} width={0} height={0} priority={true}></Image>
       </div>
     </div>
   );

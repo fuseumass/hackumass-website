@@ -159,11 +159,21 @@
 .SponsorImages,
 .PartnerImages {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
+
+.PartnerImages img {
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
+  margin: 20px;
+  position: relative;
+  flex: 1 1 50%;
+}
+
 
 .SponsorImagesUpper {
   display: flex;
@@ -244,13 +254,6 @@
   font-size: 18px;
   font-weight: 700;
 }
-
-.PartnerImages img {
-  width: 80vw;
-  height: auto;
-  margin: 20px;
-}
-
 /***************************** FAQ Section **********************************/
 
 .FAQ {
