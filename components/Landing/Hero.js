@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="LandingHeroMain">
         <Image
           className="LandingHeroMainImg"
-          src="/LandingText.png"
+          src="/HeroMain.png"
           priority={true}
           sizes={1000}
           width={0}

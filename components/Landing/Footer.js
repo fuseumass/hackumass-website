@@ -150,7 +150,7 @@ export default function Footer() {
           </p>
         </div>
         <Image
-          src="/FullBlueLogo.png"
+          src="/BlueWhiteLogo.png"
           sizes={1000}
           width={0}
           height={0}

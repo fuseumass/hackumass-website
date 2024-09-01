@@ -159,7 +159,7 @@ export default function OurTeam() {
   return (
     <section>
       <div id="team" class="container-fluid">
-        <div className="LandingAboutHeader">
+        <div className="LandingAboutHeader2">
           <h1 className="heading">Our Team</h1>
         </div>
         <div style={{ width: "70%", margin: "auto" }} id="team-container">

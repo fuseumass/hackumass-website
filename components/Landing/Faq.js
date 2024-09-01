@@ -4,7 +4,7 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 export default function Faq() {
   return (
     <div className="FAQ" id="faq">
-      <div className="LandingAboutHeader">
+      <div className="LandingAboutHeader2">
         <h1 className="heading">Frequently Asked Questions</h1>
       </div>
       <div className="FAQContent">
