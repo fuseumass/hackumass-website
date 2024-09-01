@@ -40,7 +40,6 @@ export default function OurTeam() {
         ["Renee Tsang", "Sponsorship Director"],
         ["Joud Zamzami", "Sponsorship Member"],
         ["Mikael Sareshwala", "Sponsorship Member"],
-        ["Saniya Jain", "Sponsorship Member"],
         ["Tawsif Ibne Azad", "Sponsorship Member"],
       ],
       Logistics: [
