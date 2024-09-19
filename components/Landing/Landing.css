@@ -43,7 +43,7 @@
 .LandingHeroMainAppbutt {
   margin-top: 15px;
   margin-left: 2vw;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -483,6 +483,14 @@
 }
 
 /***** Media Queries *****/
+
+
+
+@media screen and (max-width: 910px) {
+ .LandingHeroMainAppbutt {
+  width: 30vw;
+ }
+}
 
 @media screen and (max-width: 768px) {
   .LandingContainer {
