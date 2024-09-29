@@ -78,7 +78,7 @@ export default function Sponsors() {
           />
         </div>
       </div>
-      <div className="LandingAboutHeader">
+      {/* <div className="LandingAboutHeader2">
         <h1 className="heading">Our Partners</h1>
       </div>
       <div className="PartnerImages">
@@ -89,7 +89,7 @@ export default function Sponsors() {
           height={0}
           priority={true}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

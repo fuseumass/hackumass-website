@@ -15,7 +15,7 @@ export default function OurTeam() {
         ["Aayan Boradia", "Hardware Member"],
         ["Ananya Rohatgi", "Hardware Member"],
         ["Devaj Chopda", "Hardware Member"],
-        ["Franka Yakasovic Aqueveque", "Hardware Member"],
+        ["Franka Yakasovic", "Hardware Member"],
         ["Jessie Wang", "Hardware Member"],
         ["Monil Bhavsar", "Hardware Member"],
         ["Ron Bajrami", "Hardware Member"],
@@ -40,7 +40,6 @@ export default function OurTeam() {
         ["Renee Tsang", "Sponsorship Director"],
         ["Joud Zamzami", "Sponsorship Member"],
         ["Mikael Sareshwala", "Sponsorship Member"],
-        ["Saniya Jain", "Sponsorship Member"],
         ["Tawsif Ibne Azad", "Sponsorship Member"],
       ],
       Logistics: [
@@ -159,14 +158,14 @@ export default function OurTeam() {
   return (
     <section>
       <div id="team" class="container-fluid">
-        <div className="LandingAboutHeader">
+        <div className="LandingAboutHeader2">
           <h1 className="heading">Our Team</h1>
         </div>
         <div style={{ width: "70%", margin: "auto" }} id="team-container">
           <section id="tabs">
             <div class="container">
               <div class="row">
-                <div style={{alignItems: "center", justifyContent: "center"}}>
+                <div style={{ alignItems: "center", justifyContent: "center" }}>
                   <nav>
                     <div
                       class="nav nav-tabs nav-fill team-categories"

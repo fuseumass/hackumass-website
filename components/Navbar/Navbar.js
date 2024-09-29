@@ -26,12 +26,7 @@ function NavigationBarLand(user) {
             className="navbar-logo landing"
             onClick={closeMobileMenu}
           >
-            <Image
-              src="/BlueWhiteLogo.png"
-              alt="logo"
-              width={120}
-              height={60}
-            />
+            <Image src="/FullBlueLogo.png" alt="logo" width={120} height={60} />
           </Link>
 
           <div className="menu-icon landing" onClick={handleClick}>

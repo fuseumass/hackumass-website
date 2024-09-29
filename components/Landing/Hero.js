@@ -10,27 +10,27 @@ export default function HeroSection() {
       <div className="LandingHeroMain">
         <Image
           className="LandingHeroMainImg"
-          src="/LandingText.png"
+          src="/HeroMain.png"
           priority={true}
           sizes={1000}
           width={0}
           height={0}
         />
-        <button className="LandingHeroMainAppbutt">
+        {/*<button className="LandingHeroMainAppbutt">
           <p style={{ margin: "auto" }}>Coming Soon!</p>
           <Fragment>
             <FontAwesomeIcon
               icon={faCircleArrowRight}
-              style={{ fontSize: 40 }}
+              style={{ fontSize: 40, marginRight: "10px" }}
             />
           </Fragment>
-        </button>
-        {/* <button className="LandingHeroMainAppbutt" onClick={() => window.open("https://dashboard.hackumass.com/login", "_blank")}>
-                    <p style={{ margin: "auto" }}>Applications Open!</p>
+        </button> */}
+        <button className="LandingHeroMainAppbutt" onClick={() => window.open("https://dashboard.hackumass.com/login", "_blank")}>
+                    <p style={{ margin: "auto" }}>Apply Now!</p>
                     <Fragment>
-                        <FontAwesomeIcon icon={faCircleArrowRight} style={{ fontSize: 40 }} />
+                        <FontAwesomeIcon icon={faCircleArrowRight} style={{ fontSize: 40, marginRight: "10px" }} />
                     </Fragment>
-                </button> */}
+                </button>
       </div>
       <div className="LandingHeroBuilding">
         <Image

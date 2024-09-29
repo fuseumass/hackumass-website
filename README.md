@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <img src="public/BlueWhiteLogo.png" height="24px" width="24px" alt="HackUMass Gears"> HackUMass Website
+
+[![Repository Status](https://img.shields.io/badge/Repository%20Status-Actively%20Maintained-dark%20green.svg)](https://github.com/fuseumass/hackumass-website)
+[![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://hackumass.com/)
+[![Author](https://img.shields.io/badge/Author-FuseUMass%20Tech%20Team-blue.svg)](https://github.com/fuseumass)
+
+![Universal Logo](public/logo-universal.svg)
+
+**Check it out here: [hackumass.com](https://hackumass.com/)!**
 
 ## Getting Started
 
 First, run the development server:
 
-```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## How does it work?
 
-## Learn More
+- **JavaScript**
 
-To learn more about Next.js, take a look at the following resources:
+  - `components/Landing/WhyHackUmass.js`: Handles the dynamic display of reasons to attend HackUMass.
+  - `components/Landing/Faq.js`: Displays frequently asked questions about HackUMass.
+  - `components/Landing/Footer.js`: Contains the footer with social media links and a popup for email submission.
+  - `components/Landing/Sponsors.js`: Displays the sponsors of HackUMass.
+  - `components/Landing/Landing.js`: Main landing page component that includes navigation, hero section, and other sections.
+  - `app/layout.js`: Defines the root layout of the application.
+  - `components/Landing/Hero.js`: Contains the hero section of the landing page.
+  - `components/Landing/OurTeam.js`: Displays the team members of HackUMass.
+  - `components/Navbar/Navbar.js`: Navigation bar component.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **CSS**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  - `components/Landing/Landing.css`: Styles for the landing page.
+  - `components/Landing/OurTeam.css`: Styles for the team section.
+  - `app/globals.css`: Global styles for the application.
+  - `components/Navbar/navbar.css`: Styles for the navigation bar.
 
-## Deploy on Vercel
+- **JSON**
+  - `package.json`: Contains the project dependencies and scripts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Other Useful Information
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Facing any issues?
+
+If you experience any issues or encounter any bugs, please file an issue on the [GitHub issues page](https://github.com/fuseumass/hackumass-website/issues) for this repository.
+
+### Want your own version with this template?
+
+Feel free to build your own event website by creating a fork and modifying it to your needs! Please make sure that:
+
+- You remove all items from `./assets/` and `./legal/` directories.
+- You remove the `CNAME` file with hackumass.com as domain name.
+- You give credits to the [contributors and authors](https://github.com/fuseumass/hackumass-website/graphs/contributors) of this repository.
