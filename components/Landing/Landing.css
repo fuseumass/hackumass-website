@@ -63,7 +63,7 @@
 
 .LandingHeroBuilding {
   z-index: 0;
-  margin-top: 35px;
+  bottom: -200px;
   position: absolute;
   display: flex;
   flex-direction: column;

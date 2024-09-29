@@ -51,7 +51,7 @@ export default function Footer() {
 
   return (
     <div className="Footer">
-      <div className="FooterEmailSub">
+      {/* <div className="FooterEmailSub">
         <form
           name="email-subscription"
           method="POST"
@@ -89,7 +89,7 @@ export default function Footer() {
             <button onClick={handleClosePopup}>Close</button>
           </div>
         </div>
-      )}
+      )} */}
 
       <div className="FooterSocials">
         <Link
