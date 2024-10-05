@@ -52,13 +52,7 @@ export default function Sponsors() {
         <div className="WhySponsorLeft">
           <h1 className="h1">Why should you sponsor us?</h1>
           <p className="p">
-            Sponsoring HackUMass is a strategic opportunity to engage with some
-            of the brightest minds in technology and innovation. As a sponsor,
-            you'll have direct access to a diverse pool of talented students and
-            professionals eager to tackle real-world challenges. This event
-            serves as a breeding ground for cutting-edge ideas and solutions,
-            offering your company a chance to gain fresh perspectives and
-            innovative approaches to your business challenges.
+          HackUMass is one of the largest tech events at UMass Amherst, providing sponsors with exclusive access to hundreds of participant resumes and direct opportunities to engage with students during the event, along with other valuable benefits. Our team collaborates with sponsors to customize packets tailored to the company’s needs, ensuring maximum exposure that benefits both students and the company.
           </p>
 
           <button

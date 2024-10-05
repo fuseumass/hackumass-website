@@ -10,109 +10,90 @@ export default function Faq() {
       <div className="FAQContent">
         <div className="FAQContentItem">
           <h3 className="FAQContentItemHeading">
-            {" "}
-            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;What is a
-            hackathon?
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;What is a hackathon?
           </h3>
           <p className="FAQContentItemText">
-            Hackathons are events where programmers come together to collaborate
-            on innovative software and hardware projects. You’re encouraged to
-            build anything your imagination inspires! “Innovation is the ability
-            to see change as an opportunity–not a threat.” - Steve Jobs
+            A hackathon is a competitive sprint where people come together to collaborate and build innovative software and hardware projects to win prizes. However, students also have the option to participate in other activities instead of submitting a project.
           </p>
         </div>
         <div className="FAQContentItem">
           <h3 className="FAQContentItemHeading">
-            {" "}
-            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Where is it?
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Where is HackUMass XII?
           </h3>
           <p className="FAQContentItemText">
-            HackUMass XII is an in-person hackathon hosted by UMass Amherst.
-            This includes check-in, hardware checkout, swag pickup,
-            participation and judging. Mentoring and most workshops will also
-            take place in-person. More details regarding the career fair,
-            opening and closing ceremonies, and catering will be given closer to
-            the hackathon!
+            HackUMass XII is an in-person hackathon on the University of Massachusetts Amherst campus, with the main venue located at the Integrative Learning Center (650 N Pleasant St, Amherst, MA 01003).
           </p>
         </div>
         <div className="FAQContentItem">
           <h3 className="FAQContentItemHeading">
-            {" "}
-            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Do I need
-            experience?
-          </h3>
-          <p className="FAQContentItemText">
-            We’re excited to welcome hackers of all experience levels to
-            HackUMass! Whether you’re new to software and hardware hacking or
-            looking to sharpen your skills, our beginner track is designed to
-            help you get started with confidence. Plus, our team of mentors will
-            be on hand throughout the event to guide you through any challenges
-            you encounter.
-          </p>
-        </div>
-        <div className="FAQContentItem">
-          <h3 className="FAQContentItemHeading">
-            {" "}
             <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Who can attend?
           </h3>
           <p className="FAQContentItemText">
-            HackUMass XII is open to all college and university students,
-            regardless of major! Our goal is for you to leave with new
-            experiences, lasting friendships, and, of course, a satisfied
-            appetite.
+            HackUMass XII is open to ALL college students, including graduate students, regardless of major!
           </p>
         </div>
         <div className="FAQContentItem">
           <h3 className="FAQContentItemHeading">
-            {" "}
-            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Can I start my
-            project before the event?
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Will my travel be reimbursed?
           </h3>
           <p className="FAQContentItemText">
-            While getting a head start is a smart strategy, we require every
-            participant to start their project during the hours of hacking. Any
-            hint of a project being created/edited before the event will cause
-            instant disqualification.
+            Unfortunately, we are unable to reimburse travel expenses for HackUMass XII.
           </p>
         </div>
         <div className="FAQContentItem">
           <h3 className="FAQContentItemHeading">
-            {" "}
-            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Should I be in a
-            team?
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Do I have to work on a project?
           </h3>
           <p className="FAQContentItemText">
-            Absolutely! We highly encourage everyone to get in a team of 4 or
-            less. There is no stopping you from going at it solo or working
-            within a team of more than 4. However, we are unable to guarantee
-            that every member of your team will be able to receive prizes if you
-            win. There will be plenty of opportunities to form your team online
-            and at the event -- so don't worry if you haven't yet planned it
-            out.
+            No, participants are welcome to attend workshops, the club/sponsor fair, and network with sponsors or other students without submitting a final project! For final project submissions, the project does NOT need to be fully finished.
           </p>
         </div>
         <div className="FAQContentItem">
           <h3 className="FAQContentItemHeading">
-            {" "}
-            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Will my travel
-            be reimbursed?
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Do I need experience?
           </h3>
           <p className="FAQContentItemText">
-            Unfortunately we are unable to reimburse travel expenses for
-            HackUMass XII. Kindly reach out to us if you have any concerns or
-            questions regarding this.
+            We welcome students of all experience levels to participate in HackUMass! Participants will find a variety of workshops ranging from beginner-friendly to advanced, mentors, and plenty of resources to help everyone learn something new.
           </p>
         </div>
         <div className="FAQContentItem">
           <h3 className="FAQContentItemHeading">
-            {" "}
-            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Is there a Code
-            of Conduct we need to abide by?
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Should I be in a team?
           </h3>
           <p className="FAQContentItemText">
-            We want to create a safe environment for participants, speakers, and
-            sponsors. For this reason, we expect everyone to follow the MLH Code
-            of Conduct.
+            We encourage participants to form a team of four (or fewer). While teams with more than four members are allowed, prizes for each member are not guaranteed beyond that size. There will be opportunities to form teams prior to the event via our event Discord server, but there will also be a team-forming event following the opening ceremony on day 1 of the event.
+          </p>
+        </div>
+        <div className="FAQContentItem">
+          <h3 className="FAQContentItemHeading">
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Can I start my project before the event?
+          </h3>
+          <p className="FAQContentItemText">
+            No, participants are required to start their projects after the opening ceremony and hacking formally begins. If a project is created or edited beforehand, it will result in disqualification.
+          </p>
+        </div>
+        <div className="FAQContentItem">
+          <h3 className="FAQContentItemHeading">
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Do I have to stay for 36 hours?
+          </h3>
+          <p className="FAQContentItemText">
+            No, participants are encouraged to take breaks and rest throughout the event. However, teams submitting a final project must have at least one member present during the judging process on the last day.
+          </p>
+        </div>
+        <div className="FAQContentItem">
+          <h3 className="FAQContentItemHeading">
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Is there a Code of Conduct?
+          </h3>
+          <p className="FAQContentItemText">
+            We are committed to creating a safe environment for everyone at HackUMass. Therefore, all attendees are expected to follow the MLH Code of Conduct and abide by the University of Massachusetts Amherst Code of Student Conduct.
+          </p>
+        </div>
+        <div className="FAQContentItem">
+          <h3 className="FAQContentItemHeading">
+            <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Where can I get more information?
+          </h3>
+          <p className="FAQContentItemText">
+            For information about check-in, swag pick-up, the opening/closing ceremony, hardware check-out, and more before November 8th, 2024, please follow us @hackumass on Instagram for updates. For specific inquiries or questions, please email us at team@hackumass.com. An event Discord server will be used as the main platform for communication and real-time event updates. During the 36-hour hackathon, please use the event Discord server to connect directly with an organizer or stop by the organizer room in the Integrative Learning Center (ILC).
           </p>
         </div>
       </div>
