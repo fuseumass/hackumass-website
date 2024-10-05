@@ -529,6 +529,10 @@
   .LandingAboutHeader h1 {
     font-size: 40px;
   }
+  
+  .LandingAboutHeader2 h1 {
+    font-size: 40px;
+  }
 
   .LandingAboutHeader p {
     text-align: center;
