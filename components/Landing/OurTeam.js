@@ -157,23 +157,23 @@ export default function OurTeam() {
 
   return (
     <section>
-      <div id="team" class="container-fluid">
+      <div id="team" className="container-fluid">
         <div className="LandingAboutHeader2">
           <h1 className="heading">Our Team</h1>
         </div>
         <div style={{ width: "70%", margin: "auto" }} id="team-container">
           <section id="tabs">
-            <div class="container">
-              <div class="row">
+            <div className="container">
+              <div className="row">
                 <div style={{ alignItems: "center", justifyContent: "center" }}>
                   <nav>
                     <div
-                      class="nav nav-tabs nav-fill team-categories"
+                      className="nav nav-tabs nav-fill team-categories"
                       id="nav-tab"
                       role="tablist"
                     >
                       <a
-                        class="nav-item nav-link active"
+                        className="nav-item nav-link active"
                         id="nav-directors-tab"
                         data-toggle="tab"
                         href="#nav-directors"
@@ -184,7 +184,7 @@ export default function OurTeam() {
                         Directors
                       </a>
                       <a
-                        class="nav-item nav-link"
+                        className="nav-item nav-link"
                         id="nav-hardware-tab"
                         data-toggle="tab"
                         href="#nav-hardware"
@@ -195,7 +195,7 @@ export default function OurTeam() {
                         Hardware
                       </a>
                       <a
-                        class="nav-item nav-link"
+                        className="nav-item nav-link"
                         id="nav-logistics-tab"
                         data-toggle="tab"
                         href="#nav-logistics"
@@ -206,7 +206,7 @@ export default function OurTeam() {
                         Logistics
                       </a>
                       <a
-                        class="nav-item nav-link"
+                        className="nav-item nav-link"
                         id="nav-prdesign-tab"
                         data-toggle="tab"
                         href="#nav-prdesign"
@@ -217,7 +217,7 @@ export default function OurTeam() {
                         PR/Design
                       </a>
                       <a
-                        class="nav-item nav-link"
+                        className="nav-item nav-link"
                         id="nav-sponsorship-tab"
                         data-toggle="tab"
                         href="#nav-sponsorship"
@@ -228,7 +228,7 @@ export default function OurTeam() {
                         Sponsorship
                       </a>
                       <a
-                        class="nav-item nav-link"
+                        className="nav-item nav-link"
                         id="nav-technology-tab"
                         data-toggle="tab"
                         href="#nav-technology"
@@ -241,41 +241,41 @@ export default function OurTeam() {
                     </div>
                   </nav>
                   <div
-                    class="tab-content py-3 px-3 px-sm-0"
+                    className="tab-content py-3 px-3 px-sm-0"
                     id="nav-tabContent"
                   >
                     <div
-                      class="tab-pane fade show active"
+                      className="tab-pane fade show active"
                       id="nav-directors"
                       role="tabpanel"
                       aria-labelledby="nav-directors-tab"
                     ></div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-hardware"
                       role="tabpanel"
                       aria-labelledby="nav-hardware-tab"
                     ></div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-logistics"
                       role="tabpanel"
                       aria-labelledby="nav-logistics-tab"
                     ></div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-prdesign"
                       role="tabpanel"
                       aria-labelledby="nav-prdesign-tab"
                     ></div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-sponsorship"
                       role="tabpanel"
                       aria-labelledby="nav-sponsorship-tab"
                     ></div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-technology"
                       role="tabpanel"
                       aria-labelledby="nav-technology-tab"

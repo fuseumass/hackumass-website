@@ -43,7 +43,7 @@
 .LandingHeroMainAppbutt {
   margin-top: 15px;
   margin-left: 2vw;
-  font-size: 24px;
+  font-size: 1.4vw;
   font-weight: 600;
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -57,9 +57,13 @@
   border-radius: 50px;
 }
 
+.LandingHeroMainAppRightButton {
+  font-size: 2.3vw;
+}
+
 .LandingHeroBuilding {
   z-index: 0;
-  margin-top: 35px;
+  bottom: -200px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -345,7 +349,7 @@
   width: inherit;
   height: 40px;
   border: none;
-  background-color: transparent;
+  background-color: transparent !important;
   padding-left: 20px;
   font-size: 16px;
   font-weight: 400;
@@ -487,9 +491,9 @@
 
 
 @media screen and (max-width: 910px) {
- .LandingHeroMainAppbutt {
-  width: 30vw;
- }
+  .LandingHeroMainAppbutt {
+    width: 30vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -509,9 +513,13 @@
 
   .LandingHeroMainAppbutt {
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 5.5vw;
     width: 90vw;
     height: 5vh;
+  }
+
+  .LandingHeroMainAppRightButton {
+    font-size: 8vw !important;
   }
 
   .LandingHeroBuilding {
@@ -548,13 +556,16 @@
     margin: 0;
     margin-top: 40px;
   }
+
   .WhySponsorLeft,
   .WhySponsorRight {
     width: 90vw;
   }
+
   .WhySponsorButton {
     width: 90vw;
   }
+
   .WhySponsorRight img {
     width: 90vw;
   }
