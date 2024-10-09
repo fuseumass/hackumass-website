@@ -96,7 +96,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           target="_blank"
           smooth="true"
-          href="mailto:team@hackumass.org"
+          href="mailto:team@hackumass.com"
           className="social-links"
         >
           <FontAwesomeIcon icon={faSquareEnvelope} />
@@ -172,7 +172,7 @@ export default function Footer() {
             <Link
               smooth="true"
               target="_blank"
-              href="mailto:team@hackumass.org"
+              href="mailto:team@hackumass.com"
             >
               Contact Us
             </Link>
