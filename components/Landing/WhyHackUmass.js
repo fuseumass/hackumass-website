@@ -122,10 +122,7 @@ export default function WhyHackUmass() {
     <div className="LandingAbout" id="aboutus">
       <div className="LandingAboutHeader">
         <h1 className="heading">Why HackUMass?</h1>
-        <p className="p1">
-          Welcome to HackUMass, a 36-hour hackathon where college students come
-          together to learn, connect, and build their dream projects.
-        </p>
+        <p className="p1">At HackUMass, we strive to provide a fun and welcoming space for STEM education and creation for students of all experience levels</p>
       </div>
       <div className="LandingAboutContent">
         <Image
