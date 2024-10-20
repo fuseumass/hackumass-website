@@ -126,7 +126,7 @@ export default function WhyHackUmass() {
       </div>
       <div className="LandingAboutContent">
         <Image
-          src="/WhyHackUmass/WhyHackers.png"
+          src="/WhyHackUmass/WhyHackers.svg"
           id="why1"
           sizes={2000}
           width={0}
@@ -134,7 +134,7 @@ export default function WhyHackUmass() {
           priority={true}
         />
         <Image
-          src="/WhyHackUmass/WhyDining.png"
+          src="/WhyHackUmass/WhyDining.svg"
           id="why2"
           sizes={2000}
           width={0}
@@ -142,7 +142,7 @@ export default function WhyHackUmass() {
           priority={true}
         />
         <Image
-          src="/WhyHackUmass/WhyHardware.png"
+          src="/WhyHackUmass/WhyHardware.svg"
           id="why3"
           sizes={2000}
           width={0}
@@ -150,7 +150,7 @@ export default function WhyHackUmass() {
           priority={true}
         />
         <Image
-          src="/WhyHackUmass/WhySponsors.png"
+          src="/WhyHackUmass/WhySponsors.svg"
           id="why4"
           sizes={2000}
           width={0}
@@ -158,7 +158,7 @@ export default function WhyHackUmass() {
           priority={true}
         />
         <Image
-          src="/WhyHackUmass/WhyVenue.png"
+          src="/WhyHackUmass/WhyVenue.svg"
           id="why5"
           sizes={2000}
           width={0}
