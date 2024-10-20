@@ -3,36 +3,51 @@ import "./Landing.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Fragment } from "react";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
     <div className="LandingContainer">
       <div className="LandingHeroMain">
-        <Image
-          className="LandingHeroMainImg"
-          src="/HeroMain.png"
-          priority={true}
-          sizes={1000}
-          width={0}
-          height={0}
-        />
-        {/*<button className="LandingHeroMainAppbutt">
-          <p style={{ margin: "auto" }}>Coming Soon!</p>
+        <motion.div
+          initial={{ x: -300, opacity: 0 }} // Start position from left
+          animate={{ x: 0, opacity: 1 }} // End position
+          transition={{ duration: 1 }} // Animation duration
+        >
+          <Image
+            className="LandingHeroMainImg"
+            src="/HeroMain.png"
+            priority={true}
+            sizes={1000}
+            width={0}
+            height={0}
+          />
+        </motion.div>
+        <motion.button
+          className="LandingHeroMainAppbutt"
+          onClick={() =>
+            window.open("https://dashboard.hackumass.com/login", "_blank")
+          }
+          initial={{ x: -300, opacity: 0 }} // Start position from left
+          animate={{ x: 0, opacity: 1 }} // End position
+          transition={{ duration: 1 }} // Animation duration
+        >
+          <p style={{ margin: "auto" }}>Apply Now!</p>
           <Fragment>
             <FontAwesomeIcon
+              className="LandingHeroMainAppRightButton"
               icon={faCircleArrowRight}
-              style={{ fontSize: 40, marginRight: "10px" }}
+              style={{ fontSize: "2.3vw", padding: 0 }}
             />
           </Fragment>
-        </button> */}
-        <button className="LandingHeroMainAppbutt" onClick={() => window.open("https://dashboard.hackumass.com/login", "_blank")}>
-                    <p style={{ margin: "auto" }}>Apply Now!</p>
-                    <Fragment>
-                        <FontAwesomeIcon className="LandingHeroMainAppRightButton" icon={faCircleArrowRight} style={{ fontSize: "2.3vw", padding: 0}} />
-                    </Fragment>
-                </button>
+        </motion.button>
       </div>
-      <div className="LandingHeroBuilding">
+      <motion.div
+        className="LandingHeroBuilding"
+        initial={{ y: 400, opacity: 0 }} // Start position from bottom
+        animate={{ y: 0, opacity: 1 }} // End position
+        transition={{ duration: 1.5 }} // Animation duration
+      >
         <Image
           priority={true}
           className="LandingHeroBuildingImg"
@@ -41,7 +56,7 @@ export default function HeroSection() {
           width={0}
           height={0}
         />
-      </div>
+      </motion.div>
     </div>
   );
 }
