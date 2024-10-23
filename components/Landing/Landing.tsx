@@ -4,16 +4,15 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; /* eslint-disable import/first */
 
-import NavigationBarLand from "../Navbar/Navbar.js";
-import HeroSection from "./Hero.js";
-import WhyHackUmass from "./WhyHackUmass.js";
-import OurTeam from "./OurTeam.js";
-import Sponsors from "./Sponsors.js";
-
 import "./Landing.css";
 
-import Faq from "./Faq.js";
-import Footer from "./Footer.js";
+import NavigationBarLand from "../Navbar/Navbar";
+import HeroSection from "./Hero";
+import WhyHackUmass from "./WhyHackUmass";
+import Sponsors from "./Sponsors";
+import OurTeam from "./OurTeam";
+import Faq from "./Faq";
+import Footer from "./Footer";
 
 export default function Landing() {
   return (

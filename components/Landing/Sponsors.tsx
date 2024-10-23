@@ -10,40 +10,40 @@ export default function Sponsors() {
         <div className="SponsorImagesUpper">
           <Image
             src="/SponsorCOE.png"
-            sizes={2000}
             width={0}
             height={0}
             priority={true}
+            alt="College of Engineering"
           />
           <Image
             src="/SponsorCICS.png"
-            sizes={2000}
             width={0}
             height={0}
             priority={true}
+            alt="College of Information and Computer Sciences"
           />
           <Image
             src="/SponsorBE.png"
-            sizes={2000}
             width={0}
             height={0}
             priority={true}
+            alt="Berthiaume Center for Entrepreneurship"
           />
         </div>
         <div className="SponsorImagesUpper">
           <Image
             src="/SponsorKPMG.png"
-            sizes={2000}
             width={0}
             height={0}
             priority={true}
+            alt="KPMG"
           />
           <Image
             src="/SponsorMitre.png"
-            sizes={2000}
             width={0}
             height={0}
             priority={true}
+            alt="MITRE"
           />
           <Image
             src="/SponsorStandOutSticker.png"
@@ -58,7 +58,13 @@ export default function Sponsors() {
         <div className="WhySponsorLeft">
           <h1 className="h1">Why should you sponsor us?</h1>
           <p className="p">
-          HackUMass is one of the largest tech events at UMass Amherst, providing sponsors with exclusive access to hundreds of participant resumes and direct opportunities to engage with students during the event, along with other valuable benefits. Our team collaborates with sponsors to customize packets tailored to the company’s needs, ensuring maximum exposure that benefits both students and the company.
+            HackUMass is one of the largest tech events at UMass Amherst,
+            providing sponsors with exclusive access to hundreds of participant
+            resumes and direct opportunities to engage with students during the
+            event, along with other valuable benefits. Our team collaborates
+            with sponsors to customize packets tailored to the company’s needs,
+            ensuring maximum exposure that benefits both students and the
+            company.
           </p>
 
           <button
@@ -71,10 +77,10 @@ export default function Sponsors() {
         <div className="WhySponsorRight">
           <Image
             src="/SponsorUsRight.png"
-            sizes={2000}
             width={0}
             height={0}
             priority={true}
+            alt="Sponsor Us"
           />
         </div>
       </div>

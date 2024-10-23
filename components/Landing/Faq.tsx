@@ -2,6 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Faq() {
+
+  const faqItems = [
+  ]
+
   return (
     <div className="FAQ" id="faq">
       <div className="LandingAboutHeader2">

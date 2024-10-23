@@ -52,9 +52,9 @@ export default function HeroSection() {
           priority={true}
           className="LandingHeroBuildingImg"
           src="/Building.svg"
-          sizes={5000}
           width={0}
           height={0}
+          alt="HackUMass XII - An outpost for your craziest ideas"
         />
       </motion.div>
     </div>

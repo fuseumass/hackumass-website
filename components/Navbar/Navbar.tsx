@@ -11,7 +11,7 @@ import {
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-function NavigationBarLand(user) {
+export default function NavigationBarLand() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -48,7 +48,6 @@ function NavigationBarLand(user) {
           >
             <li className="nav-item landing">
               <Link
-                smooth="true"
                 href="#aboutus"
                 className="nav-links-landing landing"
                 style={{ borderTop: "none" }}
@@ -61,7 +60,6 @@ function NavigationBarLand(user) {
             </li>
             <li className="nav-item">
               <Link
-                smooth="true"
                 href="#sponsors"
                 className="nav-links-landing landing"
                 style={{ borderTop: "none" }}
@@ -74,7 +72,6 @@ function NavigationBarLand(user) {
             </li>
             <li className="nav-item">
               <Link
-                smooth="true"
                 href="#faq"
                 className="nav-links-landing landing"
                 onClick={closeMobileMenu}
@@ -84,7 +81,6 @@ function NavigationBarLand(user) {
             </li>
             <li className="nav-item">
               <Link
-                smooth="true"
                 href="#team"
                 className="nav-links-landing landing"
                 onClick={closeMobileMenu}
@@ -96,7 +92,6 @@ function NavigationBarLand(user) {
               <Link
                 rel="noopener noreferrer"
                 target="_blank"
-                smooth="true"
                 href="https://hackumass-xi.devpost.com/project-gallery"
                 className="nav-links-landing landing"
                 style={{ borderTop: "none" }}
@@ -111,7 +106,6 @@ function NavigationBarLand(user) {
               <Link
                 rel="noopener noreferrer"
                 target="_blank"
-                smooth="true"
                 href="https://www.facebook.com/HackUMass/"
                 className="nav-links-landing landing"
                 onClick={closeMobileMenu}
@@ -123,7 +117,6 @@ function NavigationBarLand(user) {
               <Link
                 rel="noopener noreferrer"
                 target="_blank"
-                smooth="true"
                 href="https://x.com/hackumass"
                 className="nav-links-landing landing"
                 onClick={closeMobileMenu}
@@ -135,7 +128,6 @@ function NavigationBarLand(user) {
               <Link
                 rel="noopener noreferrer"
                 target="_blank"
-                smooth="true"
                 href="https://www.instagram.com/hackumass/"
                 className="nav-links-landing landing"
                 onClick={closeMobileMenu}
@@ -148,7 +140,7 @@ function NavigationBarLand(user) {
                             <Link
                                 rel="noopener noreferrer" target="_blank"
                                 style={{ color: "black" }}
-                                smooth="true"
+                                
                                 href="https://dashboard.hackumass.com"
                                 className="nav-links-landing landing"
                                 onClick={closeMobileMenu}>
@@ -161,5 +153,3 @@ function NavigationBarLand(user) {
     </>
   );
 }
-
-export default NavigationBarLand;
