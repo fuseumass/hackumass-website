@@ -60,6 +60,7 @@ export default function Footer() {
         </div>
         <Image
           src="/BlueWhiteLogo.png"
+          sizes="2000"
           width={0}
           height={0}
           priority={true}

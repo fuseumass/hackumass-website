@@ -12,6 +12,7 @@ export default function Sponsors() {
             src="/SponsorCOE.png"
             width={0}
             height={0}
+            sizes="2000"
             priority={true}
             alt="College of Engineering"
           />
@@ -19,6 +20,7 @@ export default function Sponsors() {
             src="/SponsorCICS.png"
             width={0}
             height={0}
+            sizes="2000"
             priority={true}
             alt="College of Information and Computer Sciences"
           />
@@ -26,6 +28,7 @@ export default function Sponsors() {
             src="/SponsorBE.png"
             width={0}
             height={0}
+            sizes="2000"
             priority={true}
             alt="Berthiaume Center for Entrepreneurship"
           />
@@ -35,6 +38,7 @@ export default function Sponsors() {
             src="/SponsorKPMG.png"
             width={0}
             height={0}
+            sizes="2000"
             priority={true}
             alt="KPMG"
           />
@@ -42,15 +46,17 @@ export default function Sponsors() {
             src="/SponsorMitre.png"
             width={0}
             height={0}
+            sizes="2000"
             priority={true}
             alt="MITRE"
           />
           <Image
             src="/SponsorStandOutSticker.png"
-            sizes={2000}
+            sizes={"2000"}
             width={0}
             height={0}
             priority={true}
+            alt="StandOut Stickers"
           />
         </div>
       </div>
@@ -79,6 +85,7 @@ export default function Sponsors() {
             src="/SponsorUsRight.png"
             width={0}
             height={0}
+            sizes="2000"
             priority={true}
             alt="Sponsor Us"
           />

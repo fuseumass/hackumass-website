@@ -18,9 +18,10 @@ export default function HeroSection() {
             className="LandingHeroMainImg"
             src="/HeroMain.png"
             priority={true}
-            sizes={1000}
+            sizes="1000"
             width={0}
             height={0}
+            alt="HackUMass"
           />
         </motion.div>
         <motion.button
@@ -54,6 +55,7 @@ export default function HeroSection() {
           src="/Building.svg"
           width={0}
           height={0}
+          sizes="1000"
           alt="HackUMass XII - An outpost for your craziest ideas"
         />
       </motion.div>
