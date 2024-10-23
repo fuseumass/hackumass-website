@@ -1,108 +1,70 @@
-import { useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Image from "next/image.js";
 
 export default function WhyHackUmass() {
+  const [active, setActive] = useState(0);
+
+  const images = [
+    "/WhyHackUmass/WhyHackers.svg",
+    "/WhyHackUmass/WhyDining.svg",
+    "/WhyHackUmass/WhyHardware.svg",
+    "/WhyHackUmass/WhySponsors.svg",
+    "/WhyHackUmass/WhyVenue.svg",
+  ];
+
+  const next = useCallback(
+    () => setActive((active + 1) % images.length),
+    [active, images.length]
+  );
+
   useEffect(() => {
-    const why1 = document.getElementById("why1");
-    const why2 = document.getElementById("why2");
-    const why3 = document.getElementById("why3");
-    const why4 = document.getElementById("why4");
-    const why5 = document.getElementById("why5");
-    const buttwhy1 = document.getElementById("buttwhy1");
-    const buttwhy2 = document.getElementById("buttwhy2");
-    const buttwhy3 = document.getElementById("buttwhy3");
-    const buttwhy4 = document.getElementById("buttwhy4");
-    const buttwhy5 = document.getElementById("buttwhy5");
+    const interval = setInterval(() => next(), 5000);
+    return () => clearInterval(interval);
+  }, [next]);
 
-    // Initialize the first image as visible
-    why1.classList.add("active");
-    
-    // Add event listeners to buttons
-    const setActive = (activeIndex) => {
-      [why1, why2, why3, why4, why5].forEach((why, index) => {
-        if (index === activeIndex) {
-          why.classList.add("active");
-        } else {
-          why.classList.remove("active");
-        }
-      });
-
-      [buttwhy1, buttwhy2, buttwhy3, buttwhy4, buttwhy5].forEach((butt, index) => {
-        butt.style.backgroundColor = index === activeIndex ? "#ffffff" : "#DCDCDC";
-      });
-    };
-
-    buttwhy1.addEventListener("click", () => setActive(0));
-    buttwhy2.addEventListener("click", () => setActive(1));
-    buttwhy3.addEventListener("click", () => setActive(2));
-    buttwhy4.addEventListener("click", () => setActive(3));
-    buttwhy5.addEventListener("click", () => setActive(4));
-
-    const interval = setInterval(() => {
-      const currentIndex = [why1, why2, why3, why4, why5].findIndex((why) => why.classList.contains("active"));
-      const nextIndex = (currentIndex + 1) % 5;
-      setActive(nextIndex);
-    }, 3000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  const handleButtonClick = (index: number) => {
+    setActive(index);
+  };
 
   return (
     <div className="LandingAbout" id="aboutus">
       <div className="LandingAboutHeader">
         <h1 className="heading">Why HackUMass?</h1>
-        <p className="p1">At HackUMass, we strive to provide a fun and welcoming space for STEM education and creation for students of all experience levels</p>
+        <p className="p1">
+          At HackUMass, we strive to provide a fun and welcoming space for STEM
+          education and creation for students of all experience levels
+        </p>
       </div>
       <div className="LandingAboutContent">
-        <Image
-          src="/WhyHackUmass/WhyHackers.svg"
-          id="why1"
-          sizes={2000}
-          width={0}
-          height={0}
-          priority={true}
-        />
-        <Image
-          src="/WhyHackUmass/WhyDining.svg"
-          id="why2"
-          sizes={2000}
-          width={0}
-          height={0}
-          priority={true}
-        />
-        <Image
-          src="/WhyHackUmass/WhyHardware.svg"
-          id="why3"
-          sizes={2000}
-          width={0}
-          height={0}
-          priority={true}
-        />
-        <Image
-          src="/WhyHackUmass/WhySponsors.svg"
-          id="why4"
-          sizes={2000}
-          width={0}
-          height={0}
-          priority={true}
-        />
-        <Image
-          src="/WhyHackUmass/WhyVenue.svg"
-          id="why5"
-          sizes={2000}
-          width={0}
-          height={0}
-          priority={true}
-        />
+        {images.map((image, index) => (
+          <div
+            key={index}
+            style={{
+              display: active === index ? "block" : "none",
+            }}
+          >
+            <Image
+              src={image}
+              sizes="2000"
+              width={0}
+              height={0}
+              priority={true}
+              alt={`Why HackUMass ${index + 1}`}
+            />
+          </div>
+        ))}
       </div>
       <div className="LandingAboutContentButtons">
-        <button className="LandingAboutContentButton" id="buttwhy1"></button>
-        <button className="LandingAboutContentButton" id="buttwhy2"></button>
-        <button className="LandingAboutContentButton" id="buttwhy3"></button>
-        <button className="LandingAboutContentButton" id="buttwhy4"></button>
-        <button className="LandingAboutContentButton" id="buttwhy5"></button>
+        {images.map((_, index) => (
+          <button
+            key={index}
+            className="LandingAboutContentButton"
+            style={{
+              backgroundColor: active === index ? "#ffffff" : "#DCDCDC",
+            }}
+            onClick={() => handleButtonClick(index)}
+          ></button>
+        ))}
       </div>
     </div>
   );

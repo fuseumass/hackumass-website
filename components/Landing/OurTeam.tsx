@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import "./OurTeam.css";
 import "./Landing.css";
+import Image from "next/image";
 
 interface IMembers {
   [key: string]: string[][];
@@ -96,14 +97,14 @@ function OurTeam() {
                       id="nav-tab"
                       role="tablist"
                     >
-                      {Object.keys(members).map((team) => (
+                      {tabs.map((team) => (
                         <a
                           key={team}
                           className={`nav-item nav-link ${
                             activeTab === team ? "active" : ""
                           }`}
                           onClick={() => handleTabClick(team)}
-                          href="#!"
+                          href="#!" // Prevents page from scrolling to the top
                         >
                           {team}
                         </a>
@@ -114,7 +115,7 @@ function OurTeam() {
                     className="tab-content py-3 px-3 px-sm-0"
                     id="nav-tabContent"
                   >
-                    {Object.keys(members).map((team) => (
+                    {tabs.map((team) => (
                       <div
                         key={team}
                         className={`tab-pane fade ${
@@ -132,13 +133,14 @@ function OurTeam() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6 }}
                               >
-                                <img
+                                <Image
                                   className="rounded-circle shadow-2 img-border object-fit-cover"
                                   src={member.image}
                                   alt={member.name}
-                                  onError={(e: any) =>
-                                    (e.target.src = "/Team/default.jpg")
-                                  }
+                                  width={250}
+                                  height={250}
+                                  sizes="2000"
+                                  priority={true}
                                 />
                                 <h5 className="primary-color role-text">
                                   {member.name}
