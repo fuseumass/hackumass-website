@@ -45,6 +45,13 @@ export default function Sponsors() {
             height={0}
             priority={true}
           />
+          <Image
+            src="/SponsorStandOutSticker.png"
+            sizes={2000}
+            width={0}
+            height={0}
+            priority={true}
+          />
         </div>
       </div>
       <div className="WhySponsor">
