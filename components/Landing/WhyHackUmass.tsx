@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import Image from "next/image.js";
+import Image from "next/image";
 
 export default function WhyHackUmass() {
   const [active, setActive] = useState(0);
@@ -32,27 +32,17 @@ export default function WhyHackUmass() {
         <h1 className="heading">Why HackUMass?</h1>
         <p className="p1">
           At HackUMass, we strive to provide a fun and welcoming space for STEM
-          education and creation for students of all experience levels
+          education and creation for students of all experience levels.
         </p>
       </div>
       <div className="LandingAboutContent">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            style={{
-              display: active === index ? "block" : "none",
-            }}
-          >
-            <Image
-              src={image}
-              sizes="2000"
-              width={0}
-              height={0}
-              priority={true}
-              alt={`Why HackUMass ${index + 1}`}
-            />
-          </div>
-        ))}
+        <Image
+          src={images[active]}
+          alt="Why HackUMass"
+          width={1000}
+          height={750}
+          layout="responsive"
+        />
       </div>
       <div className="LandingAboutContentButtons">
         {images.map((_, index) => (
