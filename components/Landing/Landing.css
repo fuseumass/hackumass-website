@@ -238,13 +238,29 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .SponsorImagesUpper img {
   width: 20vw;
   height: auto;
   margin: 20px;
+  cursor: pointer;
+}
+
+.PartnerImagesUpper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.PartnerImagesUpper img {
+  height: 13vh;
+  width: auto;
+  margin: 20px;
+  cursor: pointer;
 }
 
 .WhySponsor {
@@ -252,8 +268,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 50px;
   width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .WhySponsorLeft {
@@ -319,11 +336,6 @@
   font-weight: 700;
 }
 
-.PartnerImages img {
-  width: 80vw;
-  height: auto;
-  margin: 20px;
-}
 
 /***************************** FAQ Section **********************************/
 
@@ -459,15 +471,20 @@
   font-size: 30px;
   align-self: center;
   transition: color 0.6s ease, background-color 0.6s ease, padding 0.6s ease, border-radius 0.6s ease;
-  padding: 0.5rem 0.6rem; /* Match the padding from .nav-links-landing */
-  border-radius: 0.5rem; /* Match the border-radius from .nav-links-landing */
+  padding: 0.5rem 0.6rem;
+  /* Match the padding from .nav-links-landing */
+  border-radius: 0.5rem;
+  /* Match the border-radius from .nav-links-landing */
   box-sizing: border-box;
 }
 
 .social-links:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Match hover background color */
-  padding: 0.7rem 0.8rem; /* Increase padding on hover */
-  border-radius: 1rem; /* Increase border-radius on hover */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Match hover background color */
+  padding: 0.7rem 0.8rem;
+  /* Increase padding on hover */
+  border-radius: 1rem;
+  /* Increase border-radius on hover */
 }
 
 .FooterContent {
@@ -630,7 +647,7 @@ html {
   .LandingAboutHeader h1 {
     font-size: 40px;
   }
-  
+
   .LandingAboutHeader2 h1 {
     font-size: 40px;
   }
@@ -654,6 +671,22 @@ html {
 
   .SponsorImagesUpper img {
     width: 60vw;
+  }
+
+  .PartnerImages {
+    flex-direction: column;
+  }
+
+  .PartnerImagesUpper {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .PartnerImagesUpper img {
+    width: 35vw;
+    height: auto;
+    margin: 0;
+    margin-top: 15px;
   }
 
   .WhySponsor {

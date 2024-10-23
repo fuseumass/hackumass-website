@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import Link from 'next/link'
 
 export default function Faq() {
   return (
@@ -84,8 +85,8 @@ export default function Faq() {
           <h3 className="FAQContentItemHeading">
             <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Is there a Code of Conduct?
           </h3>
-          <p className="FAQContentItemText">
-            We are committed to creating a safe environment for everyone at HackUMass. Therefore, all attendees are expected to follow the MLH Code of Conduct and abide by the University of Massachusetts Amherst Code of Student Conduct.
+          <p className="FAQContentItemText" style={{display: "inline"}}>
+            We are committed to creating a safe environment for everyone at HackUMass. Therefore, all attendees are expected to follow the <Link style={{ color: "#68BBE3" }} href={"https://static.mlh.io/docs/mlh-code-of-conduct.pdf"} rel="noopener noreferrer" target="_blank">MLH Code of Conduct</Link> and abide by the <Link style={{ color: "#68BBE3" }} href={"https://www.umass.edu/dean_students/sites/default/files/documents/07.01.2019%20Code%20of%20Student%20Conduct.pdf"} rel="noopener noreferrer" target="_blank">University of Massachusetts Amherst Code of Student Conduct</Link>.
           </p>
         </div>
         <div className="FAQContentItem">
