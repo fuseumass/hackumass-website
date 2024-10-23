@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./OurTeam.css";
 import "./Landing.css";
@@ -60,21 +60,28 @@ const members: IMembers = {
 function OurTeam() {
   const [activeTab, setActiveTab] = useState("Directors");
 
-  const tabs = Object.keys(members);
-
   const createTeamArr = (team: string) => {
-    const people = members[team];
-    return people.map((e) => {
-      const fullName = e[0];
-      const role = e[1];
-      const [firstName, lastName] = fullName.split(" ");
+    return members[team].map((member) => {
       return {
-        name: fullName,
-        role: role,
-        image: `/Team/${team}_${firstName}_${lastName}.jpg`,
+        name: member[0],
+        role: member[1],
+        image:
+          `/Team/${activeTab}_${member[0].split(" ")[0]}_${
+            member[0].split(" ")[1]
+          }.jpg` || "/Team/Default.jpg",
       };
     });
   };
+
+  const [team, setTeam] = useState<
+    { name: string; role: string; image: string }[]
+  >(createTeamArr(activeTab));
+
+  const tabs = Object.keys(members);
+
+  useEffect(() => {
+    setTeam(createTeamArr(activeTab));
+  }, [activeTab]);
 
   const handleTabClick = (team: string) => {
     setActiveTab(team);
@@ -115,45 +122,36 @@ function OurTeam() {
                     className="tab-content py-3 px-3 px-sm-0"
                     id="nav-tabContent"
                   >
-                    {tabs.map((team) => (
-                      <div
-                        key={team}
-                        className={`tab-pane fade ${
-                          activeTab === team ? "show active" : ""
-                        }`}
-                      >
-                        <div className="row gap-y justify-content-center align-items-center mt-3">
-                          {createTeamArr(team).map((member, index) => (
-                            <div
-                              key={index}
-                              className="col-lg-3 col-md-6 col-sm-12 text-center team-content"
-                            >
-                              <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
-                              >
-                                <Image
-                                  className="rounded-circle shadow-2 img-border object-fit-cover"
-                                  src={member.image}
-                                  alt={member.name}
-                                  width={250}
-                                  height={250}
-                                  sizes="2000"
-                                  priority={true}
-                                />
-                                <h5 className="primary-color role-text">
-                                  {member.name}
-                                </h5>
-                                <h6 className="team-role name-text">
-                                  {member.role}
-                                </h6>
-                              </motion.div>
-                            </div>
-                          ))}
+                    <div className="row gap-y justify-content-center align-items-center mt-3">
+                      {team.map((member, index) => (
+                        <div
+                          key={index}
+                          className="col-lg-3 col-md-6 col-sm-12 text-center team-content"
+                        >
+                          <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                          >
+                            <Image
+                              className="rounded-circle shadow-2 img-border object-fit-cover"
+                              src={member.image}
+                              alt={member.name}
+                              width={250}
+                              height={250}
+                              sizes="2000"
+                              priority={true}
+                            />
+                            <h5 className="primary-color role-text">
+                              {member.name}
+                            </h5>
+                            <h6 className="team-role name-text">
+                              {member.role}
+                            </h6>
+                          </motion.div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
