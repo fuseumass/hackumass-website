@@ -14,103 +14,34 @@ export default function WhyHackUmass() {
     const buttwhy4 = document.getElementById("buttwhy4");
     const buttwhy5 = document.getElementById("buttwhy5");
 
-    why1.style.display = "flex";
-    why2.style.display = "none";
-    why3.style.display = "none";
-    why4.style.display = "none";
-    why5.style.display = "none";
+    // Initialize the first image as visible
+    why1.classList.add("active");
+    
+    // Add event listeners to buttons
+    const setActive = (activeIndex) => {
+      [why1, why2, why3, why4, why5].forEach((why, index) => {
+        if (index === activeIndex) {
+          why.classList.add("active");
+        } else {
+          why.classList.remove("active");
+        }
+      });
 
-    buttwhy1.style.backgroundColor = "#ffffff";
+      [buttwhy1, buttwhy2, buttwhy3, buttwhy4, buttwhy5].forEach((butt, index) => {
+        butt.style.backgroundColor = index === activeIndex ? "#ffffff" : "#DCDCDC";
+      });
+    };
 
-    //add event listeners to buttons
-    buttwhy1.addEventListener("click", () => {
-      why1.style.display = "flex";
-      why2.style.display = "none";
-      why3.style.display = "none";
-      why4.style.display = "none";
-      why5.style.display = "none";
-      buttwhy1.style.backgroundColor = "#ffffff";
-      buttwhy2.style.backgroundColor = "#DCDCDC";
-      buttwhy3.style.backgroundColor = "#DCDCDC";
-      buttwhy4.style.backgroundColor = "#DCDCDC";
-      buttwhy5.style.backgroundColor = "#DCDCDC";
-    });
-    buttwhy2.addEventListener("click", () => {
-      why2.style.display = "flex";
-      why1.style.display = "none";
-      why3.style.display = "none";
-      why4.style.display = "none";
-      why5.style.display = "none";
-      buttwhy2.style.backgroundColor = "#ffffff";
-      buttwhy1.style.backgroundColor = "#DCDCDC";
-      buttwhy3.style.backgroundColor = "#DCDCDC";
-      buttwhy4.style.backgroundColor = "#DCDCDC";
-      buttwhy5.style.backgroundColor = "#DCDCDC";
-    });
-    buttwhy3.addEventListener("click", () => {
-      why3.style.display = "flex";
-      why2.style.display = "none";
-      why1.style.display = "none";
-      why4.style.display = "none";
-      why5.style.display = "none";
-      buttwhy3.style.backgroundColor = "#ffffff";
-      buttwhy2.style.backgroundColor = "#DCDCDC";
-      buttwhy1.style.backgroundColor = "#DCDCDC";
-      buttwhy4.style.backgroundColor = "#DCDCDC";
-      buttwhy5.style.backgroundColor = "#DCDCDC";
-    });
-    buttwhy4.addEventListener("click", () => {
-      why4.style.display = "flex";
-      why2.style.display = "none";
-      why3.style.display = "none";
-      why1.style.display = "none";
-      why5.style.display = "none";
-      buttwhy4.style.backgroundColor = "#ffffff";
-      buttwhy2.style.backgroundColor = "#DCDCDC";
-      buttwhy3.style.backgroundColor = "#DCDCDC";
-      buttwhy1.style.backgroundColor = "#DCDCDC";
-      buttwhy5.style.backgroundColor = "#DCDCDC";
-    });
-    buttwhy5.addEventListener("click", () => {
-      why5.style.display = "flex";
-      why2.style.display = "none";
-      why3.style.display = "none";
-      why4.style.display = "none";
-      why1.style.display = "none";
-      buttwhy5.style.backgroundColor = "#ffffff";
-      buttwhy2.style.backgroundColor = "#DCDCDC";
-      buttwhy3.style.backgroundColor = "#DCDCDC";
-      buttwhy4.style.backgroundColor = "#DCDCDC";
-      buttwhy1.style.backgroundColor = "#DCDCDC";
-    });
+    buttwhy1.addEventListener("click", () => setActive(0));
+    buttwhy2.addEventListener("click", () => setActive(1));
+    buttwhy3.addEventListener("click", () => setActive(2));
+    buttwhy4.addEventListener("click", () => setActive(3));
+    buttwhy5.addEventListener("click", () => setActive(4));
 
     const interval = setInterval(() => {
-      if (why1.style.display === "flex") {
-        why1.style.display = "none";
-        why2.style.display = "flex";
-        buttwhy1.style.backgroundColor = "#DCDCDC";
-        buttwhy2.style.backgroundColor = "#ffffff";
-      } else if (why2.style.display === "flex") {
-        why2.style.display = "none";
-        why3.style.display = "flex";
-        buttwhy2.style.backgroundColor = "#DCDCDC";
-        buttwhy3.style.backgroundColor = "#ffffff";
-      } else if (why3.style.display === "flex") {
-        why3.style.display = "none";
-        why4.style.display = "flex";
-        buttwhy3.style.backgroundColor = "#DCDCDC";
-        buttwhy4.style.backgroundColor = "#ffffff";
-      } else if (why4.style.display === "flex") {
-        why4.style.display = "none";
-        why5.style.display = "flex";
-        buttwhy4.style.backgroundColor = "#DCDCDC";
-        buttwhy5.style.backgroundColor = "#ffffff";
-      } else if (why5.style.display === "flex") {
-        why5.style.display = "none";
-        why1.style.display = "flex";
-        buttwhy5.style.backgroundColor = "#DCDCDC";
-        buttwhy1.style.backgroundColor = "#ffffff";
-      }
+      const currentIndex = [why1, why2, why3, why4, why5].findIndex((why) => why.classList.contains("active"));
+      const nextIndex = (currentIndex + 1) % 5;
+      setActive(nextIndex);
     }, 3000);
 
     return () => {
@@ -126,7 +57,7 @@ export default function WhyHackUmass() {
       </div>
       <div className="LandingAboutContent">
         <Image
-          src="/WhyHackUmass/WhyHackers.png"
+          src="/WhyHackUmass/WhyHackers.svg"
           id="why1"
           sizes={2000}
           width={0}
@@ -134,7 +65,7 @@ export default function WhyHackUmass() {
           priority={true}
         />
         <Image
-          src="/WhyHackUmass/WhyDining.png"
+          src="/WhyHackUmass/WhyDining.svg"
           id="why2"
           sizes={2000}
           width={0}
@@ -142,7 +73,7 @@ export default function WhyHackUmass() {
           priority={true}
         />
         <Image
-          src="/WhyHackUmass/WhyHardware.png"
+          src="/WhyHackUmass/WhyHardware.svg"
           id="why3"
           sizes={2000}
           width={0}
@@ -150,7 +81,7 @@ export default function WhyHackUmass() {
           priority={true}
         />
         <Image
-          src="/WhyHackUmass/WhySponsors.png"
+          src="/WhyHackUmass/WhySponsors.svg"
           id="why4"
           sizes={2000}
           width={0}
@@ -158,7 +89,7 @@ export default function WhyHackUmass() {
           priority={true}
         />
         <Image
-          src="/WhyHackUmass/WhyVenue.png"
+          src="/WhyHackUmass/WhyVenue.svg"
           id="why5"
           sizes={2000}
           width={0}
