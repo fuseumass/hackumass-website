@@ -75,7 +75,7 @@ export default function Sponsors() {
             onClick={() => window.open("https://insomniacookies.com/", "_blank")}
           />
           <Image
-            src="/Partners/nordpass-color-horizontal.png"
+            src="/Partners/nordpass-color-vertical.png"
             sizes={2000}
             width={0}
             height={0}
@@ -89,6 +89,14 @@ export default function Sponsors() {
             height={0}
             priority={true}
             onClick={() => window.open("https://www.umassamherstm5.org/", "_blank")}
+          />
+          <Image
+            src="/Partners/Makerspace-Logo2.png"
+            sizes={2000}
+            width={0}
+            height={0}
+            priority={true}
+            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
           />
 
         </div>
@@ -134,14 +142,6 @@ export default function Sponsors() {
             onClick={() => window.open("https://incogni.com/", "_blank")}
           />
 
-          <Image
-            src="/Partners/Makerspace-Logo2.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
-          />
 
         </div>
         <div className="PartnerImagesUpper">
@@ -168,14 +168,6 @@ export default function Sponsors() {
             height={0}
             priority={true}
             onClick={() => window.open("https://nordvpn.com/", "_blank")}
-          />
-          <Image
-            src="/Partners/nordpass-color-vertical.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://nordpass.com/", "_blank")}
           />
           <Image
             src="/Partners/ADI-Logo-AWP-Tagline-RGB-FullColor.jpg"

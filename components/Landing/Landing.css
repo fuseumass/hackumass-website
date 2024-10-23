@@ -673,9 +673,20 @@ html {
     width: 60vw;
   }
 
+  .PartnerImages {
+    flex-direction: column;
+  }
+
+  .PartnerImagesUpper {
+    flex-direction: column;
+    margin: 0;
+  }
+
   .PartnerImagesUpper img {
-    height: 6vw;
-    margin: 5px;
+    width: 35vw;
+    height: auto;
+    margin: 0;
+    margin-top: 15px;
   }
 
   .WhySponsor {
