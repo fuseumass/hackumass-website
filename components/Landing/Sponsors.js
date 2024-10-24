@@ -41,7 +41,7 @@ export default function Sponsors() {
             width={0}
             height={0}
             priority={true}
-            onClick={() => window.open("https://www.str.com/", "_blank")}
+            onClick={() => window.open("https://www.str.us/", "_blank")}
           />
         </div>
       </div>
