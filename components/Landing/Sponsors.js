@@ -123,7 +123,7 @@ export default function Sponsors() {
             width={0}
             height={0}
             priority={true}
-            onClick={() => window.open("https://www.standoutstickers.com/", "_blank")}
+            onClick={() => window.open("http://hackp.ac/mlh-StandOutStickers-hackathons", "_blank")}
           />
           <Image
             src="/Partners/MakerspaceVertical.png"
