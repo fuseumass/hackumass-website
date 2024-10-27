@@ -42,10 +42,9 @@
 
 .LandingHeroMainAppbutt {
   margin-top: 15px;
-  margin-left: 2vw;
+  margin-left: 1vw;
   font-size: 1.4vw;
   font-weight: 600;
-  background-color: var(--secondary-color);
   color: var(--primary-color);
   display: flex;
   flex-direction: row;
@@ -53,8 +52,6 @@
   align-items: center;
   width: 20vw;
   height: 6vh;
-  padding: 0 10px;
-  border-radius: 50px;
   position: relative;
   overflow: hidden;
   transition: color 0.3s ease;

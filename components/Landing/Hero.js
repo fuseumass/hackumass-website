@@ -23,8 +23,8 @@ export default function HeroSection() {
             height={0}
           />
         </motion.div>
+
         <motion.button
-          className="LandingHeroMainAppbutt"
           onClick={() =>
             window.open("https://dashboard.hackumass.com/login", "_blank")
           }
@@ -32,14 +32,14 @@ export default function HeroSection() {
           animate={{ x: 0, opacity: 1 }} // End position
           transition={{ duration: 1 }} // Animation duration
         >
-          <p style={{ margin: "auto" }}>Apply Now!</p>
-          <Fragment>
-            <FontAwesomeIcon
-              className="LandingHeroMainAppRightButton"
-              icon={faCircleArrowRight}
-              style={{ fontSize: "2.3vw", padding: 0 }}
-            />
-          </Fragment>
+          <Image
+          priority={true}
+          className="LandingHeroMainAppbutt"
+          src="/Button (Large).svg"
+          sizes={2000}
+          width={0}
+          height={0}
+          />
         </motion.button>
       </div>
       <motion.div
