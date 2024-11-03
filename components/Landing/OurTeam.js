@@ -50,7 +50,6 @@ export default function OurTeam() {
         ["Aarav Sehgal", "Logistics Member"],
         ["Brian Zhang", "Logistics Member"],
         ["Dhriti Madireddy", "Logistics Member"],
-        ["Uma Purani", "Logistics Member"],
       ],
     };
 
