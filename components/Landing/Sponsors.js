@@ -33,8 +33,6 @@ export default function Sponsors() {
             priority={true}
             onClick={() => window.open("https://www.umass.edu/entrepreneurship/", "_blank")}
           />
-        </div>
-        <div className="SponsorImagesUpper">
           <Image
             src="/Sponsors/STR_Sponsor.png"
             sizes={2000}
@@ -44,9 +42,6 @@ export default function Sponsors() {
             onClick={() => window.open("https://www.str.us/", "_blank")}
           />
         </div>
-      </div>
-      <div className="LandingAboutHeader">
-        <h1 className="heading">Our Partners</h1>
       </div>
       <div className="PartnerImages">
         <div className="PartnerImagesUpper">
