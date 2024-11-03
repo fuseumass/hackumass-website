@@ -15,7 +15,7 @@ export default function HeroSection() {
           transition={{ duration: 1 }} // Animation duration
         >
                 <h1 className="LandingHeroMainSubTitle">An outpost for,</h1>
-                <h1 className="LandingHeroMainSubTitle">Your craziest Ideas</h1>
+                <h1 className="LandingHeroMainSubTitle">Your Craziest Ideas</h1>
                 <h1 className="LandingHeroMainTitle">Hack<span>UMass XII</span></h1>
                 <h1 className="LandingHeroMainLead">Nov 8-10 | 36 Hours | Amherst, MA</h1>
         </motion.div>

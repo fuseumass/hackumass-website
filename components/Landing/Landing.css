@@ -42,16 +42,15 @@
 }
 
 .LandingHeroMainSubTitle {
-    font-size: 3vw;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    font-size: 2.6vw;
+    font-weight: 800;
     line-height: 1.2;
 }
 
 .LandingHeroMainTitle {
     font-size: 4vw;
-    font-family: 'Poppins', sans-serif;
     font-weight: 900;
+    color: black;
 }
 
 .LandingHeroMainTitle span {
