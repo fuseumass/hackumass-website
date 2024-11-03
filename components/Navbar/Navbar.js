@@ -104,7 +104,7 @@ function NavigationBarLand(user) {
                   closeMobileMenu();
                 }}
               >
-                2024
+                XI (2023)
               </Link>
             </li>
             <li className="nav-item">
@@ -143,7 +143,7 @@ function NavigationBarLand(user) {
                 <FontAwesomeIcon icon={faSquareInstagram} />
               </Link>
             </li>
-            {/* 
+            {/*
                         <li className="nav-item application-button" style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "white", paddingLeft: "20px", paddingRight: "20px", paddingTop: "7px", paddingBottom: "7px", borderRadius: "30px" }}>
                             <Link
                                 rel="noopener noreferrer" target="_blank"
