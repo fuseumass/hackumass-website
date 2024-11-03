@@ -86,6 +86,17 @@ export default function Sponsors() {
             onClick={() => window.open("https://www.umassamherstm5.org/", "_blank")}
           />
           <Image
+            src="/Partners/AmherstCopy-logo.png"
+            sizes={2000}
+            width={0}
+            height={0}
+            priority={true}
+            onClick={() => window.open("https://amherstcopy.com/", "_blank")}
+          />
+
+        </div>
+        <div className="PartnerImagesUpper">
+          <Image
             src="/Partners/Makerspace-Logo2.png"
             sizes={2000}
             width={0}
@@ -94,8 +105,6 @@ export default function Sponsors() {
             onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
           />
 
-        </div>
-        <div className="PartnerImagesUpper">
           <Image
             src="/Partners/CICS-makerspace.png"
             sizes={2000}
@@ -136,8 +145,6 @@ export default function Sponsors() {
             priority={true}
             onClick={() => window.open("https://incogni.com/", "_blank")}
           />
-
-
         </div>
         <div className="PartnerImagesUpper">
           <Image
