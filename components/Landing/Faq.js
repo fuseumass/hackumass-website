@@ -89,14 +89,14 @@ export default function Faq() {
             We are committed to creating a safe environment for everyone at HackUMass. Therefore, all attendees are expected to follow the <Link style={{ color: "#68BBE3" }} href={"https://static.mlh.io/docs/mlh-code-of-conduct.pdf"} rel="noopener noreferrer" target="_blank">MLH Code of Conduct</Link> and abide by the <Link style={{ color: "#68BBE3" }} href={"https://www.umass.edu/dean_students/sites/default/files/documents/07.01.2019%20Code%20of%20Student%20Conduct.pdf"} rel="noopener noreferrer" target="_blank">University of Massachusetts Amherst Code of Student Conduct</Link>.
           </p>
         </div>
-        <div className="FAQContentItem">
+        {/* <div className="FAQContentItem">
           <h3 className="FAQContentItemHeading">
             <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp;Where can I get more information?
           </h3>
           <p className="FAQContentItemText">
             For information about check-in, swag pick-up, the opening/closing ceremony, hardware check-out, and more before November 8th, 2024, please follow us @hackumass on Instagram for updates. For specific inquiries or questions, please email us at team@hackumass.com. An event Discord server will be used as the main platform for communication and real-time event updates. During the 36-hour hackathon, please use the event Discord server to connect directly with an organizer or stop by the organizer room in the Integrative Learning Center (ILC).
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
