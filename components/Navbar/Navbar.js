@@ -9,6 +9,7 @@ import {
   faSquareFacebook,
   faSquareXTwitter,
   faSquareInstagram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 function NavigationBarLand(user) {
@@ -112,11 +113,11 @@ function NavigationBarLand(user) {
                 rel="noopener noreferrer"
                 target="_blank"
                 smooth="true"
-                href="https://www.facebook.com/HackUMass/"
+                href="https://www.linkedin.com/company/hackumass"
                 className="nav-links-landing landing"
                 onClick={closeMobileMenu}
               >
-                <FontAwesomeIcon icon={faSquareFacebook} />
+                <FontAwesomeIcon icon={faLinkedin} />
               </Link>
             </li>
             <li className="nav-item">

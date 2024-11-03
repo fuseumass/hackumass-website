@@ -9,6 +9,7 @@ import {
   faSquareFacebook,
   faSquareXTwitter,
   faSquareInstagram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Fragment, useState } from "react";
 
@@ -106,10 +107,10 @@ export default function Footer() {
           smooth="true"
           rel="noopener noreferrer"
           target="_blank"
-          href="https://www.facebook.com/HackUMass/"
+          href="https://www.linkedin.com/company/hackumass/"
           className="social-links"
         >
-          <FontAwesomeIcon icon={faSquareFacebook} />
+          <FontAwesomeIcon icon={faLinkedin} />
         </Link>
         <Link
           smooth="true"
