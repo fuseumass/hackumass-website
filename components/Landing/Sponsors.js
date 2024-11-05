@@ -181,6 +181,7 @@ export default function Sponsors() {
           />
           <Image
             src="/Partners/Panera-Bread.png"
+            className="bg-white"
             sizes={2000}
             width={0}
             height={0}
