@@ -179,6 +179,15 @@ export default function Sponsors() {
             priority={true}
             onClick={() => window.open("https://www.analog.com/", "_blank")}
           />
+          <Image
+            src="/Partners/Panera-Bread.png"
+            className="bg-white"
+            sizes={2000}
+            width={0}
+            height={0}
+            priority={true}
+            onClick={() => window.open("https://www.panerabread.com/", "_blank")}
+          />
         </div>
 
       </div>
