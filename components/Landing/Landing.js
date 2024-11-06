@@ -9,6 +9,7 @@ import HeroSection from "./Hero.js";
 import WhyHackUmass from "./WhyHackUmass.js";
 import OurTeam from "./OurTeam.js";
 import Sponsors from "./Sponsors.js";
+import Schedule from "./Schedule.js";
 
 import "./Landing.css";
 
@@ -21,6 +22,7 @@ export default function Landing() {
       <NavigationBarLand />
       <HeroSection />
       <WhyHackUmass />
+      <Schedule />
       <Sponsors />
       <Faq />
       <OurTeam />
