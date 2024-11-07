@@ -14,10 +14,14 @@ export default function HeroSection() {
           animate={{ x: 0, opacity: 1 }} // End position
           transition={{ duration: 1 }} // Animation duration
         >
-                <h1 className="LandingHeroMainSubTitle">An outpost for,</h1>
-                <h1 className="LandingHeroMainSubTitle">Your Craziest Ideas</h1>
-                <h1 className="LandingHeroMainTitle">Hack<span>UMass XII</span></h1>
-                <h1 className="LandingHeroMainLead">Nov 8-10 | 36 Hours | Amherst, MA</h1>
+          <Image
+            className="LandingHeroMainImg"
+            src="/HeroMain.png"
+            priority={true}
+            sizes={1000}
+            width={0}
+            height={0}
+          />
         </motion.div>
         <motion.button
           className="LandingHeroMainAppbutt"
