@@ -3,7 +3,6 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import './Landing.css';
-import { Handler } from '@netlify/functions';
 
 export default function Schedule() {
   const renderEventContent = (eventInfo) => {
