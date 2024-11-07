@@ -605,9 +605,58 @@ html {
   scroll-behavior: smooth;
 }
 
-/***** Media Queries *****/
+.calendar-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 1000px; 
+  overflow-y: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+}
 
+.calendar-container::-webkit-scrollbar {
+  display: none; 
+}
 
+.event-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.event-location {
+  font-size: 0.8em;
+  color: #d3d3d3;
+}
+
+.fc-daygrid-event {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #193348;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  overflow: hidden;
+
+}
+
+.fc-daygrid-event:hover {
+  background-color: #1c4160;
+}
+
+.day-header-content {
+  color: #193348; 
+}
 
 @media screen and (max-width: 910px) {
   .LandingHeroMainAppbutt {
@@ -756,4 +805,46 @@ html {
   .FooterContent img {
     display: none;
   }
+
+  .fc .fc-toolbar-title {
+    font-size: 1.2em;
+  }
+
+  .fc .fc-daygrid-day-frame {
+    height: auto;
+  }
+
+  .fc .fc-daygrid-day-number {
+    font-size: 1em;
+  }
+
+  .fc .fc-daygrid-event {
+    font-size: 0.8em;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+  
+  }
+
+  .fc .fc-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .fc .fc-toolbar .fc-toolbar-chunk {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fc .fc-toolbar .fc-toolbar-chunk:first-child {
+    order: 2;
+  }
+
+  .fc .fc-toolbar .fc-toolbar-chunk:nth-child(2) {
+    order: 1;
+  }
+
+  .fc .fc-toolbar .fc-toolbar-chunk:last-child {
+    order: 3;
+  }
 }
+
+

@@ -60,6 +60,19 @@ function NavigationBarLand(user) {
                 About Us
               </Link>
             </li>
+            <li className="nav-item landing">
+              <Link
+                smooth="true"
+                href="#schedule"
+                className="nav-links-landing landing"
+                style={{ borderTop: "none" }}
+                onClick={() => {
+                  closeMobileMenu();
+                }}
+              >
+                Schedule
+              </Link>
+            </li>
             <li className="nav-item">
               <Link
                 smooth="true"
