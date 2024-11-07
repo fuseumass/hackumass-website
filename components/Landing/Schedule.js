@@ -3,6 +3,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import './Landing.css';
+import { Handler } from '@netlify/functions';
 
 export default function Schedule() {
   const renderEventContent = (eventInfo) => {
@@ -36,7 +37,7 @@ export default function Schedule() {
         <FullCalendar
           plugins={[dayGridPlugin, googleCalendarPlugin]}
           initialView="customThreeDay"
-          googleCalendarApiKey={process.env.REACT_APP_GOOGLE_CALENDAR_API_KEY} 
+          googleCalendarApiKey={process.env.REACT_APP_API_KEY}
           events={{
             googleCalendarId: 'c_d72a2518e24811953a600a17cc31ae2309264570b0c731f13724e420aabd1369@group.calendar.google.com',
             className: 'gcal-event' 
