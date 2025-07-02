@@ -116,15 +116,6 @@ export default function Footer() {
           smooth="true"
           rel="noopener noreferrer"
           target="_blank"
-          href="https://x.com/hackumass"
-          className="social-links"
-        >
-          <FontAwesomeIcon icon={faSquareXTwitter} />
-        </Link>
-        <Link
-          smooth="true"
-          rel="noopener noreferrer"
-          target="_blank"
           href="https://www.instagram.com/hackumass/"
           className="social-links"
         >

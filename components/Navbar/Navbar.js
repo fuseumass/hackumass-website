@@ -138,18 +138,6 @@ function NavigationBarLand(user) {
                 rel="noopener noreferrer"
                 target="_blank"
                 smooth="true"
-                href="https://x.com/hackumass"
-                className="nav-links-landing landing"
-                onClick={closeMobileMenu}
-              >
-                <FontAwesomeIcon icon={faSquareXTwitter} />
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                rel="noopener noreferrer"
-                target="_blank"
-                smooth="true"
                 href="https://www.instagram.com/hackumass/"
                 className="nav-links-landing landing"
                 onClick={closeMobileMenu}
