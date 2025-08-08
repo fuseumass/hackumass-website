@@ -59,10 +59,10 @@ export default function HeroSection() {
           height={0}
         />
       </motion.div>
-          <motion.div initial={{ y: -750, opacity: 0 }} // Start position from bottom
-        animate={{ y: -650, opacity: 1 }} // End position
-        transition={{ duration: 2 }} >
-            <p style={{ textAlign: "center", color: "black", fontSize: ".95vw", fontWeight: "bold"}}>Check Back Soon for Updated Information on HackUMass XIII taking place Nov 7-9, 2025!</p>
+          <motion.div className="LandingHeroText" initial={{ y: -480, opacity: 0 }} // Start position from bottom
+        animate={{ y: -455, opacity: 1 }} // End position
+        transition={{ duration: 2.5 }} >
+            <p>Check Back Soon for Updated Information on HackUMass XIII taking place Nov 7-9, 2025!</p>
           </motion.div>
     </div>
   );
