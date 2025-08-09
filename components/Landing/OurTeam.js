@@ -112,16 +112,14 @@ export default function OurTeam() {
       
       const memberContent = document.createElement("div");
       memberContent.innerHTML = `
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.6 }}
-        >
-          <img class="rounded-circle shadow-2 img-border object-fit-cover" 
-              src="${imageSrc}" alt="${memberObj.name}" onerror="this.onerror=null;this.src='/Team/Default.jpg';" style=""/>
-          <h5 class="primary-color role-text">${memberObj.name}</h5>
+        <div class="flex flex-col items-center">
+          <img class="rounded-full shadow-2xl border content-center"
+              src="${imageSrc}"
+              alt="${memberObj.name}"
+              onerror="this.onerror=null;this.src='/Team/Default.jpg';" />
+          <h5 class="text-primary role-text">${memberObj.name}</h5>
           <h6 class="team-role name-text">${memberObj.role}</h6>
-        </motion.div>
+        </div>
       `;
       colDivElement.appendChild(memberContent);
 
