@@ -4,7 +4,9 @@ import Link from 'next/link'
 import { useEffect, useState } from "react";
 
 export default function Faq() {
-  const [faqs, setFaqs] = useState([
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const [faqs, _] = useState([
     ["What is a hackathon?", " A hackathon is a competitive sprint where people come together to collaborate and build innovative software and hardware projects to win prizes. However, students also have the option to participate in other activities instead of submitting a project."],
     ["Where is HackUMass XII?", "HackUMass XII is an in-person hackathon on the University of Massachusetts Amherst campus, with the main venue located at the Integrative Learning Center (650 N Pleasant St, Amherst, MA 01003)."],
     ["Who can attend?", "HackUMass XII is open to ALL college students, including graduate students, regardless of major!"],
@@ -17,6 +19,10 @@ export default function Faq() {
     ["Is there a Code of Conduct?", "We are committed to creating a safe environment for everyone at HackUMass. Therefore, all attendees are expected to follow the <a href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf'>MLH Code of Conduct</a> and abide by the <a href='https://www.umass.edu/dean_students/sites/default/files/documents/07.01.2019%20Code%20of%20Student%20Conduct.pdf'>University of Massachusetts Amherst Code of Student Conduct</a>."]
   ]);
 
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className="FAQ" id="faq">
       <div className="LandingAboutHeader2">
@@ -24,17 +30,34 @@ export default function Faq() {
       </div>
       <div className="FAQContent">
         {faqs.map((faq, index) => {
+          const isOpen = openIndex === index;
           return (
-            <div className="FAQContentItem">
-              <h3 className="FAQContentItemHeading">
-                <FontAwesomeIcon icon={faCaretRight} /> &nbsp;&nbsp; {faq[0]}
-              </h3>
+            <div key={index} className="FAQContentItem">
+              <button
+                className="FAQContentItemHeading flex items-center w-full text-left"
+                onClick={() => toggle(index)}
+              >
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  className={`mr-2 transform transition-transform duration-200 ${
+                    isOpen ? "rotate-90" : ""
+                  }`}
+                />
+                {faq[0]}
+              </button>
+              <hr></hr>
+              <div
+                className={`FAQContentItemText overflow-hidden transition-all duration-300 ${
+                  isOpen ? "max-h-96 mt-2" : "max-h-0"
+                }`}
+              >
                 <div
-                  className="FAQContentItemText !block [&_a]:inline [&_a]:underline"
+                  className="[&_a]:underline"
                   dangerouslySetInnerHTML={{ __html: faq[1] }}
                 />
+              </div>
             </div>
-          )
+          );
         })}
       </div>
     </div>
