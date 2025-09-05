@@ -27,7 +27,11 @@ function NavigationBarLand(user) {
             className="navbar-logo landing"
             onClick={closeMobileMenu}
           >
-            <Image src="/FullBlueLogo.png" alt="logo" width={120} height={60} />
+        <div className="flex items-center gap-[var(--block)]" style={{ '--block': '8px' }}>
+          <Image src="/TFC-whiteLogo.png" alt="PIT Tech for Change Butterfly" width={120} height={60} className="h-14 w-auto" />
+          <Image src="/PastelPinkPlus.png" alt="Plus" width={60} height={60} className="h-7 w-auto" />
+          <Image src="/darkHUMLogo.png" alt="HMLogo" width={120} height={60} className="h-16 w-auto" />
+        </div>
           </Link>
 
           <div className="menu-icon landing" onClick={handleClick}>
