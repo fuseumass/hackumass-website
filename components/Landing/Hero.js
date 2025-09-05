@@ -42,12 +42,14 @@ export default function HeroSection() {
           </Fragment>
         </motion.button>
       </div>
+  
       <motion.div
         className="LandingHeroBuilding"
         initial={{ y: 400, opacity: 0 }} // Start position from bottom
         animate={{ y: 0, opacity: 1 }} // End position
         transition={{ duration: 1.5 }} // Animation duration
       >
+        
         <Image
           priority={true}
           className="LandingHeroBuildingImg"
@@ -57,6 +59,11 @@ export default function HeroSection() {
           height={0}
         />
       </motion.div>
+          <motion.div className="LandingHeroText" initial={{ y: -480, opacity: 0 }} // Start position from bottom
+        animate={{ y: -455, opacity: 1 }} // End position
+        transition={{ duration: 2.5 }} >
+            <p>Check Back Soon for Updated Information on HackUMass XIII taking place Nov 7-9, 2025!</p>
+          </motion.div>
     </div>
   );
 }

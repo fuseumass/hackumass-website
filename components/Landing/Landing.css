@@ -128,6 +128,20 @@
   mix-blend-mode: lighten;
 }
 
+.LandingHeroText {
+    z-index: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ text-align: center;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 100%;
+  color: black;
+}
+
 /********************************* Landing About *********************************/
 
 .LandingAbout {
