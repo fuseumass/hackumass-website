@@ -8,48 +8,42 @@ export default function OurTeam() {
     const members = {
       Directors: [
         ["Dev Mehta", "Co-Director"],
-        ["Khiem Nguyen", "Co-Director"],
+        ["Addie Padhi", "Co-Director"],
+        ["Devaj Chopda", "Assistant Co-Director"],
       ],
       Hardware: [
-        ["Kavya Manchanda", "Hardware Co-Director"],
-        ["Poul Holm", "Hardware Co-Director"],
-        ["Aayan Boradia", "Hardware Member"],
-        ["Ananya Rohatgi", "Hardware Member"],
-        ["Devaj Chopda", "Hardware Member"],
-        ["Franka Yakasovic", "Hardware Member"],
-        ["Jessie Wang", "Hardware Member"],
-        ["Monil Bhavsar", "Hardware Member"],
-        ["Ron Bajrami", "Hardware Member"],
+        ["Monil Bhavsar", "Hardware Director"],
+        ["Jessie Wang", "Hardware Director"],
+        ["Anaika Pathak", "Hardware Member"],
+        ["Lucas Crawshaw", "Hardware Member"],
         ["Sreeniyathi Kasireddy", "Hardware Member"],
       ],
       Tech: [
-        ["Shiven Patel", "Technology Director"],
-        ["Aayush Garg", "Technology Member"],
-        ["Manu Hegde", "Technology Member"],
-        ["Manya Phutela", "Technology Member"],
-        ["Sathvik Yadanaparthi", "Technology Member"],
-        ["Shreyas Donti", "Technology Member"],
+        ["Sathvik Yadanaparthi", "Technology Director"],
+        ["Keerthi Chebrolu", "Technology Member"],
+        ["Tamanna Chandak", "Technology Member"],
+        ["Noah Shayne", "Technology Member"],
       ],
       "PR-Design": [
-        ["Vianca Varma", "PR/Design Director"],
+         ["Vianca Varma", "PR/Design Director"],
+        ["Arundhati Vasishth", "PR/Design Member"],
+        ["Kashvi Kapoor", "PR/Design Member"],
         ["Anay Liu", "PR/Design Member"],
-        ["Hanabel Mengistu", "PR/Design Member"],
-        ["Naina Singh", "PR/Design Member"],
-        ["Swastika Dev", "PR/Design Member"],
+        ["Lana Vu", "PR/Design Member"],
       ],
       Sponsorship: [
-        ["Renee Tsang", "Sponsorship Director"],
+        ["Aanya Mehta", "Sponsorship Director"],
         ["Joud Zamzami", "Sponsorship Member"],
-        ["Mikael Sareshwala", "Sponsorship Member"],
-        ["Tawsif Ibne Azad", "Sponsorship Member"],
+        ["Paulan Huang", "Sponsorship Member"],
+        ["Sneha Agarwal", "Sponsorship Member"],
+        ["Urvi Gupta", "Sponsorship Member"],
       ],
       Logistics: [
-        ["Addie Padhi", "Logistics Director"],
-        ["Aanya Mehta", "Logistics Member"],
-        ["Aarav Nair", "Logistics Member"],
-        ["Aarav Sehgal", "Logistics Member"],
-        ["Brian Zhang", "Logistics Member"],
-        ["Dhriti Madireddy", "Logistics Member"],
+        ["Aarav Sehgal", "Logistics Director"],
+        ["Dhriti Madireddy", "Logistics Director"],
+        ["Anagha Panamakuri", "Logistics Member"],
+        ["Gaurang Patil", "Logistics Member"],
+        ["Shriya Gautam", "Logistics Member"],
       ],
     };
 
@@ -113,7 +107,7 @@ export default function OurTeam() {
       const memberContent = document.createElement("div");
       memberContent.innerHTML = `
         <div class="flex flex-col items-center">
-          <img class="rounded-full shadow-2xl border content-center"
+          <img class="rounded-full shadow-2xl border content-center fix-size"
               src="${imageSrc}"
               alt="${memberObj.name}"
               onerror="this.onerror=null;this.src='/Team/Default.jpg';" />
