@@ -30,6 +30,7 @@ export default function OurTeam() {
         ["Kashvi Kapoor", "PR/Design Member"],
         ["Anay Liu", "PR/Design Member"],
         ["Lana Vu", "PR/Design Member"],
+        ["Naina Singh", "PR/Design Member"],
       ],
       Sponsorship: [
         ["Aanya Mehta", "Sponsorship Director"],
@@ -37,6 +38,7 @@ export default function OurTeam() {
         ["Paulan Huang", "Sponsorship Member"],
         ["Sneha Agarwal", "Sponsorship Member"],
         ["Urvi Gupta", "Sponsorship Member"],
+        ["Mikael Sareshwala", "Sponsorship Member"],
       ],
       Logistics: [
         ["Aarav Sehgal", "Logistics Director"],
