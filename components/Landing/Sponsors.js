@@ -193,7 +193,6 @@ export default function Sponsors() {
       </div>
       <div className="WhySponsor">
         <div className="WhySponsorLeft">
-          <h1 className="h1">Why should you sponsor us?</h1>
           <p className="p">
           HackUMass is one of the largest tech events at UMass Amherst, providing sponsors with exclusive access to hundreds of participant resumes and direct opportunities to engage with students during the event, along with other valuable benefits. Our team collaborates with sponsors to customize packets tailored to the company’s needs, ensuring maximum exposure that benefits both students and the company.
           </p>
@@ -204,15 +203,6 @@ export default function Sponsors() {
           >
             <p style={{ margin: "auto" }}>Sponsor HackUMass</p>
           </button>
-        </div>
-        <div className="WhySponsorRight">
-          <Image
-            src="/Sponsors/SponsorUsRight.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-          />
         </div>
       </div>
       {/* <div className="LandingAboutHeader2">

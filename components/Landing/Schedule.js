@@ -40,7 +40,7 @@ export default function Schedule() {
   return (
     <div className="Schedule" id="schedule">
       <div className="LandingAboutHeader">
-        <h1 className="heading">Schedule</h1>
+        <h1 className="heading">Schedule (2024-2025)</h1>
       </div>
       <div className="calendar-container">
         {apiKey && (
