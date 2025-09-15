@@ -115,14 +115,14 @@ function NavigationBarLand(user) {
                 rel="noopener noreferrer"
                 target="_blank"
                 smooth="true"
-                href="https://hackumass-xi.devpost.com/project-gallery"
+                href="https://hackumass-xii.devpost.com/project-gallery"
                 className="nav-links-landing landing"
                 style={{ borderTop: "none" }}
                 onClick={() => {
                   closeMobileMenu();
                 }}
               >
-                XI (2023)
+                XII (2024)
               </Link>
             </li>
             <li className="nav-item">
