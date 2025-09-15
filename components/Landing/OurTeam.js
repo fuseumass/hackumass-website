@@ -23,6 +23,7 @@ export default function OurTeam() {
         ["Keerthi Chebrolu", "Technology Member"],
         ["Tamanna Chandak", "Technology Member"],
         ["Noah Shayne", "Technology Member"],
+         ["Shreyas Donti", "Technology Member"],
       ],
       "PR-Design": [
          ["Vianca Varma", "PR/Design Director"],
@@ -41,8 +42,8 @@ export default function OurTeam() {
         ["Mikael Sareshwala", "Sponsorship Member"],
       ],
       Logistics: [
-        ["Aarav Sehgal", "Logistics Director"],
         ["Dhriti Madireddy", "Logistics Director"],
+        ["Aarav Sehgal", "Logistics Director"],
         ["Anagha Panamakuri", "Logistics Member"],
         ["Gaurang Patil", "Logistics Member"],
         ["Shriya Gautam", "Logistics Member"],
@@ -109,7 +110,7 @@ export default function OurTeam() {
       const memberContent = document.createElement("div");
       memberContent.innerHTML = `
         <div class="flex flex-col items-center">
-          <img class="rounded-full shadow-2xl border content-center fix-size"
+          <img class="rounded-full shadow-2xl border content-center"
               src="${imageSrc}"
               alt="${memberObj.name}"
               onerror="this.onerror=null;this.src='/Team/Default.jpg';" />
