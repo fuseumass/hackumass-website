@@ -22,6 +22,7 @@ export default function OurTeam() {
         ["Sathvik Yadanaparthi", "Technology Director"],
         ["Keerthi Chebrolu", "Technology Member"],
         ["Tamanna Chandak", "Technology Member"],
+        ["Aayush Garg", "Technology Member"],
         ["Noah Shayne", "Technology Member"],
          ["Shreyas Donti", "Technology Member"],
       ],
