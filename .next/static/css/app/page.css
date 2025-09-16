@@ -680,7 +680,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 
 .LandingHeroMainAppbutt {
   margin-top: 15px;
-  margin-left: 2vw;
+  margin-left: 18px;
   font-size: 1.4vw;
   font-weight: 600;
   background-color: var(--secondary-color);
