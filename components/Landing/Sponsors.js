@@ -192,6 +192,8 @@ export default function Sponsors() {
 
       </div>
       <div className="WhySponsor">
+        <h1 className="heading">Why Sponsor Us</h1>
+      </div>
         <div className="WhySponsorLeft">
           <p className="p">
           HackUMass is one of the largest tech events at UMass Amherst, providing sponsors with exclusive access to hundreds of participant resumes and direct opportunities to engage with students during the event, along with other valuable benefits. Our team collaborates with sponsors to customize packets tailored to the company’s needs, ensuring maximum exposure that benefits both students and the company.
@@ -204,7 +206,6 @@ export default function Sponsors() {
             <p style={{ margin: "auto" }}>Sponsor HackUMass</p>
           </button>
         </div>
-      </div>
       {/* <div className="LandingAboutHeader2">
         <h1 className="heading">Our Partners</h1>
       </div>
