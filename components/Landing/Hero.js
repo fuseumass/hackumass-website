@@ -8,11 +8,6 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <div>
-      <div className="bg-black py-1 flex justify-center">
-        <h1 className="text-xl text-white text-center">
-          Check Back Soon for Updated Information on HackUMass XIII taking place Nov 7-9, 2025!
-        </h1>
-      </div>
       <div className="LandingContainer">
         <div className="LandingHeroMain">
           <motion.div
