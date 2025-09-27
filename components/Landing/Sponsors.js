@@ -111,6 +111,8 @@ export default function Sponsors() {
         </div>
       </div>
       <div className="WhySponsor">
+        <h1 className="heading">Why Sponsor Us</h1>
+      </div>
         <div className="WhySponsorLeft">
           <p className="p">
             Sponsoring HackUMass offers companies a unique opportunity to connect with some of the brightest and most ambitious students in technology and engineering. 
@@ -127,7 +129,6 @@ export default function Sponsors() {
             <p style={{ margin: "auto" }}>Sponsor HackUMass</p>
           </button>
         </div>
-      </div>
       {/* <div className="LandingAboutHeader2">
         <h1 className="heading">Our Partners</h1>
       </div>
