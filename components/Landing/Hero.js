@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <div>
+    <div style={{marginTop: "10px"}}>
       <div className="LandingContainer">
         <div className="LandingHeroMain">
           <motion.div
