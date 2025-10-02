@@ -34,13 +34,16 @@ export default function Sponsors() {
 
           />
           <Image
-            src="/Partners/MakerspaceVertical.png"
+            src="/Sponsors/SponsorCDSAI.png"
             sizes={2000}
             width={0}
             height={0}
             priority={true}
-            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
+            onClick={() => window.open("https://ds.cs.umass.edu/", "_blank")}
+
           />
+
+   
         </div>
         
         <div className="SponsorImagesUpper">
@@ -83,6 +86,14 @@ export default function Sponsors() {
         
         <div className="SponsorImagesUpper">
   
+          <Image
+            src="/Partners/MakerspaceVertical.png"
+            sizes={2000}
+            width={0}
+            height={0}
+            priority={true}
+            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
+          />
           <Image
             src="/Partners/ADI-Logo-AWP-Tagline-RGB-FullColor.jpg"
             sizes={2000}
