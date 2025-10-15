@@ -17,6 +17,23 @@ export default function Sponsors() {
             onClick={() => window.open("https://pit-un.org/", "_blank")}
           />
           <Image
+            src="/Partners/AWS-logo.png"
+            sizes={2000}
+            width={0}
+            height={0}
+            priority={true}
+            onClick={() => window.open("https://pit-un.org/", "_blank")}
+          />
+          <Image
+            src="/Partners/HondaResearch.png"
+            sizes={2000}
+            width={0}
+            height={0}
+            priority={true}
+            onClick={() => window.open("https://pit-un.org/", "_blank")}
+          />
+          
+          <Image
             src="/Sponsors/SponsorCOE.png"
             sizes={2000}
             width={0}
@@ -24,6 +41,13 @@ export default function Sponsors() {
             priority={true}
             onClick={() => window.open("https://engineering.umass.edu/", "_blank")}
           />
+          
+
+   
+        </div>
+        
+        <div className="SponsorImagesUpper">
+
           <Image
             src="/Sponsors/SponsorCICS.png"
             sizes={2000}
@@ -43,10 +67,6 @@ export default function Sponsors() {
 
           />
 
-   
-        </div>
-        
-        <div className="SponsorImagesUpper">
           <Image
             src="/Partners/CICS-makerspace.png"
             sizes={2000}
@@ -64,6 +84,11 @@ export default function Sponsors() {
             onClick={() => window.open("https://insomniacookies.com/", "_blank")}
           />
               
+   
+    
+        </div>
+        
+        <div className="SponsorImagesUpper">
           <Image
             src="/Partners/M5Logo-removebg-preview.png"
             sizes={2000}
@@ -80,12 +105,6 @@ export default function Sponsors() {
             priority={true}
             onClick={() => window.open("https://www.silverscreendesign.com/", "_blank")}
           />
-   
-    
-        </div>
-        
-        <div className="SponsorImagesUpper">
-  
           <Image
             src="/Partners/MakerspaceVertical.png"
             sizes={2000}
@@ -94,6 +113,20 @@ export default function Sponsors() {
             priority={true}
             onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
           />
+          
+          <Image
+            src="/Partners/PITLogo.png"
+            sizes={2000}
+            width={0}
+            height={0}
+            priority={true}
+            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
+          />
+          
+        </div>
+        
+        <div className="SponsorImagesUpper">
+          
           <Image
             src="/Partners/ADI-Logo-AWP-Tagline-RGB-FullColor.jpg"
             sizes={2000}
@@ -112,14 +145,25 @@ export default function Sponsors() {
           />
       
           <Image
-            src="/Partners/StandOut-Stickers-Logo.png"
+            src="/Partners/pureButtons.png"
             sizes={2000}
             width={0}
             height={0}
             priority={true}
             onClick={() => window.open("http://hackp.ac/mlh-StandOutStickers-hackathons", "_blank")}
           />
+          
+          <Image
+            src="/Partners/AmherstCopyLogo.png"
+            sizes={2000}
+            width={0}
+            height={0}
+            priority={true}
+            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
+          />
+
         </div>
+
       </div>
       <div className="WhySponsor">
         <h1 className="heading">Why Sponsor Us</h1>
