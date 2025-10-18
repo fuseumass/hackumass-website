@@ -112,12 +112,12 @@ export default function Sponsors() {
           />
       
           <Image
-            src="/Partners/StandOut-Stickers-Logo.png"
+            src="/Partners/pureButtons.png"
             sizes={2000}
             width={0}
             height={0}
             priority={true}
-            onClick={() => window.open("http://hackp.ac/mlh-StandOutStickers-hackathons", "_blank")}
+            onClick={() => window.open("https://www.purebuttons.com/", "_blank")}
           />
         </div>
       </div>
