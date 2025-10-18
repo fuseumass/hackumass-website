@@ -27,7 +27,7 @@ export default function HeroSection() {
           <motion.button
             className="LandingHeroMainAppbutt"
             onClick={() =>
-              window.open("https://dashboard.hackumass.com/login", "_blank")
+              window.open("https://forms.gle/CLryypCVaaHaPdyv9", "_blank")
             }
             initial={{ x: -300, opacity: 0 }} // Start position from left
             animate={{ x: 0, opacity: 1 }} // End position
