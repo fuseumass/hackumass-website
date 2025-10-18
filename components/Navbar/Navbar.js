@@ -172,12 +172,12 @@ function NavigationBarLand(user) {
         rel="noopener noreferrer"
         style={{
           display: "block",
-          maxWidth: "100px",
-          minWidth: "60px",
+          maxWidth: "80px",
+          minWidth: "50px",
           position: "fixed",
-          right: "50px",
-          top: "0",
-          width: "10%",
+          right: "40px",
+          top: "10px",
+          width: "8%",
           zIndex: "10000",
         }}
       >
