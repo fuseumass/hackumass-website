@@ -176,7 +176,7 @@ function NavigationBarLand(user) {
           minWidth: "50px",
           position: "fixed",
           right: "40px",
-          top: "10px",
+          top: "0px",
           width: "8%",
           zIndex: "10000",
         }}
