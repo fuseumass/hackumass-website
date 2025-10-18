@@ -174,7 +174,7 @@ function NavigationBarLand(user) {
           display: "block",
           maxWidth: "80px",
           minWidth: "50px",
-          position: "fixed",
+          position: "absolute",
           right: "40px",
           top: "0px",
           width: "8%",
