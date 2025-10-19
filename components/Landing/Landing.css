@@ -18,7 +18,10 @@
   justify-items: start;
   margin-top: 148px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  gap: clamp(24px, 6vw, 120px);
 }
 
 /********************************* Landing Hero *********************************/
@@ -112,7 +115,7 @@
 
 .LandingHeroBuilding {
   z-index: 0;
-  bottom: -200px;
+  bottom: -20px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -129,12 +132,12 @@
 }
 
 .LandingHeroText {
-    z-index: 0;
+  z-index: 0;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
- text-align: center;
+  text-align: center;
   height: 100%;
   width: 100%;
   font-weight: bold;
