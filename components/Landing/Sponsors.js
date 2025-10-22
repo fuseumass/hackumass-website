@@ -1,5 +1,88 @@
 import Image from "next/image.js";
 
+const sponsorLogos = [
+  {
+    href: "https://pit-un.org/",
+    src: "/Partners/SponsorPITUN.png",
+    alt: "Sponsor PITUN",
+  },
+  {
+    href: "https://aws.amazon.com/",
+    src: "/Partners/AWS-logo.png",
+    alt: "AWS",
+  },
+  {
+    href: "https://www.honda.com/research",
+    src: "/Partners/HondaResearch.png",
+    alt: "Honda Research",
+  },
+  {
+    href: "https://engineering.umass.edu/",
+    src: "/Sponsors/SponsorCOE.png",
+    alt: "College of Engineering",
+  },
+  {
+    href: "https://www.umass.edu/cics/",
+    src: "/Sponsors/SponsorCICS.png",
+    alt: "CICS",
+  },
+  {
+    href: "https://ds.cs.umass.edu/",
+    src: "/Sponsors/SponsorCDSAI.png",
+    alt: "CDSAI",
+  },
+  {
+    href: "https://groups.cs.umass.edu/makerspace/",
+    src: "/Partners/CICS-makerspace.png",
+    alt: "CICS Makerspace",
+  },
+  {
+    href: "https://insomniacookies.com/",
+    src: "/Partners/insomnia-cookies.png",
+    alt: "Insomnia Cookies",
+  },
+  {
+    href: "https://www.umassamherstm5.org/",
+    src: "/Partners/M5Logo-removebg-preview.png",
+    alt: "M5",
+  },
+  {
+    href: "https://www.silverscreendesign.com/",
+    src: "/Partners/silverscreen.png",
+    alt: "Silver Screen Design",
+  },
+  {
+    href: "https://sites.google.com/umass.edu/umassmakerspace/",
+    src: "/Partners/MakerspaceVertical.png",
+    alt: "UMass Makerspace",
+  },
+  {
+    href: "https://pit-un.org/",
+    src: "/Partners/PITLogo.png",
+    alt: "PIT Logo",
+  },
+  {
+    href: "https://www.analog.com/",
+    src: "/Partners/ADI-Logo-AWP-Tagline-RGB-FullColor.jpg",
+    alt: "Analog Devices",
+  },
+  {
+    href: "https://mlh.io/",
+    src: "/Partners/mlh-logo-color.png",
+    alt: "MLH",
+  },
+  {
+    href: "http://hackp.ac/mlh-StandOutStickers-hackathons",
+    src: "/Partners/pureButtons.png",
+    alt: "Pure Buttons",
+  },
+  {
+    href: "https://sites.google.com/umass.edu/umassmakerspace/",
+    src: "/Partners/AmherstCopyLogo.png",
+    alt: "Amherst Copy",
+  },
+];
+
 export default function Sponsors() {
   return (
     <div className="Sponsors" id="sponsors">
@@ -7,163 +90,25 @@ export default function Sponsors() {
         <h1 className="heading">Our Sponsors</h1>
       </div>
       <div className="SponsorImages">
-        <div className="SponsorImagesUpper">
-          <Image
-            src="/Partners/SponsorPITUN.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://pit-un.org/", "_blank")}
-          />
-          <Image
-            src="/Partners/AWS-logo.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://pit-un.org/", "_blank")}
-          />
-          <Image
-            src="/Partners/HondaResearch.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://pit-un.org/", "_blank")}
-          />
-          
-          <Image
-            src="/Sponsors/SponsorCOE.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://engineering.umass.edu/", "_blank")}
-          />
-          
-
-   
+        <div className="SponsorGrid">
+          {sponsorLogos.map(({ href, src, alt }, index) => (
+            <a
+              key={alt}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="SponsorImageLink"
+            >
+              <Image
+                src={src}
+                alt={alt}
+                width={375}
+                height={375}
+                className="SponsorImage"
+              />
+            </a>
+          ))}
         </div>
-        
-        <div className="SponsorImagesUpper">
-
-          <Image
-            src="/Sponsors/SponsorCICS.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://www.umass.edu/cics/", "_blank")}
-
-          />
-          <Image
-            src="/Sponsors/SponsorCDSAI.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://ds.cs.umass.edu/", "_blank")}
-
-          />
-
-          <Image
-            src="/Partners/CICS-makerspace.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://groups.cs.umass.edu/makerspace/", "_blank")}
-          />
-          <Image
-            src="/Partners/insomnia-cookies.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://insomniacookies.com/", "_blank")}
-          />
-              
-   
-    
-        </div>
-        
-        <div className="SponsorImagesUpper">
-          <Image
-            src="/Partners/M5Logo-removebg-preview.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://www.umassamherstm5.org/", "_blank")}
-          />
-          <Image
-            src="/Partners/silverscreen.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://www.silverscreendesign.com/", "_blank")}
-          />
-          <Image
-            src="/Partners/MakerspaceVertical.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
-          />
-          
-          <Image
-            src="/Partners/PITLogo.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
-          />
-          
-        </div>
-        
-        <div className="SponsorImagesUpper">
-          
-          <Image
-            src="/Partners/ADI-Logo-AWP-Tagline-RGB-FullColor.jpg"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://www.analog.com/", "_blank")}
-          />
-          <Image
-            src="/Partners/mlh-logo-color.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://mlh.io/", "_blank")}
-          />
-      
-          <Image
-            src="/Partners/pureButtons.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("http://hackp.ac/mlh-StandOutStickers-hackathons", "_blank")}
-          />
-          
-          <Image
-            src="/Partners/AmherstCopyLogo.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
-          />
-
-        </div>
-
       </div>
       <div className="WhySponsor">
         <h1 className="heading">Why Sponsor Us</h1>

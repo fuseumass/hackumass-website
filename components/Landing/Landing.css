@@ -241,28 +241,52 @@
 
 /******************************* Sponsor Images ***********************************/
 
-.SponsorImages,
+
+.SponsorImages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.SponsorGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 36px;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.SponsorImageLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.SponsorImageLink:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.SponsorImage {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .PartnerImages {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-
-.SponsorImagesUpper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.SponsorImagesUpper img {
-  width: 20vw;
-  height: auto;
-  margin: 20px;
-  cursor: pointer;
 }
 
 .PartnerImagesUpper {
@@ -684,6 +708,16 @@ html {
   color: #193348; 
 }
 
+@media screen and (max-width: 1024px) {
+  .SponsorGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .SponsorImageLink {
+    height: 160px;
+  }
+}
+
 @media screen and (max-width: 910px) {
   .LandingHeroMainAppbutt {
     width: 30vw;
@@ -740,13 +774,14 @@ html {
   }
 
   /* Sponsor Images */
-  .SponsorImagesUpper {
-    flex-direction: column;
-    margin-bottom: 0;
+  .SponsorGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
   }
 
-  .SponsorImagesUpper img {
-    width: 60vw;
+  .SponsorImageLink {
+    height: 140px;
+    padding: 16px;
   }
 
   .PartnerImages {
@@ -794,6 +829,17 @@ html {
     width: 80vw;
   }
 
+
+@media screen and (max-width: 540px) {
+  .SponsorGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .SponsorImageLink {
+    height: 120px;
+    padding: 14px;
+  }
+}
   .FAQContentItemHeading {
     font-size: 16px;
     color: var(--secondary-color) !important;
