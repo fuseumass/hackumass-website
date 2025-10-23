@@ -12,7 +12,7 @@ const sponsorLogos = [
     alt: "AWS",
   },
   {
-    href: "https://www.honda.com/research",
+    href: "https://www.99plabs.com/about-us",
     src: "/Partners/HondaResearch.png",
     alt: "Honda Research",
   },
@@ -57,7 +57,7 @@ const sponsorLogos = [
     alt: "UMass Makerspace",
   },
   {
-    href: "https://pit-un.org/",
+    href: "https://groups.cs.umass.edu/pit/",
     src: "/Partners/PITLogo.png",
     alt: "PIT Logo",
   },
@@ -72,12 +72,12 @@ const sponsorLogos = [
     alt: "MLH",
   },
   {
-    href: "http://hackp.ac/mlh-StandOutStickers-hackathons",
+    href: "https://www.purebuttons.com/",
     src: "/Partners/pureButtons.png",
     alt: "Pure Buttons",
   },
   {
-    href: "https://sites.google.com/umass.edu/umassmakerspace/",
+    href: "",
     src: "/Partners/AmherstCopyLogo.png",
     alt: "Amherst Copy",
   },
