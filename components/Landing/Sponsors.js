@@ -77,7 +77,7 @@ const sponsorLogos = [
     alt: "Pure Buttons",
   },
   {
-    href: "",
+    href: "https://amherstcopy.com/",
     src: "/Partners/AmherstCopyLogo.png",
     alt: "Amherst Copy",
   },
@@ -102,8 +102,8 @@ export default function Sponsors() {
               <Image
                 src={src}
                 alt={alt}
-                width={375}
-                height={375}
+                width={375} // Adjust width as needed--bounded by SponsorGrid total width attribute
+                height={375} //This height has no effect; just here to avert warnings. Height which has effect is the SponsorImageLink CSS class height.
                 className="SponsorImage"
               />
             </a>
