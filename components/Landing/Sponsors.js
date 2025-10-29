@@ -81,6 +81,11 @@ const sponsorLogos = [
     src: "/Partners/AmherstCopyLogo.png",
     alt: "Amherst Copy",
   },
+  {
+    href: "https://claude.com/product/overview",
+    src: "/Partners/Claude_AI_logo.png",
+    alt: "Claude AI",
+  }
 ];
 
 export default function Sponsors() {
@@ -102,8 +107,8 @@ export default function Sponsors() {
               <Image
                 src={src}
                 alt={alt}
-                width={375} // Adjust width as needed--bounded by SponsorGrid total width attribute
-                height={375} //This height has no effect; just here to avert warnings. Height which has effect is the SponsorImageLink CSS class height.
+                width={300} // Adjust width as needed--bounded by SponsorGrid total width attribute
+                height={300} //This height has no real effect; just here to avert warnings and for next.js optimization. Height which has effect is the SponsorImageLink CSS class height.
                 className="SponsorImage"
               />
             </a>

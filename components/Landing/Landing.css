@@ -250,8 +250,9 @@
 }
 
 .SponsorGrid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 36px;
   width: 100%;
   max-width: 1500px;
@@ -263,9 +264,13 @@
   justify-content: center;
   padding: 24px;
   height: 180px;
+  width: calc((100% - 108px) / 4); /* 4 items per row with 36px gaps */
+  min-width: 250px;
+  max-width: 320px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
 }
 
 .SponsorImageLink:hover {
@@ -279,6 +284,7 @@
   width: auto;
   height: auto;
   object-fit: contain;
+  
 }
 
 .PartnerImages {
