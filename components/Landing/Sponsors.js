@@ -1,5 +1,93 @@
 import Image from "next/image.js";
 
+const sponsorLogos = [
+  {
+    href: "https://pit-un.org/",
+    src: "/Partners/SponsorPITUN.png",
+    alt: "Sponsor PITUN",
+  },
+  {
+    href: "https://aws.amazon.com/",
+    src: "/Partners/AWS-logo.png",
+    alt: "AWS",
+  },
+  {
+    href: "https://www.99plabs.com/about-us",
+    src: "/Partners/HondaResearch.png",
+    alt: "Honda Research",
+  },
+  {
+    href: "https://engineering.umass.edu/",
+    src: "/Sponsors/SponsorCOE.png",
+    alt: "College of Engineering",
+  },
+  {
+    href: "https://www.umass.edu/cics/",
+    src: "/Sponsors/SponsorCICS.png",
+    alt: "CICS",
+  },
+  {
+    href: "https://ds.cs.umass.edu/",
+    src: "/Sponsors/SponsorCDSAI.png",
+    alt: "CDSAI",
+  },
+  {
+    href: "https://groups.cs.umass.edu/makerspace/",
+    src: "/Partners/CICS-makerspace.png",
+    alt: "CICS Makerspace",
+  },
+  {
+    href: "https://insomniacookies.com/",
+    src: "/Partners/insomnia-cookies.png",
+    alt: "Insomnia Cookies",
+  },
+  {
+    href: "https://www.umassamherstm5.org/",
+    src: "/Partners/M5Logo-removebg-preview.png",
+    alt: "M5",
+  },
+  {
+    href: "https://www.silverscreendesign.com/",
+    src: "/Partners/silverscreen.png",
+    alt: "Silver Screen Design",
+  },
+  {
+    href: "https://sites.google.com/umass.edu/umassmakerspace/",
+    src: "/Partners/MakerspaceVertical.png",
+    alt: "UMass Makerspace",
+  },
+  {
+    href: "https://groups.cs.umass.edu/pit/",
+    src: "/Partners/PITLogo.png",
+    alt: "PIT Logo",
+  },
+  {
+    href: "https://www.analog.com/",
+    src: "/Partners/ADI-Logo-AWP-Tagline-RGB-FullColor.jpg",
+    alt: "Analog Devices",
+  },
+  {
+    href: "https://mlh.io/",
+    src: "/Partners/mlh-logo-color.png",
+    alt: "MLH",
+  },
+  {
+    href: "https://www.purebuttons.com/",
+    src: "/Partners/pureButtons.png",
+    alt: "Pure Buttons",
+  },
+  {
+    href: "https://amherstcopy.com/",
+    src: "/Partners/AmherstCopyLogo.png",
+    alt: "Amherst Copy",
+  },
+  {
+    href: "https://claude.com/product/overview",
+    src: "/Partners/Claude_AI_logo.png",
+    alt: "Claude AI",
+  }
+];
+
 export default function Sponsors() {
   return (
     <div className="Sponsors" id="sponsors">
@@ -7,118 +95,24 @@ export default function Sponsors() {
         <h1 className="heading">Our Sponsors</h1>
       </div>
       <div className="SponsorImages">
-        <div className="SponsorImagesUpper">
-          <Image
-            src="/Partners/SponsorPITUN.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://pit-un.org/", "_blank")}
-          />
-          <Image
-            src="/Sponsors/SponsorCOE.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://engineering.umass.edu/", "_blank")}
-          />
-          <Image
-            src="/Sponsors/SponsorCICS.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://www.umass.edu/cics/", "_blank")}
-
-          />
-          <Image
-            src="/Sponsors/SponsorCDSAI.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://ds.cs.umass.edu/", "_blank")}
-
-          />
-
-   
-        </div>
-        
-        <div className="SponsorImagesUpper">
-          <Image
-            src="/Partners/CICS-makerspace.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://groups.cs.umass.edu/makerspace/", "_blank")}
-          />
-          <Image
-            src="/Partners/insomnia-cookies.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://insomniacookies.com/", "_blank")}
-          />
-              
-          <Image
-            src="/Partners/M5Logo-removebg-preview.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://www.umassamherstm5.org/", "_blank")}
-          />
-          <Image
-            src="/Partners/silverscreen.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://www.silverscreendesign.com/", "_blank")}
-          />
-   
-    
-        </div>
-        
-        <div className="SponsorImagesUpper">
-  
-          <Image
-            src="/Partners/MakerspaceVertical.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://sites.google.com/umass.edu/umassmakerspace/", "_blank")}
-          />
-          <Image
-            src="/Partners/ADI-Logo-AWP-Tagline-RGB-FullColor.jpg"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://www.analog.com/", "_blank")}
-          />
-          <Image
-            src="/Partners/mlh-logo-color.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://mlh.io/", "_blank")}
-          />
-      
-          <Image
-            src="/Partners/pureButtons.png"
-            sizes={2000}
-            width={0}
-            height={0}
-            priority={true}
-            onClick={() => window.open("https://www.purebuttons.com/", "_blank")}
-          />
+        <div className="SponsorGrid">
+          {sponsorLogos.map(({ href, src, alt }, index) => (
+            <a
+              key={alt}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="SponsorImageLink"
+            >
+              <Image
+                src={src}
+                alt={alt}
+                width={300} // Adjust width as needed--bounded by SponsorGrid total width attribute
+                height={300} //This height has no real effect; just here to avert warnings and for next.js optimization. Height which has effect is the SponsorImageLink CSS class height.
+                className="SponsorImage"
+              />
+            </a>
+          ))}
         </div>
       </div>
       <div className="WhySponsor">
