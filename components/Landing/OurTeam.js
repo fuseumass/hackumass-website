@@ -17,6 +17,7 @@ export default function OurTeam() {
         ["Anaika Pathak", "Hardware Member"],
         ["Lucas Crawshaw", "Hardware Member"],
         ["Sreeniyathi Kasireddy", "Hardware Member"],
+        ["Alexandra Kotsinyan", "Hardware Member"]
       ],
       Tech: [
         ["Sathvik Yadanaparthi", "Technology Director"],
