@@ -706,6 +706,12 @@ html {
 
 }
 
+/* Normalize all day cells */
+.fc-daygrid-day {
+  background-color: transparent !important;
+}
+
+
 .fc-daygrid-event:hover {
   background-color: #1c4160;
 }
