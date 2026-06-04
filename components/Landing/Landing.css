@@ -42,7 +42,6 @@
 
 .LandingHeroMainAppbutt {
   margin-top: 15px;
-  margin-left: 18px;
   font-size: 1.4vw;
   font-weight: 600;
   background-color: var(--secondary-color);
@@ -756,6 +755,7 @@ html {
     font-size: 5.5vw;
     width: 90vw;
     height: 5vh;
+    margin-left:0;
   }
 
   .LandingHeroMainAppRightButton {
