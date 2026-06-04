@@ -182,7 +182,7 @@ function NavigationBarLand(user) {
         }}
       >
         <img
-          src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
+          src="/MLHTrustBadge.svg"
           alt="Major League Hacking 2026 Hackathon Season"
           style={{ width: "100%" }}
         />
