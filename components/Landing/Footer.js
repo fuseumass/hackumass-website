@@ -127,7 +127,7 @@ export default function Footer() {
           <p>
             <Link smooth="true" href="/">
               {" "}
-              HackUMass XIII
+              HackUMass XIV
             </Link>
           </p>
           <p>

@@ -95,7 +95,7 @@ export default function Schedule() {
   return (
     <div className="Schedule" id="schedule">
       <div className="LandingAboutHeader">
-        <h1 className="heading">Schedule</h1>
+        <h1 className="heading">Schedule (XIII)</h1>
       </div>
 
       <div className="calendar-container">
