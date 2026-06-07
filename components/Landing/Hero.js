@@ -27,13 +27,13 @@ export default function HeroSection() {
           <motion.button
             className="LandingHeroMainAppbutt"
             onClick={() =>
-              window.open("https://forms.gle/CLryypCVaaHaPdyv9", "_blank")
+              window.open("https://forms.gle/p32x8oFDE8oxgXx26", "_blank")
             }
             initial={{ x: -300, opacity: 0 }} // Start position from left
             animate={{ x: 0, opacity: 1 }} // End position
             transition={{ duration: 1 }} // Animation duration
           >
-            <p style={{ margin: "auto" }}>Apply Now!</p>
+            <p style={{ margin: "auto" }}>Pre-Register Now!</p>
             <Fragment>
               <FontAwesomeIcon
                 className="LandingHeroMainAppRightButton"
