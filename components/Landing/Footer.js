@@ -9,6 +9,7 @@ import {
   faSquareFacebook,
   faSquareXTwitter,
   faSquareInstagram,
+  faDiscord,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Fragment, useState } from "react";
@@ -120,6 +121,15 @@ export default function Footer() {
           className="social-links"
         >
           <FontAwesomeIcon icon={faSquareInstagram} />
+        </Link>
+        <Link
+          smooth="true"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://discord.gg/YZshAc5GH9"
+          className="social-links"
+        >
+          <FontAwesomeIcon icon={faDiscord} />
         </Link>
       </div>
       <div className="FooterContent">

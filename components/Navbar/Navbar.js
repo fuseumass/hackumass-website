@@ -10,6 +10,7 @@ import {
   faSquareXTwitter,
   faSquareInstagram,
   faLinkedin,
+  faDiscord
 } from "@fortawesome/free-brands-svg-icons";
 
 function NavigationBarLand(user) {
@@ -147,6 +148,18 @@ function NavigationBarLand(user) {
                 onClick={closeMobileMenu}
               >
                 <FontAwesomeIcon icon={faSquareInstagram} />
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                smooth="true"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://discord.gg/YZshAc5GH9"
+                className="nav-links-landing landing"
+                onClick={closeMobileMenu}
+              >
+                <FontAwesomeIcon icon={faDiscord} />
               </Link>
             </li>
             {/*
