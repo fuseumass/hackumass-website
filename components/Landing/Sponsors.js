@@ -2,11 +2,6 @@ import Image from "next/image.js";
 
 const sponsorLogos = [
   {
-    href: "https://pit-un.org/",
-    src: "/Partners/SponsorPITUN.png",
-    alt: "Sponsor PITUN",
-  },
-  {
     href: "https://aws.amazon.com/",
     src: "/Partners/AWS-logo.png",
     alt: "AWS",
@@ -55,11 +50,6 @@ const sponsorLogos = [
     href: "https://sites.google.com/umass.edu/umassmakerspace/",
     src: "/Partners/MakerspaceVertical.png",
     alt: "UMass Makerspace",
-  },
-  {
-    href: "https://groups.cs.umass.edu/pit/",
-    src: "/Partners/PITLogo.png",
-    alt: "PIT Logo",
   },
   {
     href: "https://www.analog.com/",
@@ -120,10 +110,10 @@ export default function Sponsors() {
       </div>
         <div className="WhySponsorLeft">
           <p className="p">
-            Sponsoring HackUMass offers companies a unique opportunity to connect with some of the brightest and most ambitious students in technology and engineering. 
-          As one of the largest hackathons in the Pioneer Valley, HackUMass brings together over 600 participants from top universities across the nation, all eager to innovate, 
-          learn, and showcase their skills. Sponsors gain exclusive access to a highly talented pool of future engineers and leaders through resume directories, direct networking, mentorship, and workshops. 
-          Beyond recruiting, HackUMass provides companies with a platform to highlight their technologies, inspire participants to build projects aligned with their vision, and establish their brand as a champion of innovation and education. 
+            Sponsoring HackUMass offers companies a unique opportunity to connect with some of the brightest and most ambitious students in technology and engineering.
+          As one of the largest hackathons in the Pioneer Valley, HackUMass brings together over 600 participants from top universities across the nation, all eager to innovate,
+          learn, and showcase their skills. Sponsors gain exclusive access to a highly talented pool of future engineers and leaders through resume directories, direct networking, mentorship, and workshops.
+          Beyond recruiting, HackUMass provides companies with a platform to highlight their technologies, inspire participants to build projects aligned with their vision, and establish their brand as a champion of innovation and education.
           By partnering with HackUMass, sponsors not only fuel the growth of the next generation of creators but also benefit from meaningful engagement and visibility in a dynamic, collaborative environment.
           </p>
 

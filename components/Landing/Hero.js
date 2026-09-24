@@ -42,6 +42,24 @@ export default function HeroSection() {
               />
             </Fragment>
           </motion.button>
+          <motion.button
+            className="LandingHeroMainAppbutt"
+            onClick={() =>
+              window.open("https://forms.gle/LAonAWS8PT8rsCGg8", "_blank")
+            }
+            initial={{ x: -300, opacity: 0 }} // Start position from left
+            animate={{ x: 0, opacity: 1 }} // End position
+            transition={{ duration: 1 }} // Animation duration
+          >
+            <p style={{ margin: "auto" }}>Apply to be a Judge!</p>
+            <Fragment>
+              <FontAwesomeIcon
+                className="LandingHeroMainAppRightButton"
+                icon={faCircleArrowRight}
+                style={{ fontSize: "2.3vw", padding: 0 }}
+              />
+            </Fragment>
+          </motion.button>
         </div>
 
         <motion.div
