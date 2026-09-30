@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackUMass XIV - An outpost for your craziest ideas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=hero-entrance">
+    <script src="team.js?v=team-headings-removed" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="schedule.js?v=three-categories" defer></script>
+</head>
+<body>
+    <header class="hum-header">
+        <nav class="hum-navbar" aria-label="Main navigation">
+            <a class="hum-brand" href="#" aria-label="HackUMass home">
+                <img class="hum-event-logo" src="assets/hum_logos/xiv_logos/(T)WhiteLogoWithGears.svg" alt="HackUMass">
+            </a>
+            <button class="hum-menu-toggle" type="button" aria-expanded="false" aria-controls="hum-nav-menu" aria-label="Open navigation menu" hidden><span aria-hidden="true">☰</span></button>
+            <ul class="hum-nav-menu" id="hum-nav-menu">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#hum-team">Team</a></li>
+                <li><a href="https://hackumass-xiii.devpost.com/project-gallery" target="_blank" rel="noopener noreferrer">XIII (2025)</a></li>
+                <li><a href="https://www.linkedin.com/company/hackumass/" aria-label="HackUMass on LinkedIn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false" fill="currentColor"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></li>
+                <li><a href="https://www.instagram.com/hackumass/" aria-label="HackUMass on Instagram" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false" fill="currentColor"><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"></path></svg></a></li>
+            </ul>
+        </nav>
+        <a class="hum-mlh-badge" href="https://mlh.io/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/hum_logos/MLHTrustBadge.svg" alt="Major League Hacking 2027 Hackathon Season">
+        </a>
+    </header>
+    <!-- Hero -->
+    <section id="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+            <p class="hero-tagline">An outpost for,<br>Your craziest ideas.</p>
+            <h1 id="hero-heading">HackUMass XIV</h1>
+            <p class="hero-details">Nov 13–15 <span aria-hidden="true">|</span> 36 Hours <span aria-hidden="true">|</span> Amherst, MA</p>
+            <div class="hero-actions">
+                <a href="https://forms.gle/p32x8oFDE8oxgXx26" target="_blank" rel="noopener noreferrer">Pre-Register Now! <span aria-hidden="true">➜</span></a>
+                <a href="https://forms.gle/LAonAWS8PT8rsCGg8" target="_blank" rel="noopener noreferrer">Apply to be a Judge! <span aria-hidden="true">➜</span></a>
+            </div>
+        </div>
+        <img class="hero-building" src="assets/hero/Building.svg" alt="" aria-hidden="true">
+    </section>
+    <!-- About -->
+    <section id="about">
+        <h1>Why HackUMass?</h1>
+        <p>
+            HackUMass is the perfect place for students of all backgrounds and experience levels to dive into the world of technology.
+            As a beginner-friendly hackathon, we provide hands-on workshops and dedicated mentorship to teach you the skills you need
+            to apply technology in your field. Over the course of 36 hours, you’ll have the chance to collaborate with like-minded students
+            from across the country, build an exciting project with our support, and compete for amazing prizes. Beyond the competition,
+            HackUMass is also an incredible opportunity to network with industry professionals, gain real-world experience, and join a vibrant
+            community of innovators who share your passion for learning and creating.
+        </p>
+        <div class="photo-collage" role="region" aria-label="HackUMass photo highlights">
+            <div class="photo-wall">
+                <figure class="photo-print" tabindex="0">
+                    <img src="assets/photos/hackers.webp" alt="HackUMass participants sharing their projects beside their laptops" width="1200" height="800">
+                    <figcaption><h2>Creative Hackers</h2><p>Participants from diverse backgrounds gather at one of the largest hackathons in New England, creating new connections while exchanging ideas and skills</p></figcaption>
+                </figure>
+                <figure class="photo-print" tabindex="0">
+                    <img src="assets/photos/dining.webp" alt="Food and dining at HackUMass" loading="lazy" width="1200" height="800">
+                    <figcaption><h2>#1 Dining</h2><p>Enjoy the #1 Best Campus Food in the country by the Princeton Review for five years in a row. With four main dining halls and tons of on-campus eateries and cafes</p></figcaption>
+                </figure>
+                <figure class="photo-print" tabindex="0">
+                    <img src="assets/photos/hardware.webp" alt="Hardware available for building HackUMass projects" loading="lazy" width="1200" height="800">
+                    <figcaption><h2>Extensive Hardware</h2><p>From Arduinos and Raspberry Pis to quadcopters and Oculus Rifts, HackUMass provides an extensive selection of hardware and toolkits to help you bring your wildest ideas to life</p></figcaption>
+                </figure>
+                <figure class="photo-print" tabindex="0">
+                    <img src="assets/photos/sponsors.webp" alt="Sponsors connecting with the HackUMass community" loading="lazy" width="1200" height="800">
+                    <figcaption><h2>Generous Sponsors</h2><p>Connect with sponsors from a diverse range of companies to learn about internship opportunities, enjoy free swag, and participate in their engaging talks and workshops</p></figcaption>
+                </figure>
+                <figure class="photo-print" tabindex="0">
+                    <img src="assets/photos/venue.webp" alt="The HackUMass event venue at UMass Amherst" loading="lazy" width="1200" height="800">
+                    <figcaption><h2>Incredible Venue</h2><p>Work on your projects in the $93 million, 173,000-square-foot Integrative Learning Center (ILC), which provides state-of-the-art education and technology facilities, along with spaces to rest, socialize, and more.</p></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- Last year's schedule -->
+    <section id="schedule" aria-labelledby="schedule-heading">
+        <h1 id="schedule-heading">Schedule — HackUMass XIII (2025)</h1>
+        <p class="schedule-note">Our schedule for this year's HackUMass is not yet published. Explore last year's schedule from November 7–9, 2025 below. All times are Eastern Standard Time (EST).</p>
+        <div class="schedule-toolbar">
+            <div class="schedule-legend" aria-label="Event categories">
+                <span data-category="hackathon">Hackathon</span>
+                <span data-category="food">Food</span>
+                <span data-category="workshop">Workshops &amp; Talks</span>
+            </div>
+        </div>
+        <div class="schedule-grid" data-view="list">
+            <div class="schedule-day">
+                <h2><time datetime="2025-11-07">Friday, November 7</time></h2>
+                <ul class="schedule-events" tabindex="0">
+                    <li>
+                        <time datetime="2025-11-07T18:30:00-05:00">6:30 PM</time>
+                        <span class="schedule-event-title">Participant Check-In</span>
+                        <span class="schedule-location">Campus Center Auditorium</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-07T19:30:00-05:00">7:30 PM</time>
+                        <span class="schedule-event-title">Opening Ceremony</span>
+                        <span class="schedule-location">Campus Center Auditorium</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-07T20:30:00-05:00">8:30 PM</time>
+                        <span class="schedule-event-title">Hacking Begins</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-07T21:30:00-05:00">9:30 PM</time>
+                        <span class="schedule-event-title">Hardware Table Opens</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-07T21:30:00-05:00">9:30 PM</time>
+                        <span class="schedule-event-title">Workshop: Unlock AI</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-07T21:30:00-05:00">9:30 PM</time>
+                        <span class="schedule-event-title">Workshop: Team Building</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-07T22:45:00-05:00">10:45 PM</time>
+                        <span class="schedule-event-title">Workshop: Intro to Git</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-07T22:45:00-05:00">10:45 PM</time>
+                        <span class="schedule-event-title">Workshop: Using AWS at Hackathons</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-07T22:45:00-05:00">10:45 PM</time>
+                        <span class="schedule-event-title">Workshop: AI Safety And Ethics</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="schedule-day">
+                <h2><time datetime="2025-11-08">Saturday, November 8</time></h2>
+                <ul class="schedule-events" tabindex="0">
+                    <li>
+                        <time datetime="2025-11-08T08:00:00-05:00">8:00 AM</time>
+                        <span class="schedule-event-title">Breakfast</span>
+                        <span class="schedule-location">ILC Main Atrium</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T10:00:00-05:00">10:00 AM</time>
+                        <span class="schedule-event-title">Workshop: Agent Building using campusGenAI</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T10:00:00-05:00">10:00 AM</time>
+                        <span class="schedule-event-title">Workshop: Building Your First WebApp on AWS</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T11:15:00-05:00">11:15 AM</time>
+                        <span class="schedule-event-title">Workshop: Intro to CAD - Simple Rocket Booster Section</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T11:15:00-05:00">11:15 AM</time>
+                        <span class="schedule-event-title">Workshop: PIT 101</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T12:15:00-05:00">12:15 PM</time>
+                        <span class="schedule-event-title">Lunch</span>
+                        <span class="schedule-location">ILC Main Atrium</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T13:00:00-05:00">1:00 PM</time>
+                        <span class="schedule-event-title">Workshop: NFC Keychain</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T13:00:00-05:00">1:00 PM</time>
+                        <span class="schedule-event-title">Workshop: AWS Bedrock</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T13:00:00-05:00">1:00 PM</time>
+                        <span class="schedule-event-title">Workshop: Intro to Distributed Systems</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T14:00:00-05:00">2:00 PM</time>
+                        <span class="schedule-event-title">Sponsor Fair</span>
+                        <span class="schedule-location">ILC Main Atrium</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T14:15:00-05:00">2:15 PM</time>
+                        <span class="schedule-event-title">Workshop: Diversity Expo</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T14:15:00-05:00">2:15 PM</time>
+                        <span class="schedule-event-title">Workshop: AWS Bedrock</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T14:15:00-05:00">2:15 PM</time>
+                        <span class="schedule-event-title">Workshop: Intro to 3D Printing</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T15:30:00-05:00">3:30 PM</time>
+                        <span class="schedule-event-title">Workshop: Hacking With Github Copilot</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T15:30:00-05:00">3:30 PM</time>
+                        <span class="schedule-event-title">Workshop: From APIs to Agents: How to Build AI Systems</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T16:00:00-05:00">4:00 PM</time>
+                        <span class="schedule-event-title">AWS Coffee Chats</span>
+                        <span class="schedule-location">ILC Main Atrium</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T16:45:00-05:00">4:45 PM</time>
+                        <span class="schedule-event-title">Workshop: Experiment with Google AI Studio</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T16:45:00-05:00">4:45 PM</time>
+                        <span class="schedule-event-title">Workshop: Design Thinking</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T16:45:00-05:00">4:45 PM</time>
+                        <span class="schedule-event-title">Workshop: Intro to Cybersecurity Careers</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T18:00:00-05:00">6:00 PM</time>
+                        <span class="schedule-event-title">Dinner</span>
+                        <span class="schedule-location">ILC Main Atrium</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T19:00:00-05:00">7:00 PM</time>
+                        <span class="schedule-event-title">Workshop: Intro to Web: SQL Injections</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T19:00:00-05:00">7:00 PM</time>
+                        <span class="schedule-event-title">Workshop: Real-time gestures with Google's MediaPipe</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T20:15:00-05:00">8:15 PM</time>
+                        <span class="schedule-event-title">Workshop: How to Mod Minecraft</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T20:15:00-05:00">8:15 PM</time>
+                        <span class="schedule-event-title">Workshop: GWC Career Development</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T21:30:00-05:00">9:30 PM</time>
+                        <span class="schedule-event-title">Workshop: Intro to Arduino</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-08T23:00:00-05:00">11:00 PM</time>
+                        <span class="schedule-event-title">Insomnia Cookies</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="schedule-day">
+                <h2><time datetime="2025-11-09">Sunday, November 9</time></h2>
+                <ul class="schedule-events" tabindex="0">
+                    <li>
+                        <time datetime="2025-11-09T00:00:00-05:00">12:00 AM</time>
+                        <span class="schedule-event-title">Initial Submission Deadline</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-09T09:00:00-05:00">9:00 AM</time>
+                        <span class="schedule-event-title">Breakfast</span>
+                        <span class="schedule-location">ILC Main Atrium</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-09T10:00:00-05:00">10:00 AM</time>
+                        <span class="schedule-event-title">Project Final Submission Deadline</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-09T12:30:00-05:00">12:30 PM</time>
+                        <span class="schedule-event-title">Judging</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-09T15:00:00-05:00">3:00 PM</time>
+                        <span class="schedule-event-title">Project Deliberation</span>
+                    </li>
+                    <li>
+                        <time datetime="2025-11-09T17:00:00-05:00">5:00 PM</time>
+                        <span class="schedule-event-title">Closing Ceremony</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Sponsors -->
+    <section id="sponsors">
+        <h1>Our Sponsors</h1>
+        <div class="sponsor-grid">
+            <a class="sponsor-link" href="https://www.umass.edu/cics/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/umass_cics.jpg" alt="UMass Amherst Manning College of Information and Computer Sciences" loading="lazy">
+            </a>
+            <a class="sponsor-link" href="https://make.cs.umass.edu/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/makerspace.webp" alt="CICS Physical Computing Makerspace" loading="lazy">
+            </a>
+            <a class="sponsor-link" href="https://www.hpe.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/HPE_logo_full-clr_pos_rgb.png" alt="Hewlett Packard Enterprise" loading="lazy">
+            </a>
+            <a class="sponsor-link" href="https://str.us/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/str.jpeg" alt="STR" loading="lazy">
+            </a>
+            <a class="sponsor-link" href="https://www.amd.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/amd.jpg" alt="AMD" loading="lazy">
+            </a>
+            <a class="sponsor-link" href="https://www.analog.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/ADI.png" alt="Analog Devices" loading="lazy">
+            </a>
+            <a class="sponsor-link" href="https://mlh.io/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/mlh.webp" alt="Major League Hacking" loading="lazy">
+            </a>
+            <a class="sponsor-link sponsor-link-dark" href="https://photon.codes/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/photon.avif" alt="Photon" loading="lazy">
+            </a>
+            <a class="sponsor-link" href="https://www.capitalone.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/capital_one.png" alt="Capital One" loading="lazy">
+            </a>
+        </div>
+        <div class="why-sponsor" aria-labelledby="why-sponsor-heading">
+            <h2 id="why-sponsor-heading">Why Sponsor Us</h2>
+            <p>Sponsoring HackUMass offers companies a unique opportunity to connect with some of the brightest and most ambitious students in technology and engineering. As one of the largest hackathons in the Pioneer Valley, HackUMass brings together over 600 participants from top universities across the nation, all eager to innovate, learn, and showcase their skills. Sponsors gain exclusive access to a highly talented pool of future engineers and leaders through resume directories, direct networking, mentorship, and workshops. Beyond recruiting, HackUMass provides companies with a platform to highlight their technologies, inspire participants to build projects aligned with their vision, and establish their brand as a champion of innovation and education. By partnering with HackUMass, sponsors not only fuel the growth of the next generation of creators but also benefit from meaningful engagement and visibility in a dynamic, collaborative environment.</p>
+            <a class="why-sponsor-button" href="mailto:team@hackumass.com">Sponsor HackUMass</a>
+        </div>
+    </section>
+    <!--  FAQ (IN PROGRESS) -->
+    <section id="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-list">
+            <details name="faq">
+                <summary>What is a hackathon?</summary>
+                <p>A hackathon is a competitive sprint where people come together to collaborate and build innovative software and hardware projects to win prizes. However, students also have the option to participate in other activities instead of submitting a project.</p>
+            </details>
+            <details name="faq">
+                <summary>Where is HackUMass XIV?</summary>
+                <p>HackUMass XIV is an in-person hackathon on the University of Massachusetts Amherst campus, with the main venue located at the Integrative Learning Center (650 N Pleasant St, Amherst, MA 01003).</p>
+            </details>
+            <details name="faq">
+                <summary>Who can attend?</summary>
+                <p>HackUMass XIV is open to ALL college students, including graduate students, regardless of major!</p>
+            </details>
+            <details name="faq">
+                <summary>Will my travel be reimbursed?</summary>
+                <p>If you apply by the early application deadline, you have the opportunity to apply for travel reimbursement. Early applications are now closed, but we invite you to attend HackUMass if you are able to support your own travel to Amherst, MA.</p>
+            </details>
+            <details name="faq">
+                <summary>Do I have to work on a project?</summary>
+                <p>No, participants are welcome to attend workshops, the club/sponsor fair, and network with sponsors or other students without submitting a final project! For final project submissions, the project does NOT need to be fully finished.</p>
+            </details>
+            <details name="faq">
+                <summary>Do I need experience?</summary>
+                <p>We welcome students of all experience levels to participate in HackUMass! Participants will find a variety of workshops ranging from beginner-friendly to advanced, mentors, and plenty of resources to help everyone learn something new.</p>
+            </details>
+            <details name="faq">
+                <summary>Should I be in a team?</summary>
+                <p>We encourage participants to form a team of four (or fewer). While teams with more than four members are allowed, prizes for each member are not guaranteed beyond that size. There will be opportunities to form teams prior to the event via our event Discord server, but there will also be a team-forming event following the opening ceremony on day 1 of the event.</p>
+            </details>
+            <details name="faq">
+                <summary>Can I start my project before the event?</summary>
+                <p>No, participants are required to start their projects after the opening ceremony and hacking formally begins. If a project is created or edited beforehand, it will result in disqualification.</p>
+            </details>
+            <details name="faq">
+                <summary>Do I have to stay for 36 hours?</summary>
+                <p>No, participants are encouraged to take breaks and rest throughout the event. However, teams submitting a final project must have at least one member present during the judging process on the last day.</p>
+            </details>
+            <details name="faq">
+                <summary>Is there a Code of Conduct?</summary>
+                <p>We are committed to creating a safe environment for everyone at HackUMass. Therefore, all attendees are expected to follow the <a href='https://static.mlh.io/docs/mlh-code-of-conduct.pdf'>MLH Code of Conduct</a> and abide by the <a href='https://www.umass.edu/dean_students/sites/default/files/documents/07.01.2019%20Code%20of%20Student%20Conduct.pdf'>University of Massachusetts Amherst Code of Student Conduct</a>.</p>
+            </details>
+            <details name="faq">
+                <summary>Will photographs and videos be taken during the hackathon?</summary>
+                <p>Yes. HackUMass will take photos, audio, and video throughout the event. By participating in the event, you consent to the use of your image or voice in HackUMass materials, including on our website, social media, and other promotional or educational content. By participating in HackUMass, you are consenting to the use of your likeness and agree to release, defend, hold harmless, and indemnify HackUMass from any and all claims involving the use of your picture or likeness. If you prefer not to appear in photos or recordings, please email us at team@hackumass.com</p>
+            </details>
+        </div>
+    </section>
+    <!--  Team (IN PROGRESS) -->
+    <section id="hum-team">
+        <h1>Our Team</h1>
+
+        <section id="directors" data-team-name="Directors">
+            <div>
+                <img src="assets/headshots/Director/shriya.jpeg" alt="Shriya Gautam">
+                <h3>Shriya Gautam</h3>
+                <p>Co-Director</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Director/Devaj.jpeg" alt="Devaj Chopda">
+                <h3>Devaj Chopda</h3>
+                <p>Co-Director</p>
+            </div>
+        </section>
+
+        <section id="hardware" data-team-name="Hardware">
+            <div>
+                <img src="assets/headshots/Returning/Hardware_Anaika_Pathak.jpg" alt="Anaika Pathak">
+                <h3>Anaika Pathak</h3>
+                <p>Co-Director</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Rajashri Das">
+                <h3>Rajashri Das</h3>
+                <p>Co-Director</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Hardware/Chris_Costa.jpeg" alt="Chris Costa">
+                <h3>Chris Costa</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Junaid Pathan">
+                <h3>Junaid Pathan</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Hardware/mokshim.jpeg" alt="Mokshim Gupta">
+                <h3>Mokshim Gupta</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Tan Troung">
+                <h3>Tan Troung</h3>
+                <p>Organizer</p>
+            </div>
+        </section>
+
+        <section id="logistics" data-team-name="Logistics">
+            <div>
+                <img src="assets/headshots/Logistics/Anagha Panamakuri.JPG" alt="Anagha Panamakuri">
+                <h3>Anagha Panamakuri</h3>
+                <p>Director</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Logistics/Gaurang Patil.png" alt="Gaurang Patil">
+                <h3>Gaurang Patil</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Logistics/Aarna Deshpande.jpg" alt="Aarna Deshpande">
+                <h3>Aarna Deshpande</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Logistics/Jeba_Shalin.jpg" alt="Jeba Shalin">
+                <h3>Jeba Shalin</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Logistics/Tahir Husain.png" alt="Tahir Husain">
+                <h3>Tahir Husain</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Logistics/Poorvi Goyal.jpg" alt="Poorvi Goyal">
+                <h3>Poorvi Goyal</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Sabad Modi">
+                <h3>Sabad Modi</h3>
+                <p>Organizer</p>
+            </div>
+        </section>
+
+        <section id="pr-design" data-team-name="PR/Design">
+            <div>
+                <img src="assets/headshots/PR-Design/Liu_Anay.png" alt="Anay Liu">
+                <h3>Anay Liu</h3>
+                <p>Director</p>
+            </div>
+            <div>
+                <img src="assets/headshots/PR-Design/Kashvi Kapoor, Headshot.jpg" alt="Kashvi Kapoor">
+                <h3>Kashvi Kapoor</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Returning/PR-Design_Naina_Singh.jpg" alt="Naina Singh">
+                <h3>Naina Singh</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Swarith Gandhan">
+                <h3>Swarith Gandhan</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Rakti Iyer">
+                <h3>Rakti Iyer</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/PR-Design/Veer_HemanKuruwa.JPG" alt="Veer Heman Kuruwa">
+                <h3>Veer Heman Kuruwa</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/PR-Design/Kimaya Joshi.png" alt="Kimaya Joshi">
+                <h3>Kimaya Joshi</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/PR-Design/SARVESH PATIL.jpg" alt="Sarvesh Patil">
+                <h3>Sarvesh Patil</h3>
+                <p>Organizer</p>
+            </div>
+        </section>
+
+        <section id="sponsorship" data-team-name="Sponsorship">
+            <div>
+                <img src="assets/headshots/Sponsorship/Urvi Gupta.jpg" alt="Urvi Gupta">
+                <h3>Urvi Gupta</h3>
+                <p>Co-Director</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Sponsorship/Sponsorship_Sneha_Agarwal (1).JPG" alt="Sneha Agarwal">
+                <h3>Sneha Agarwal</h3>
+                <p>Co-Director</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Sponsorship/Sponsorship_Paulan_Huang(1).jpeg" alt="Paulan Huang">
+                <h3>Paulan Huang</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Sponsorship/Mayurika Borah.heic" alt="Mayurika Bora">
+                <h3>Mayurika Bora</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Sponsorship/Mihir Shinde.png" alt="Mihir Shinde">
+                <h3>Mihir Shinde</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Sponsorship/Walter Lloyd.jpeg" alt="Walter Lloyd">
+                <h3>Walter Lloyd</h3>
+                <p>Organizer</p>
+            </div>
+        </section>
+
+        <section id="technology" data-team-name="Technology">
+            <div>
+                <img src="assets/headshots/Returning/Tech_Aayush_Garg.jpg" alt="Aayush Garg">
+                <h3>Aayush Garg</h3>
+                <p>Co-Director</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Returning/Tech_Shreyas_Donti.jpg" alt="Shreyas Donti">
+                <h3>Shreyas Donti</h3>
+                <p>Co-Director</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Returning/Tech_Keerthi_Chebrolu.jpg" alt="Keerthi Chebrolu">
+                <h3>Keerthi Chebrolu</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Noah Shayne">
+                <h3>Noah Shayne</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Returning/Tech_Tamanna_Chandak.jpg" alt="Tamanna Chandak">
+                <h3>Tamanna Chandak</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Maggie Li">
+                <h3>Maggie Li</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Keshav Garg">
+                <h3>Keshav Garg</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Jeng Aun Chou">
+                <h3>Jeng Aun Chou</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Tech/Tech_Jeffrey_Deng.jpg" alt="Jeffrey Deng">
+                <h3>Jeffrey Deng</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Default.jpg" alt="Richarla J Preston">
+                <h3>Richarla J Preston</h3>
+                <p>Organizer</p>
+            </div>
+            <div>
+                <img src="assets/headshots/Returning/PR-Design_Arundhati_Vasishth.jpg" alt="Arundhati Vasishth">
+                <h3>Arundhati Vasishth</h3>
+                <p>Organizer</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer (IN PROGRESS) -->
+    <section id="footer">
+        <div class="footer-icon-tray">
+            <a href="mailto:team@hackumass.com" aria-label="Email HackUMass" title="Email HackUMass" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false" fill="currentColor"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM218 271.7L64.2 172.4C66 156.4 79.5 144 96 144l256 0c16.5 0 30 12.4 31.8 28.4L230 271.7c-1.8 1.2-3.9 1.8-6 1.8s-4.2-.6-6-1.8zm29.4 26.9L384 210.4 384 336c0 17.7-14.3 32-32 32L96 368c-17.7 0-32-14.3-32-32l0-125.6 136.6 88.2c7 4.5 15.1 6.9 23.4 6.9s16.4-2.4 23.4-6.9z"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/hackumass/" aria-label="HackUMass on LinkedIn" title="HackUMass on LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false" fill="currentColor"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/hackumass/" aria-label="HackUMass on Instagram" title="HackUMass on Instagram" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false" fill="currentColor"><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"></path></svg>
+            </a>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+            <div class="footer-links-left">
+                <a href="#">HackUMass XIV</a>
+                <a href="#about">Why HackUMass</a>
+                <a href="#sponsors">Sponsors</a>
+            </div>
+            <a class="footer-logo" href="#" aria-label="HackUMass home">
+                <img src="assets/hum_logos/xiv_logos/(T)FullRedFullGear.svg" alt="HackUMass XIV full red gear logo" width="180" height="180" loading="lazy">
+            </a>
+            <div class="footer-links-right">
+                <a href="#faq">FAQ</a>
+                <a href="#hum-team">Team</a>
+                <a href="mailto:team@hackumass.com">Contact Us</a>
+            </div>
+        </nav>
+    </section>
+</body>
+</html>
