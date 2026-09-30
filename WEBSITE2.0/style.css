@@ -1,20 +1,103 @@
 /* FOR WHOLE PAGE */
-.hum-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
+body {
+    margin: 0;
+}
+
+.hum-header {
+    position: relative;
     z-index: 1000;
 }
 
-.hum-sidebar a {
-    text-decoration: none;
+.hum-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 148px;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 140px 0 5%;
+}
+
+.hum-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.hum-brand img { width: auto; object-fit: contain; }
+.hum-tfc-logo { height: 56px; }
+.hum-logo-plus { height: 28px; }
+.hum-event-logo { height: 64px; }
+
+.hum-nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hum-navbar a {
     color: inherit;
+    text-decoration: none;
+}
+
+.hum-nav-menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.hum-nav-menu a:hover { background: #ffffff33; }
+.hum-nav-menu svg { width: 20px; height: 20px; }
+.hum-navbar a:focus-visible,
+.hum-menu-toggle:focus-visible { outline: 3px solid #183249; outline-offset: 4px; }
+
+.hum-mlh-badge {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 80px;
+}
+.hum-mlh-badge img { display: block; width: 100%; }
+.hum-menu-toggle { display: none; }
+
+@media (max-width: 1100px) {
+    .hum-navbar { min-height: 100px; padding: 16px 110px 16px 24px; flex-wrap: wrap; box-sizing: border-box; }
+    .hum-tfc-logo { height: 40px; }
+    .hum-logo-plus { height: 20px; }
+    .hum-event-logo { height: 48px; }
+    .hum-mlh-badge { right: 16px; width: 64px; }
+    .hum-menu-toggle:not([hidden]) {
+        display: block;
+        border: 0;
+        background: transparent;
+        color: #183249;
+        font-size: 28px;
+        padding: 8px;
+        cursor: pointer;
+    }
+    .hum-nav-menu { width: 100%; flex-direction: column; align-items: stretch; gap: 4px; }
+    .hum-nav-menu a { justify-content: center; font-size: 18px; }
+    .hum-header.menu-ready .hum-nav-menu { display: none; }
+    .hum-header.menu-open .hum-nav-menu { display: flex; }
+}
+
+@media (max-width: 400px) {
+    .hum-navbar { padding-left: 12px; padding-right: 80px; gap: 8px; }
+    .hum-brand { gap: 4px; }
+    .hum-tfc-logo { height: 32px; }
+    .hum-logo-plus { height: 16px; }
+    .hum-event-logo { height: 38px; }
+    .hum-mlh-badge { right: 8px; width: 50px; }
 }
 
 section {
@@ -300,6 +383,7 @@ section h1 {
 
 .footer-links {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 24px;
     max-width: 800px;
@@ -309,9 +393,26 @@ section h1 {
 
 .footer-links-left,
 .footer-links-right {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.footer-logo {
+    flex: 0 0 180px;
+}
+
+.footer-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .footer-links { flex-wrap: wrap; }
+    .footer-logo { order: -1; flex-basis: 100%; }
+    .footer-logo img { width: 160px; margin: 0 auto; }
 }
 
 .footer-links-left {
