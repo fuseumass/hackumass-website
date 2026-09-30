@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HackUMass XIV - An outpost for your craziest ideas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="team.js" defer></script>
     <script src="navbar.js" defer></script>
+    <script src="schedule.js" defer></script>
 </head>
 <body>
     <header class="hum-header">
         <nav class="hum-navbar" aria-label="Main navigation">
             <a class="hum-brand" href="#" aria-label="HackUMass home">
-                <img class="hum-event-logo" src="assets/hum_logos/xiv_logos/(T)FullRedFullGear.svg" alt="HackUMass">
+                <img class="hum-event-logo" src="assets/hum_logos/xiv_logos/(T)WhiteLogoWithGears.svg" alt="HackUMass">
             </a>
             <button class="hum-menu-toggle" type="button" aria-expanded="false" aria-controls="hum-nav-menu" aria-label="Open navigation menu" hidden><span aria-hidden="true">☰</span></button>
             <ul class="hum-nav-menu" id="hum-nav-menu">
@@ -30,6 +34,10 @@
             <img src="assets/hum_logos/MLHTrustBadge.svg" alt="Major League Hacking 2027 Hackathon Season">
         </a>
     </header>
+    <!-- Hero -->
+    <section id="hero">
+
+    </section>
     <!-- About -->
     <section id="about">
         <h1>Why HackUMass?</h1>
@@ -70,6 +78,19 @@
     <section id="schedule" aria-labelledby="schedule-heading">
         <h1 id="schedule-heading">Schedule — HackUMass XIII (2025)</h1>
         <p class="schedule-note">Our schedule for this year's HackUMass is not yet published. Explore last year's schedule from November 7–9, 2025 below. All times are Eastern Standard Time (EST).</p>
+        <div class="schedule-toolbar" hidden>
+            <div class="schedule-view-toggle" role="group" aria-label="Schedule view">
+                <button type="button" data-view="calendar" aria-pressed="true">Calendar</button>
+                <button type="button" data-view="list" aria-pressed="false">List</button>
+            </div>
+            <div class="schedule-legend" aria-label="Event categories">
+                <span data-category="ceremony">Ceremonies &amp; Judging</span>
+                <span data-category="workshop">Workshops &amp; Talks</span>
+                <span data-category="food">Food</span>
+                <span data-category="hacking">Hacking &amp; Deadlines</span>
+                <span data-category="general">General</span>
+            </div>
+        </div>
         <div class="schedule-grid">
             <div class="schedule-day">
                 <h2><time datetime="2025-11-07">Friday, November 7</time></h2>
@@ -317,6 +338,11 @@
                 <img src="assets/sponsor_logos/capital_one.png" alt="Capital One" loading="lazy">
             </a>
         </div>
+        <div class="why-sponsor" aria-labelledby="why-sponsor-heading">
+            <h2 id="why-sponsor-heading">Why Sponsor Us</h2>
+            <p>Sponsoring HackUMass offers companies a unique opportunity to connect with some of the brightest and most ambitious students in technology and engineering. As one of the largest hackathons in the Pioneer Valley, HackUMass brings together over 600 participants from top universities across the nation, all eager to innovate, learn, and showcase their skills. Sponsors gain exclusive access to a highly talented pool of future engineers and leaders through resume directories, direct networking, mentorship, and workshops. Beyond recruiting, HackUMass provides companies with a platform to highlight their technologies, inspire participants to build projects aligned with their vision, and establish their brand as a champion of innovation and education. By partnering with HackUMass, sponsors not only fuel the growth of the next generation of creators but also benefit from meaningful engagement and visibility in a dynamic, collaborative environment.</p>
+            <a class="why-sponsor-button" href="mailto:team@hackumass.com">Sponsor HackUMass</a>
+        </div>
     </section>
     <!--  FAQ (IN PROGRESS) -->
     <section id="faq">
@@ -389,7 +415,7 @@
         <section id="hardware">
             <h2>Hardware</h2>
             <div>
-                <img src="assets/headshots/Default.jpg" alt="Anaika Pathak">
+                <img src="assets/headshots/Returning/Hardware_Anaika_Pathak.jpg" alt="Anaika Pathak">
                 <h3>Anaika Pathak</h3>
                 <p>Co-Director</p>
             </div>
@@ -472,7 +498,7 @@
                 <p>Organizer</p>
             </div>
             <div>
-                <img src="assets/headshots/Default.jpg" alt="Naina Singh">
+                <img src="assets/headshots/Returning/PR-Design_Naina_Singh.jpg" alt="Naina Singh">
                 <h3>Naina Singh</h3>
                 <p>Organizer</p>
             </div>
@@ -540,17 +566,17 @@
         <section id="technology">
             <h2>Technology</h2>
             <div>
-                <img src="assets/headshots/Default.jpg" alt="Aayush Garg">
+                <img src="assets/headshots/Returning/Tech_Aayush_Garg.jpg" alt="Aayush Garg">
                 <h3>Aayush Garg</h3>
                 <p>Co-Director</p>
             </div>
             <div>
-                <img src="assets/headshots/Default.jpg" alt="Shreyas Donti">
+                <img src="assets/headshots/Returning/Tech_Shreyas_Donti.jpg" alt="Shreyas Donti">
                 <h3>Shreyas Donti</h3>
                 <p>Co-Director</p>
             </div>
             <div>
-                <img src="assets/headshots/Default.jpg" alt="Keerthi Chebrolu">
+                <img src="assets/headshots/Returning/Tech_Keerthi_Chebrolu.jpg" alt="Keerthi Chebrolu">
                 <h3>Keerthi Chebrolu</h3>
                 <p>Organizer</p>
             </div>
@@ -560,7 +586,7 @@
                 <p>Organizer</p>
             </div>
             <div>
-                <img src="assets/headshots/Default.jpg" alt="Tamanna Chandak">
+                <img src="assets/headshots/Returning/Tech_Tamanna_Chandak.jpg" alt="Tamanna Chandak">
                 <h3>Tamanna Chandak</h3>
                 <p>Organizer</p>
             </div>
@@ -590,7 +616,7 @@
                 <p>Organizer</p>
             </div>
             <div>
-                <img src="assets/headshots/Default.jpg" alt="Arundhati Vasishth">
+                <img src="assets/headshots/Returning/PR-Design_Arundhati_Vasishth.jpg" alt="Arundhati Vasishth">
                 <h3>Arundhati Vasishth</h3>
                 <p>Organizer</p>
             </div>

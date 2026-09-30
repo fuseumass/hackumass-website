@@ -1,14 +1,39 @@
 /* FOR WHOLE PAGE */
+html {
+    font-family: "DM Sans", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
 body {
     margin: 0;
+    background: #000;
+    color: #fff;
+}
+
+a {
+    color: inherit;
+}
+
+#hero {
+    background: #a71930;
+    color: #fff;
 }
 
 .hum-header {
     position: relative;
+    background: #a71930;
+    color: #fff;
     z-index: 1000;
 }
 
 .hum-navbar {
+    position: static;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +76,7 @@ body {
     align-items: center;
     padding: 10px;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: clamp(14px, 1vw, 18px);
     font-weight: 500;
     white-space: nowrap;
 }
@@ -59,7 +84,7 @@ body {
 .hum-nav-menu a:hover { background: #ffffff33; }
 .hum-nav-menu svg { width: 20px; height: 20px; }
 .hum-navbar a:focus-visible,
-.hum-menu-toggle:focus-visible { outline: 3px solid #183249; outline-offset: 4px; }
+.hum-menu-toggle:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
 
 .hum-mlh-badge {
     position: absolute;
@@ -80,13 +105,13 @@ body {
         display: block;
         border: 0;
         background: transparent;
-        color: #183249;
+        color: #fff;
         font-size: 28px;
         padding: 8px;
         cursor: pointer;
     }
     .hum-nav-menu { width: 100%; flex-direction: column; align-items: stretch; gap: 4px; }
-    .hum-nav-menu a { justify-content: center; font-size: 18px; }
+    .hum-nav-menu a { justify-content: center; font-size: 24px; }
     .hum-header.menu-ready .hum-nav-menu { display: none; }
     .hum-header.menu-open .hum-nav-menu { display: flex; }
 }
@@ -108,12 +133,23 @@ section h1 {
     text-align: center;
 }
 
+body > section > h1,
+.why-sponsor h2 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 50px 16px 20px;
+}
+
 /* Photo Highlights */
 #about > p {
+    font-size: 16px;
+    font-weight: 500;
     max-width: 900px;
     margin: 0 auto 24px;
     padding: 0 16px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .photo-collage {
@@ -252,7 +288,8 @@ section h1 {
 
 /* Last Year's Schedule */
 .schedule-note {
-    max-width: 800px;
+    font-size: 16px;
+    max-width: 750px;
     margin: 0 auto 24px;
     padding: 0 16px;
     text-align: center;
@@ -277,8 +314,8 @@ section h1 {
 .schedule-day h2 {
     margin: 0;
     padding: 20px 16px;
-    background: #eee;
-    color: #222;
+    background: #222;
+    color: #fff;
     font-size: 1.25rem;
     text-align: center;
 }
@@ -364,6 +401,43 @@ section h1 {
 }
 
 /* Footer Section */
+.why-sponsor {
+    max-width: 900px;
+    margin: 48px auto 64px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.why-sponsor h2 {
+    margin-bottom: 24px;
+}
+
+.why-sponsor p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.why-sponsor-button {
+    font-size: 18px;
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    background: #a71930;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.why-sponsor-button:hover {
+    background: #c7223d;
+}
+
+.why-sponsor-button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
 .footer-icon-tray {
     display: flex;
     justify-content: center;
@@ -429,6 +503,7 @@ section h1 {
 }
 
 .footer-links a {
+    font-size: 18px;
     color: inherit;
     text-decoration: none;
 }
@@ -451,11 +526,13 @@ section h1 {
 }
 
 .faq-list summary {
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .faq-list p {
+    font-size: 14px;
     line-height: 1.5;
     margin-bottom: 0;
 }
@@ -466,7 +543,9 @@ section h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    margin-top: 24px;
+    max-width: 872px;
+    margin: 24px auto 0;
+    padding: 0 16px;
 }
 
 #hum-team > section[hidden] {
@@ -474,13 +553,24 @@ section h1 {
 }
 
 #hum-team > section > h2 {
+    font-size: 24px;
     width: 100%;
     text-align: center;
 }
 
 #hum-team > section > div {
+    flex: 0 0 200px;
     width: 200px;
     text-align: center;
+}
+
+#hum-team h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#hum-team > section > div > p {
+    font-size: 14px;
 }
 
 .team-menu {
@@ -494,21 +584,113 @@ section h1 {
     padding: 8px 16px;
     border: 1px solid #aaa;
     border-radius: 4px;
-    background: white;
-    color: black;
+    background: #171717;
+    color: white;
     font: inherit;
+    font-size: 16px;
     cursor: pointer;
 }
 
 .team-menu button[aria-selected="true"] {
-    background: #eee;
-    border-color: black;
+    background: #222;
+    border-color: #fff;
     font-weight: bold;
 }
 
 #hum-team img {
     width: 200px;
     height: 200px;
+    box-sizing: border-box;
+    border: 3px solid #a71930;
     object-fit: cover;
     border-radius: 50%;
+}
+
+/* Calendar and list views inspired by SteelHacks */
+.schedule-toolbar {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.schedule-toolbar[hidden] { display: none; }
+.schedule-view-toggle { display: flex; gap: 8px; }
+.schedule-view-toggle button {
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #171717;
+    color: #fff;
+    font: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+.schedule-view-toggle button[aria-pressed="true"] { background: #a71930; color: white; border-color: #a71930; }
+.schedule-view-toggle button:focus-visible { outline: 3px solid #a71930; outline-offset: 3px; }
+.schedule-legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; }
+[data-category="ceremony"] { --event-color: #f0be45; --event-bg: #302610; }
+[data-category="workshop"] { --event-color: #b58aef; --event-bg: #251a35; }
+[data-category="food"] { --event-color: #4fd0a0; --event-bg: #102b20; }
+[data-category="hacking"] { --event-color: #f27b9d; --event-bg: #351521; }
+[data-category="general"] { --event-color: #54c5e5; --event-bg: #102a32; }
+.schedule-legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; background: var(--event-color); }
+.schedule-grid[data-view] { gap: 0; }
+.schedule-grid[data-view] .schedule-day { border-radius: 0; background: #111; }
+.schedule-grid[data-view] .schedule-day:first-child { border-radius: 12px 0 0 12px; }
+.schedule-grid[data-view] .schedule-day:last-child { border-radius: 0 12px 12px 0; }
+.schedule-grid[data-view] h2 { background: #1c1c1c; font-size: 14px; }
+.schedule-grid[data-view="calendar"] { max-width: 1400px; }
+.schedule-grid[data-view="calendar"] .schedule-day { max-height: 720px; overflow: auto; }
+.schedule-grid[data-view="calendar"] h2 { position: sticky; top: 0; z-index: 2; border-bottom: 1px solid #ddd; }
+.schedule-grid[data-view="calendar"] .schedule-events {
+    position: relative;
+    height: var(--calendar-height);
+    margin: 12px 8px 12px 50px;
+    padding: 0;
+    background: repeating-linear-gradient(to bottom, #333 0 1px, transparent 1px 320px);
+}
+.schedule-hours { display: none; }
+.schedule-grid[data-view="calendar"] .schedule-hours { display: block; }
+.schedule-hours span { position: absolute; left: -44px; font-size: 0.7rem; color: #bbb; }
+.schedule-grid[data-view="calendar"] li {
+    position: absolute;
+    top: var(--event-top);
+    left: calc(100% / var(--event-count) * var(--event-column));
+    width: calc(100% / var(--event-count) - 4px);
+    box-sizing: border-box;
+    padding: 8px;
+    gap: 4px;
+    border: 1px solid var(--event-color);
+    border-left: 3px solid var(--event-color);
+    border-radius: 6px;
+    background: var(--event-bg);
+    font-size: 0.75rem;
+    line-height: 1.25;
+}
+.schedule-grid[data-view="calendar"] .schedule-event-title { order: -1; font-weight: 600; }
+.schedule-grid[data-view="calendar"] .schedule-location { font-size: 0.7rem; }
+.schedule-grid[data-view="list"] li { border-left: 3px solid var(--event-color); margin: 12px 0; padding: 12px; background: var(--event-bg); border-radius: 6px; }
+@media (max-width: 1100px) {
+    .schedule-grid[data-view="calendar"] { display: flex; overflow-x: auto; max-width: none; }
+    .schedule-grid[data-view="calendar"] .schedule-day { flex: 0 0 420px; }
+}
+@media (max-width: 500px) {
+    .schedule-grid[data-view="calendar"] .schedule-day { flex-basis: 340px; }
+}
+
+@media (max-width: 768px) {
+    body > section > h1,
+    .why-sponsor h2 {
+        font-size: 36px;
+    }
+
+    #about > p,
+    .schedule-note,
+    .why-sponsor p {
+        font-size: 16px;
+    }
 }
