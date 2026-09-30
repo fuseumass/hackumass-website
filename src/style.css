@@ -20,6 +20,16 @@ a {
     color: inherit;
 }
 
+.application-banner {
+    padding: 12px 20px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: clamp(15px, 2vw, 22px);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
 #hero {
     position: relative;
     isolation: isolate;
