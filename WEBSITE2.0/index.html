@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="team.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=three-categories">
+    <script src="team.js?v=team-headings-removed" defer></script>
     <script src="navbar.js" defer></script>
-    <script src="schedule.js" defer></script>
+    <script src="schedule.js?v=three-categories" defer></script>
 </head>
 <body>
     <header class="hum-header">
@@ -87,20 +87,14 @@
     <section id="schedule" aria-labelledby="schedule-heading">
         <h1 id="schedule-heading">Schedule — HackUMass XIII (2025)</h1>
         <p class="schedule-note">Our schedule for this year's HackUMass is not yet published. Explore last year's schedule from November 7–9, 2025 below. All times are Eastern Standard Time (EST).</p>
-        <div class="schedule-toolbar" hidden>
-            <div class="schedule-view-toggle" role="group" aria-label="Schedule view">
-                <button type="button" data-view="calendar" aria-pressed="true">Calendar</button>
-                <button type="button" data-view="list" aria-pressed="false">List</button>
-            </div>
+        <div class="schedule-toolbar">
             <div class="schedule-legend" aria-label="Event categories">
-                <span data-category="ceremony">Ceremonies &amp; Judging</span>
-                <span data-category="workshop">Workshops &amp; Talks</span>
+                <span data-category="hackathon">Hackathon</span>
                 <span data-category="food">Food</span>
-                <span data-category="hacking">Hacking &amp; Deadlines</span>
-                <span data-category="general">General</span>
+                <span data-category="workshop">Workshops &amp; Talks</span>
             </div>
         </div>
-        <div class="schedule-grid">
+        <div class="schedule-grid" data-view="list">
             <div class="schedule-day">
                 <h2><time datetime="2025-11-07">Friday, November 7</time></h2>
                 <ul class="schedule-events">
@@ -407,8 +401,7 @@
     <section id="hum-team">
         <h1>Our Team</h1>
 
-        <section id="directors">
-            <h2>Directors</h2>
+        <section id="directors" data-team-name="Directors">
             <div>
                 <img src="assets/headshots/Director/shriya.jpeg" alt="Shriya Gautam">
                 <h3>Shriya Gautam</h3>
@@ -421,8 +414,7 @@
             </div>
         </section>
 
-        <section id="hardware">
-            <h2>Hardware</h2>
+        <section id="hardware" data-team-name="Hardware">
             <div>
                 <img src="assets/headshots/Returning/Hardware_Anaika_Pathak.jpg" alt="Anaika Pathak">
                 <h3>Anaika Pathak</h3>
@@ -455,8 +447,7 @@
             </div>
         </section>
 
-        <section id="logistics">
-            <h2>Logistics</h2>
+        <section id="logistics" data-team-name="Logistics">
             <div>
                 <img src="assets/headshots/Logistics/Anagha Panamakuri.JPG" alt="Anagha Panamakuri">
                 <h3>Anagha Panamakuri</h3>
@@ -494,8 +485,7 @@
             </div>
         </section>
 
-        <section id="pr-design">
-            <h2>PR/Design</h2>
+        <section id="pr-design" data-team-name="PR/Design">
             <div>
                 <img src="assets/headshots/PR-Design/Liu_Anay.png" alt="Anay Liu">
                 <h3>Anay Liu</h3>
@@ -538,8 +528,7 @@
             </div>
         </section>
 
-        <section id="sponsorship">
-            <h2>Sponsorship</h2>
+        <section id="sponsorship" data-team-name="Sponsorship">
             <div>
                 <img src="assets/headshots/Sponsorship/Urvi Gupta.jpg" alt="Urvi Gupta">
                 <h3>Urvi Gupta</h3>
@@ -572,8 +561,7 @@
             </div>
         </section>
 
-        <section id="technology">
-            <h2>Technology</h2>
+        <section id="technology" data-team-name="Technology">
             <div>
                 <img src="assets/headshots/Returning/Tech_Aayush_Garg.jpg" alt="Aayush Garg">
                 <h3>Aayush Garg</h3>

@@ -32,8 +32,8 @@ a {
 }
 
 #hero .hero-content { position: relative; z-index: 2; max-width: min(760px, 65vw); }
-#hero .hero-tagline { margin: 0 0 24px; font-size: clamp(30px, 4vw, 44px); font-weight: 800; line-height: 1.1; }
-#hero h1 { margin: 0 0 24px; font-size: clamp(42px, 5.5vw, 108px); line-height: 1.1; text-align: left; }
+#hero .hero-tagline { margin: 0 0 10px; font-size: clamp(30px, 4vw, 44px); font-weight: 800; line-height: 1.1; }
+#hero h1 { margin: 0 0 10px; font-size: clamp(42px, 5.5vw, 108px); line-height: 1.1; text-align: left; }
 #hero .hero-title-hack { color: #000; }
 #hero .hero-details { font-size: clamp(16px, 1.8vw, 24px); font-weight: 600; line-height: 1.5; }
 #hero .hero-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 32px; }
@@ -581,9 +581,7 @@ body > section > h1,
 }
 
 #hum-team > section > h2 {
-    font-size: 24px;
-    width: 100%;
-    text-align: center;
+    display: none;
 }
 
 #hum-team > section > div {
@@ -605,24 +603,43 @@ body > section > h1,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
+    width: 70%;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .team-menu button {
-    padding: 8px 16px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    background: #171717;
-    color: white;
+    flex: 1 1 auto;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
     font: inherit;
-    font-size: 16px;
+    font-size: 20px;
+    text-align: center;
     cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.team-menu button:hover {
+    color: #f06a7b;
 }
 
 .team-menu button[aria-selected="true"] {
-    background: #222;
-    border-color: #fff;
-    font-weight: bold;
+    color: #c52a3d;
+    border-bottom-color: currentColor;
+}
+
+.team-menu button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .team-menu { width: calc(100% - 32px); }
+    .team-menu button { font-size: 18px; }
 }
 
 #hum-team img {
@@ -634,7 +651,7 @@ body > section > h1,
     border-radius: 50%;
 }
 
-/* Calendar and list views inspired by SteelHacks */
+/* Schedule list and category legend */
 .schedule-toolbar {
     max-width: 1200px;
     margin: 24px auto;
@@ -646,70 +663,17 @@ body > section > h1,
     gap: 20px;
 }
 .schedule-toolbar[hidden] { display: none; }
-.schedule-view-toggle { display: flex; gap: 8px; }
-.schedule-view-toggle button {
-    padding: 10px 18px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background: #171717;
-    color: #fff;
-    font: inherit;
-    font-size: 16px;
-    cursor: pointer;
-}
-.schedule-view-toggle button[aria-pressed="true"] { background: #a71930; color: white; border-color: #a71930; }
-.schedule-view-toggle button:focus-visible { outline: 3px solid #a71930; outline-offset: 3px; }
 .schedule-legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; }
-[data-category="ceremony"] { --event-color: #f0be45; --event-bg: #302610; }
-[data-category="workshop"] { --event-color: #b58aef; --event-bg: #251a35; }
+[data-category="hackathon"] { --event-color: #e63946; --event-bg: #321419; }
 [data-category="food"] { --event-color: #4fd0a0; --event-bg: #102b20; }
-[data-category="hacking"] { --event-color: #f27b9d; --event-bg: #351521; }
-[data-category="general"] { --event-color: #54c5e5; --event-bg: #102a32; }
+[data-category="workshop"] { --event-color: #4c9fff; --event-bg: #14263d; }
 .schedule-legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; background: var(--event-color); }
 .schedule-grid[data-view] { gap: 0; }
 .schedule-grid[data-view] .schedule-day { border-radius: 0; background: #111; }
 .schedule-grid[data-view] .schedule-day:first-child { border-radius: 12px 0 0 12px; }
 .schedule-grid[data-view] .schedule-day:last-child { border-radius: 0 12px 12px 0; }
 .schedule-grid[data-view] h2 { background: #1c1c1c; font-size: 14px; }
-.schedule-grid[data-view="calendar"] { max-width: 1400px; }
-.schedule-grid[data-view="calendar"] .schedule-day { max-height: 720px; overflow: auto; }
-.schedule-grid[data-view="calendar"] h2 { position: sticky; top: 0; z-index: 2; border-bottom: 1px solid #ddd; }
-.schedule-grid[data-view="calendar"] .schedule-events {
-    position: relative;
-    height: var(--calendar-height);
-    margin: 12px 8px 12px 50px;
-    padding: 0;
-    background: repeating-linear-gradient(to bottom, #333 0 1px, transparent 1px 320px);
-}
-.schedule-hours { display: none; }
-.schedule-grid[data-view="calendar"] .schedule-hours { display: block; }
-.schedule-hours span { position: absolute; left: -44px; font-size: 0.7rem; color: #bbb; }
-.schedule-grid[data-view="calendar"] li {
-    position: absolute;
-    top: var(--event-top);
-    left: calc(100% / var(--event-count) * var(--event-column));
-    width: calc(100% / var(--event-count) - 4px);
-    box-sizing: border-box;
-    padding: 8px;
-    gap: 4px;
-    border: 1px solid var(--event-color);
-    border-left: 3px solid var(--event-color);
-    border-radius: 6px;
-    background: var(--event-bg);
-    font-size: 0.75rem;
-    line-height: 1.25;
-}
-.schedule-grid[data-view="calendar"] .schedule-event-title { order: -1; font-weight: 600; }
-.schedule-grid[data-view="calendar"] .schedule-location { font-size: 0.7rem; }
 .schedule-grid[data-view="list"] li { border-left: 3px solid var(--event-color); margin: 12px 0; padding: 12px; background: var(--event-bg); border-radius: 6px; }
-@media (max-width: 1100px) {
-    .schedule-grid[data-view="calendar"] { display: flex; overflow-x: auto; max-width: none; }
-    .schedule-grid[data-view="calendar"] .schedule-day { flex: 0 0 420px; }
-}
-@media (max-width: 500px) {
-    .schedule-grid[data-view="calendar"] .schedule-day { flex-basis: 340px; }
-}
-
 @media (max-width: 768px) {
     body > section > h1,
     .why-sponsor h2 {

@@ -18,7 +18,9 @@ panels.forEach((panel, index) => {
     const button = document.createElement("button");
     button.type = "button";
     button.id = `${panel.id}-tab`;
-    button.textContent = panel.querySelector("h2").textContent;
+    const heading = panel.querySelector("h2");
+    button.textContent = panel.dataset.teamName || heading?.textContent;
+    heading?.remove();
     button.setAttribute("role", "tab");
     button.setAttribute("aria-controls", panel.id);
     panel.setAttribute("role", "tabpanel");
