@@ -17,10 +17,12 @@ Open http://localhost:8000.
 Import this repository into Netlify. The root `netlify.toml` defines:
 
 - Base directory: repository root (leave blank).
-- Build command: none (leave blank).
+- Build command: `test -f src/index.html` (only verifies the static entry point exists).
 - Publish directory: `src`.
 
-For an existing Netlify site, remove any old Next.js build plugins or framework integrations and check that its build settings match the values above. No environment variables or serverless functions are required.
+For an existing Netlify site, open **Project configuration → Developer settings → Continuous deployment → Build settings → Configure** and replace `next build` with `test -f src/index.html` and `.next` with `src`. Leave the base directory at the repository root and the package directory unset. Remove any manually installed Next.js build plugin under **Build plugins**. No environment variables or serverless functions are required.
+
+Commit and push the root `netlify.toml` along with the `src/` directory to the branch connected to Netlify, then retry the deployment. The explicit verification command overrides any old build command without requiring a framework build. If it still fails, inspect the deploy log for the resolved configuration and the first error.
 
 For a manual deployment, drag the `src` folder into Netlify's deploy interface.
 

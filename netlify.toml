@@ -1,5 +1,5 @@
 [build]
-  command = ""
+  command = "test -f src/index.html"
   publish = "src"
 
 [[headers]]
