@@ -408,7 +408,7 @@ body > section > h1,
     padding: 0 16px;
 }
 
-.sponsor-link {
+.partner-logo-card {
     display: flex;
     flex: 0 1 232px;
     align-items: center;
@@ -422,23 +422,23 @@ body > section > h1,
     background: white;
 }
 
-.sponsor-link-dark {
+.partner-logo-card-dark {
     background: #222;
 }
 
-.sponsor-link img {
+.partner-logo-card img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.sponsor-link:hover {
+.partner-logo-card:hover {
     border-color: #555;
     box-shadow: 0 4px 12px #0002;
 }
 
-.sponsor-link:focus-visible {
+.partner-logo-card:focus-visible {
     outline: 3px solid #0066cc;
     outline-offset: 4px;
 }
