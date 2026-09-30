@@ -170,7 +170,6 @@ body > section > h1,
     position: relative;
     grid-column: span 2;
     margin: 0 -8px;
-    border: 2px solid black;
     background: white;
     color: white;
     box-shadow: 0 8px 20px #0005;
@@ -515,7 +514,11 @@ body > section > h1,
 
 /* FAQ Section */
 .faq-list {
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+    column-gap: clamp(24px, 6vw, 80px);
+    align-items: start;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -542,8 +545,8 @@ body > section > h1,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
-    max-width: 872px;
+    gap: 40px;
+    max-width: 920px;
     margin: 24px auto 0;
     padding: 0 16px;
 }
@@ -577,7 +580,7 @@ body > section > h1,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
 }
 
 .team-menu button {
@@ -601,7 +604,7 @@ body > section > h1,
     width: 200px;
     height: 200px;
     box-sizing: border-box;
-    border: 3px solid #a71930;
+    border: 4px solid #a71930;
     object-fit: cover;
     border-radius: 50%;
 }
