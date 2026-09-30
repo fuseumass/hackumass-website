@@ -25,6 +25,261 @@ section h1 {
     text-align: center;
 }
 
+/* Photo Highlights */
+#about > p {
+    max-width: 900px;
+    margin: 0 auto 24px;
+    padding: 0 16px;
+    line-height: 1.6;
+}
+
+.photo-collage {
+    max-width: 1200px;
+    margin: 32px auto 48px;
+    padding: 56px 40px;
+    box-sizing: border-box;
+}
+
+.photo-wall {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    align-items: center;
+    gap: 0;
+}
+
+.photo-print {
+    position: relative;
+    grid-column: span 2;
+    margin: 0 -8px;
+    border: 2px solid black;
+    background: white;
+    color: white;
+    box-shadow: 0 8px 20px #0005;
+    transform: rotate(-5deg);
+}
+
+.photo-print:nth-child(2) {
+    transform: translateY(24px) rotate(4deg);
+    z-index: 2;
+}
+
+.photo-print:nth-child(3) {
+    transform: rotate(-3deg);
+}
+
+.photo-print:nth-child(4) {
+    grid-column: 2 / span 2;
+    transform: translateY(-8px) rotate(3deg);
+    z-index: 3;
+}
+
+.photo-print:nth-child(5) {
+    grid-column: 4 / span 2;
+    transform: translateY(12px) rotate(-4deg);
+    z-index: 4;
+}
+
+.photo-print img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.photo-print figcaption {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    box-sizing: border-box;
+    background: linear-gradient(transparent, #000e);
+    opacity: 0;
+    text-align: center;
+}
+
+.photo-print:hover,
+.photo-print:focus {
+    z-index: 5;
+}
+
+.photo-print:hover figcaption,
+.photo-print:focus figcaption {
+    opacity: 1;
+}
+
+.photo-print:focus-visible {
+    outline: 3px solid #0066cc;
+    outline-offset: 4px;
+}
+
+.photo-print h2 {
+    margin: 0 0 8px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.photo-print figcaption p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.35;
+}
+
+@media (max-width: 800px) {
+    .photo-collage {
+        padding: 40px 28px;
+    }
+
+    .photo-wall {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        row-gap: 16px;
+    }
+
+    .photo-print:nth-child(4) {
+        grid-column: span 2;
+    }
+
+    .photo-print:nth-child(5) {
+        grid-column: 2 / span 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .photo-wall {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .photo-print {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .photo-print:nth-child(n) {
+        transform: rotate(-3deg);
+    }
+
+    .photo-print:nth-child(even) {
+        transform: rotate(3deg);
+    }
+}
+
+/* Last Year's Schedule */
+.schedule-note {
+    max-width: 800px;
+    margin: 0 auto 24px;
+    padding: 0 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto 48px;
+    padding: 0 16px;
+}
+
+.schedule-day {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.schedule-day h2 {
+    margin: 0;
+    padding: 20px 16px;
+    background: #eee;
+    color: #222;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.schedule-events {
+    list-style: none;
+    margin: 0;
+    padding: 0 16px;
+}
+
+.schedule-events li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 0;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.schedule-events li + li {
+    border-top: 1px solid #ddd;
+}
+
+.schedule-events time {
+    font-weight: bold;
+}
+
+.schedule-location {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+}
+
+/* Sponsors Section */
+.sponsor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 24px auto 48px;
+    padding: 0 16px;
+}
+
+.sponsor-link {
+    display: flex;
+    flex: 0 1 232px;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    height: 160px;
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+}
+
+.sponsor-link-dark {
+    background: #222;
+}
+
+.sponsor-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sponsor-link:hover {
+    border-color: #555;
+    box-shadow: 0 4px 12px #0002;
+}
+
+.sponsor-link:focus-visible {
+    outline: 3px solid #0066cc;
+    outline-offset: 4px;
+}
+
 /* Footer Section */
 .footer-icon-tray {
     display: flex;
