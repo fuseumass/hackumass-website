@@ -418,6 +418,14 @@ body > section > h1,
     padding: 0 16px;
 }
 
+.sponsor-grid-primary {
+    margin-bottom: 24px;
+}
+
+.sponsor-grid-primary + .sponsor-grid {
+    margin-top: 0;
+}
+
 .partner-logo-card {
     display: flex;
     flex: 0 1 232px;
