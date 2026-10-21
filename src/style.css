@@ -418,12 +418,39 @@ body > section > h1,
     padding: 0 16px;
 }
 
-.sponsor-grid-primary {
-    margin-bottom: 24px;
+#sponsors > .sponsor-tier-heading {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 32px auto 0;
 }
 
-.sponsor-grid-primary + .sponsor-grid {
-    margin-top: 0;
+.sponsor-tier-heading-gold {
+    color: #e8bd59;
+}
+
+.sponsor-grid-gold {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sponsor-grid-gold .partner-logo-card {
+    height: 240px;
+    padding: 32px;
+    border: 2px solid #c69a36;
+}
+
+@media (max-width: 600px) {
+    .sponsor-grid-gold {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .sponsor-grid-gold .partner-logo-card {
+        height: 220px;
+        padding: 24px;
+    }
 }
 
 .partner-logo-card {

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=application-banner">
+    <link rel="stylesheet" href="style.css?v=sponsor-headings">
     <script src="team.js?v=team-headings-removed" defer></script>
     <script src="navbar.js" defer></script>
     <script src="schedule.js?v=three-categories" defer></script>
@@ -314,10 +314,14 @@
     <!-- Sponsors -->
     <section id="sponsors">
         <h1>Our Sponsors</h1>
-        <div class="sponsor-grid sponsor-grid-primary">
+        <h2 id="gold-sponsors-heading" class="sponsor-tier-heading sponsor-tier-heading-gold">Gold Sponsors</h2>
+        <div class="sponsor-grid sponsor-grid-gold" role="group" aria-labelledby="gold-sponsors-heading">
             <a class="partner-logo-card" href="https://www.umass.edu/cics/" target="_blank" rel="noopener noreferrer">
                 <img src="assets/sponsor_logos/umass_cics.jpg" alt="UMass Amherst Manning College of Information and Computer Sciences" loading="lazy">
             </a>
+            <div class="partner-logo-card partner-logo-card-dark">
+                <img src="assets/sponsor_logos/umass-ece.png" alt="UMass Amherst Electrical and Computer Engineering" loading="lazy">
+            </div>
             <a class="partner-logo-card" href="https://www.capitalone.com/" target="_blank" rel="noopener noreferrer">
                 <img src="assets/sponsor_logos/capital_one.png" alt="Capital One" loading="lazy">
             </a>
@@ -325,12 +329,13 @@
                 <img src="assets/sponsor_logos/HPE_logo_full-clr_pos_rgb.png" alt="Hewlett Packard Enterprise" loading="lazy">
             </a>
         </div>
-        <div class="sponsor-grid">
+        <h2 id="supporting-sponsors-heading" class="sponsor-tier-heading">Supporting Sponsors</h2>
+        <div class="sponsor-grid" role="group" aria-labelledby="supporting-sponsors-heading">
             <a class="partner-logo-card" href="https://make.cs.umass.edu/" target="_blank" rel="noopener noreferrer">
                 <img src="assets/sponsor_logos/makerspace.webp" alt="CICS Physical Computing Makerspace" loading="lazy">
             </a>
-            <a class="partner-logo-card" href="https://str.us/" target="_blank" rel="noopener noreferrer">
-                <img src="assets/sponsor_logos/str.jpeg" alt="STR" loading="lazy">
+            <a class="partner-logo-card partner-logo-card-dark" href="https://str.us/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/str.png" alt="STR" loading="lazy">
             </a>
             <a class="partner-logo-card" href="https://www.amd.com/" target="_blank" rel="noopener noreferrer">
                 <img src="assets/sponsor_logos/amd.jpg" alt="AMD" loading="lazy">
@@ -347,6 +352,21 @@
             <a class="partner-logo-card" href="https://mlh.link/MLH-PureButtons-hackathons" target="_blank" rel="noopener noreferrer">
                 <img src="assets/sponsor_logos/purebuttons.png" alt="Pure Buttons" loading="lazy">
             </a>
+            <div class="partner-logo-card">
+                <img src="assets/sponsor_logos/silverscreen.png" alt="Silver Screen Design" loading="lazy">
+            </div>
+            <div class="partner-logo-card">
+                <img src="assets/sponsor_logos/amherst-copy.png" alt="Amherst Copy &amp; Designworks" loading="lazy">
+            </div>
+            <div class="partner-logo-card partner-logo-card-dark">
+                <img src="assets/sponsor_logos/deepspace.svg" alt="DeepSpace" loading="lazy">
+            </div>
+            <div class="partner-logo-card">
+                <img src="assets/sponsor_logos/nord-security.png" alt="Nord Security" loading="lazy">
+            </div>
+            <div class="partner-logo-card partner-logo-card-dark">
+                <img src="assets/sponsor_logos/saily.png" alt="Saily" loading="lazy">
+            </div>
         </div>
         <div class="why-sponsor" aria-labelledby="why-sponsor-heading">
             <h2 id="why-sponsor-heading">Why Sponsor Us</h2>
@@ -514,7 +534,7 @@
                 <p>Organizer</p>
             </div>
             <div>
-                <img src="assets/headshots/Default.jpg" alt="Rakti Iyer">
+                <img src="assets/headshots/PR-Design/RaktiIyer.png" alt="Rakti Iyer">
                 <h3>Rakti Iyer</h3>
                 <p>Organizer</p>
             </div>
