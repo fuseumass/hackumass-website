@@ -91,6 +91,7 @@
     <section id="schedule" aria-labelledby="schedule-heading">
         <h1 id="schedule-heading">Schedule</h1>
         <p class="schedule-note">All times are Eastern Standard Time (EST).</p>
+
         <div class="schedule-toolbar">
             <div class="schedule-legend" aria-label="Event categories">
                 <span data-category="hackathon">Hackathon</span>
@@ -98,110 +99,211 @@
                 <span data-category="workshop">Workshops &amp; Talks</span>
             </div>
         </div>
+
         <div class="schedule-grid" data-view="list">
+
+            <!-- FRIDAY -->
             <div class="schedule-day">
                 <h2><time datetime="2026-11-13">Friday, November 13</time></h2>
                 <ul class="schedule-events" tabindex="0">
-                    <li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-13T18:30:00-05:00">6:30 PM</time>
                         <span class="schedule-event-title">Participant Check-In</span>
                         <span class="schedule-location">Campus Center Auditorium</span>
                     </li>
-                    <li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-13T19:30:00-05:00">7:30 PM</time>
                         <span class="schedule-event-title">Opening Ceremony</span>
                         <span class="schedule-location">Campus Center Auditorium</span>
                     </li>
-                    <li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-13T20:30:00-05:00">8:30 PM</time>
                         <span class="schedule-event-title">Hacking Begins</span>
                     </li>
-                    <li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-13T21:30:00-05:00">9:30 PM</time>
                         <span class="schedule-event-title">Hardware Table Opens</span>
                     </li>
-                    <li>
+
+                    <li data-category="workshop">
                         <time datetime="2026-11-13T21:30:00-05:00">9:30 PM</time>
                         <span class="schedule-event-title">Workshop: Team Building</span>
                     </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-13T22:45:00-05:00">10:45 PM</time>
+                        <span class="schedule-event-title">Workshop: LLMs and Gamification</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+
                 </ul>
             </div>
+
+            <!-- SATURDAY -->
             <div class="schedule-day">
                 <h2><time datetime="2026-11-14">Saturday, November 14</time></h2>
                 <ul class="schedule-events" tabindex="0">
-                    <li>
+
+                    <li data-category="food">
                         <time datetime="2026-11-14T09:00:00-05:00">9:00 AM</time>
                         <span class="schedule-event-title">Breakfast</span>
                         <span class="schedule-location">ILC Main Atrium</span>
                     </li>
-                    <li>
-                        <time datetime="2026-11-14T09:00:00-05:00">9:00 AM</time>
-                        <span class="schedule-event-title">Workshop: The Next Step: Turning Hacks into Ventures</span>
-                    </li>
-                    <li>
+
+                    <li data-category="workshop">
                         <time datetime="2026-11-14T11:15:00-05:00">11:15 AM</time>
-                        <span class="schedule-event-title">Workshop: MLH AI Studio + Cursor</span>
+                        <span class="schedule-event-title">Workshop: MLH Intro to Google AI Studio + Cursor</span>
                     </li>
-                    <li>
-                        <time datetime="2026-11-14T12:00:00-05:00">12:00 PM</time>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T11:15:00-05:00">11:15 AM</time>
+                        <span class="schedule-event-title">Workshop: Intro to Open-Source Intelligence</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T11:45:00-05:00">11:45 AM</time>
+                        <span class="schedule-event-title">Workshop: Hackathon A-Team with SpaceXSI</span>
+                    </li>
+
+                    <li data-category="food">
+                        <time datetime="2026-11-14T12:15:00-05:00">12:15 PM</time>
                         <span class="schedule-event-title">Lunch</span>
                         <span class="schedule-location">ILC Main Atrium</span>
                     </li>
-                    <li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T13:00:00-05:00">1:00 PM</time>
+                        <span class="schedule-event-title">Workshop: Model Routing: Building Smarter, Faster, and Cheaper AI Applications</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T13:00:00-05:00">1:00 PM</time>
+                        <span class="schedule-event-title">Workshop: Data-Over-Sound "Spy" Communications</span>
+                        <span class="schedule-location">ILC S140</span>
+                    </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T13:00:00-05:00">1:00 PM</time>
+                        <span class="schedule-event-title">Workshop: Building a Database for Your Hackathon Project</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-14T14:00:00-05:00">2:00 PM</time>
                         <span class="schedule-event-title">Sponsor Fair</span>
                         <span class="schedule-location">ILC Main Atrium</span>
                     </li>
-                    <li>
-                        <time datetime="2026-11-14T16:45:00-05:00">4:45 PM</time>
-                        <span class="schedule-event-title">Workshop: Capital One Mario Kart Tournament</span>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T15:30:00-05:00">3:30 PM</time>
+                        <span class="schedule-event-title">Workshop: Your Idea Isn't Too Big: A Comprehensive Guide to Algorithmic Thinking</span>
                     </li>
-                    <li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T16:45:00-05:00">4:45 PM</time>
+                        <span class="schedule-event-title">Workshop: Capital One Smash Tournament</span>
+                    </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T16:45:00-05:00">4:45 PM</time>
+                        <span class="schedule-event-title">Workshop: From Idea to AI App: Building Your First AI-Powered Prototype</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T16:45:00-05:00">4:45 PM</time>
+                        <span class="schedule-event-title">Workshop: From Breadboard to PCB</span>
+                        <span class="schedule-location">ILC S131</span>
+                    </li>
+
+                    <li data-category="food">
                         <time datetime="2026-11-14T18:00:00-05:00">6:00 PM</time>
                         <span class="schedule-event-title">Dinner</span>
                         <span class="schedule-location">ILC Main Atrium</span>
                     </li>
-                    <li>
+
+                    <li data-category="workshop">
                         <time datetime="2026-11-14T19:00:00-05:00">7:00 PM</time>
                         <span class="schedule-event-title">Workshop: MLH TechTogether Meetup</span>
-                        <span class="schedule-location">ILC Main Atrium</span>
+                        <span class="schedule-location">ILC N151 / ILC Atrium</span>
                     </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T19:00:00-05:00">7:00 PM</time>
+                        <span class="schedule-event-title">Workshop: The Next Step: Turning Hacks into Ventures</span>
+                        <span class="schedule-location">ILC S120</span>
+                    </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T20:15:00-05:00">8:15 PM</time>
+                        <span class="schedule-event-title">Workshop: Your MVP Is Probably Too Big: How to Scope a Product You Can Actually Ship</span>
+                        <span class="schedule-location">ILC S131</span>
+                    </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T20:15:00-05:00">8:15 PM</time>
+                        <span class="schedule-event-title">Workshop: From Hack to Hired</span>
+                        <span class="schedule-location">ILC N151</span>
+                    </li>
+
+                    <li data-category="workshop">
+                        <time datetime="2026-11-14T21:30:00-05:00">9:30 PM</time>
+                        <span class="schedule-event-title">Workshop: Intro to AI Security &amp; Safety</span>
+                    </li>
+
                 </ul>
             </div>
+
+            <!-- SUNDAY -->
             <div class="schedule-day">
                 <h2><time datetime="2026-11-15">Sunday, November 15</time></h2>
                 <ul class="schedule-events" tabindex="0">
-                    <li>
+
+                    <li data-category="food">
                         <time datetime="2026-11-15T00:00:00-05:00">12:00 AM</time>
                         <span class="schedule-event-title">Insomnia Cookies</span>
                     </li>
-                    <li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-15T00:00:00-05:00">12:00 AM</time>
                         <span class="schedule-event-title">Initial Submission Deadline</span>
                     </li>
-                    <li>
+
+                    <li data-category="food">
                         <time datetime="2026-11-15T09:00:00-05:00">9:00 AM</time>
                         <span class="schedule-event-title">Breakfast</span>
                         <span class="schedule-location">ILC Main Atrium</span>
                     </li>
-                    <li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-15T10:00:00-05:00">10:00 AM</time>
                         <span class="schedule-event-title">Project Final Submission Deadline</span>
                     </li>
-                    <li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-15T12:30:00-05:00">12:30 PM</time>
                         <span class="schedule-event-title">Judging</span>
                     </li>
-                    <li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-15T15:00:00-05:00">3:00 PM</time>
                         <span class="schedule-event-title">Project Deliberation</span>
                     </li>
-                    <li>
+
+                    <li data-category="hackathon">
                         <time datetime="2026-11-15T16:30:00-05:00">4:30 PM</time>
                         <span class="schedule-event-title">Closing Ceremony</span>
                     </li>
+
                 </ul>
             </div>
+
         </div>
     </section>
     <!-- Prizes -->
@@ -382,6 +484,9 @@
         </div>
         <h2 id="supporting-sponsors-heading" class="sponsor-tier-heading">Supporting Sponsors</h2>
         <div class="sponsor-grid" role="group" aria-labelledby="supporting-sponsors-heading">
+            <a class="partner-logo-card" href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/sponsor_logos/AWS_logo_RGB_1c_Gray850.png" alt="Amazon Web Services (AWS)" loading="lazy">
+            </a>
             <a class="partner-logo-card" href="https://make.cs.umass.edu/" target="_blank" rel="noopener noreferrer">
                 <img src="assets/sponsor_logos/makerspace.webp" alt="CICS Physical Computing Makerspace" loading="lazy">
             </a>
