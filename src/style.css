@@ -839,3 +839,13 @@ body > section > h1,
         max-width: 500px;
     }
 }
+
+@media (min-width: 601px) {
+    .sponsor-grid-gold .partner-logo-card.partner-logo-card-center {
+        grid-column: 1 / -1;
+        justify-self: center;
+        flex: 0 0 auto;
+        width: calc((100% - 24px) / 2);
+        margin: 0 auto;
+    }
+}
